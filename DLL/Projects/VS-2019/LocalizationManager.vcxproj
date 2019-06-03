@@ -161,13 +161,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Code\Sources\clike.cpp" />
     <ClCompile Include="..\..\Code\Sources\dllmain.cpp" />
     <ClCompile Include="Precompiled Headers\pch.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Code\Headers\clike.h" />
-    <ClInclude Include="Precompiled Headers\framework.h" />
-    <ClInclude Include="Precompiled Headers\pch.h" />
+    <ClInclude Include="..\..\Code\Headers\clike.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
