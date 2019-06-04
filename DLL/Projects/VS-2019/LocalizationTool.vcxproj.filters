@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\Code\Sources\clike.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Code\Sources\dllmain.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Program Essentials</Filter>
     </ClCompile>
     <ClCompile Include="Precompiled Headers\pch.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Program Essentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Localization_Tool.cpp">
+      <Filter>Source Files\Core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -18,10 +18,22 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{efc10258-08f7-4805-ba01-b1c4cb0b6cfd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{073aac98-61fb-4d68-b3ac-e4c383c41719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Program Essentials">
+      <UniqueIdentifier>{b7932871-bda7-406e-8d63-32df9e9a6266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{828589ba-957c-4926-9e30-3c9ef516ba9b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Code\Headers\clike.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\Code\Headers\Localization_Tool.hpp">
+      <Filter>Header Files\Core</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>
