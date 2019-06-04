@@ -44,6 +44,7 @@ ExportedObj/
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
+*\.dll\.meta
 
 # Unity3D generated file on crash reports
 sysinfo.txt
@@ -59,4 +60,3 @@ crashlytics-build.properties
 # Whitelist
 
 !Assets/Plugins/**/*.pdb
-!Assets/Plugins/**/*.pdb.meta
