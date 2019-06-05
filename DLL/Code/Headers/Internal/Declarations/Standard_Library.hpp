@@ -23,6 +23,8 @@
 #include <cassert>
 #include <cstddef>         // std::size_t
 
+#include <filesystem>
+
 using namespace std;
 
 namespace prz

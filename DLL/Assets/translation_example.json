@@ -2,9 +2,9 @@
     "Assets Folder": "../../Assets/",
     "Events":
     {
-        "Event_001":
+        "Sequence001":
         {
-            "Audio tracks":
+            "Audio clips":
             {
                 "birds_sound.mp3":
                 {
@@ -13,7 +13,7 @@
                    "Clip End": "-"
                 }
             },
-           "Subtitle tracks": 
+           "Subtitle clips": 
            {
                "ST_001":
                {

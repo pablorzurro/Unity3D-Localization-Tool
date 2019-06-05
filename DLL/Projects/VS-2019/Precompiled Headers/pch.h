@@ -20,4 +20,4 @@
 // Windows Header Files
 #include <windows.h>
 
-#endif //PCH_H
+#endif // !PCH_H

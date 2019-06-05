@@ -1,10 +1,10 @@
-#ifndef LOCALIZATION_TOOL_LOCALIZATION_TOOL_H_
-#define LOCALIZATION_TOOL_LOCALIZATION_TOOL_H_
+#ifndef LOCALIZATION_TOOL_INTERFACE_H_
+#define LOCALIZATION_TOOL_INTERFACE_H_
 
 #ifdef LOCALIZATIONTOOL_EXPORTS
-#define LOCALIZATIONTOOL_API __declspec(dllexport)
+#define LOCALIZATION_TOOL_API __declspec(dllexport)
 #else
-#define LOCALIZATIONTOOL_API __declspec(dllimport)
+#define LOCALIZATION_TOOL_API __declspec(dllimport)
 #endif
 
 #include <Declarations.hpp>
@@ -19,14 +19,14 @@ namespace prz
 
 		#pragma region Memory Release
 
-		LOCALIZATIONTOOL_API int free_char_array(char* charArray);
-		LOCALIZATIONTOOL_API int free_pointer(void* ptr);
+		LOCALIZATION_TOOL_API int free_char_array(char* charArray);
+		LOCALIZATION_TOOL_API int free_pointer(void* ptr);
 
 		#pragma endregion
 
 		#pragma region Testing
 
-		LOCALIZATIONTOOL_API const char* get_byte_array();
+		LOCALIZATION_TOOL_API const char* get_byte_array();
 
 		#pragma endregion
 
@@ -37,4 +37,4 @@ namespace prz
 } // !namespace prz
 
 
-#endif // !LOCALIZATION_TOOL_LOCALIZATION_TOOL_H_
+#endif // !LOCALIZATION_TOOL_INTERFACE_H_
