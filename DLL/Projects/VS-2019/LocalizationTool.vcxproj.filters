@@ -42,6 +42,12 @@
     <Filter Include="Header Files\Internal\Utilities">
       <UniqueIdentifier>{7bb715da-2adb-48e9-8ad6-2d9f5d20c84a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Tracks">
+      <UniqueIdentifier>{024b8db0-db36-41e0-bc2d-011be1467676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Clips">
+      <UniqueIdentifier>{f6f1a1d7-d83c-46a2-b5da-e7534683f086}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
@@ -64,6 +70,15 @@
     </ClInclude>
     <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Math.hpp">
       <Filter>Header Files\Internal\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Track.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Clip.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Sequence.hpp">
+      <Filter>Header Files\Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
