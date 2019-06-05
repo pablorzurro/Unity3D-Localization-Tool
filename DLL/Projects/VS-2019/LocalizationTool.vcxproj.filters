@@ -99,5 +99,8 @@
     <ClInclude Include="..\..\Code\Headers\Internal\Utilities\String.hpp">
       <Filter>Header Files\Internal\Utilities</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\IO.hpp">
+      <Filter>Header Files\Internal\Utilities</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

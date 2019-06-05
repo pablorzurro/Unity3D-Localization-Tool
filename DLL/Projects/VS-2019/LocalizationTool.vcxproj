@@ -79,6 +79,7 @@
     <ClInclude Include="..\..\Code\Headers\Interface.hpp" />
     <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Nlohmann_JSON_Converter.hpp" />
     <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Standard_Library.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\IO.hpp" />
     <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Math.hpp" />
     <ClInclude Include="..\..\Code\Headers\Internal\Utilities\String.hpp" />
     <ClInclude Include="..\..\Code\Headers\Sequence.hpp" />
