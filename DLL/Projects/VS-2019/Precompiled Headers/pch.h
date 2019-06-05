@@ -7,10 +7,14 @@
 #ifndef PCH_H
 #define PCH_H
 
-// add headers that you want to pre-compile here
+// Add headers that you want to pre-compile here
 #include "targetver.h"
 #include "framework.h"
-#include <Localization_Tool.hpp>
+
+#include <Declarations.hpp>
+#include <Utilities.hpp>
+
+#include <Interface.hpp>
 
 #define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers
 // Windows Header Files

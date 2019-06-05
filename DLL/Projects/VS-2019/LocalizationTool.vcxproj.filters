@@ -7,7 +7,7 @@
     <ClCompile Include="Precompiled Headers\pch.cpp">
       <Filter>Source Files\Program Essentials</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Code\Sources\Localization_Tool.cpp">
+    <ClCompile Include="..\..\Code\Sources\Interface.cpp">
       <Filter>Source Files\Core</Filter>
     </ClCompile>
   </ItemGroup>
@@ -27,13 +27,43 @@
     <Filter Include="Source Files\Core">
       <UniqueIdentifier>{828589ba-957c-4926-9e30-3c9ef516ba9b}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Code\Headers\Localization_Tool.hpp">
-      <Filter>Header Files\Core</Filter>
-    </ClInclude>
+    <Filter Include="Header Files\Subtitles">
+      <UniqueIdentifier>{c772a5f2-4e84-4fdb-9b7a-89ba7691c531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Audio">
+      <UniqueIdentifier>{96224521-7020-4fd8-a2a8-f3646bc5b178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Internal">
+      <UniqueIdentifier>{2b9a4d35-4c0c-4e2f-b5d4-81d9ced3acf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Internal\Declarations">
+      <UniqueIdentifier>{6db3d8b5-4ed9-438f-8104-7cf12d12f955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Internal\Utilities">
+      <UniqueIdentifier>{7bb715da-2adb-48e9-8ad6-2d9f5d20c84a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Code\Headers\Interface.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Nlohmann_JSON_Converter.hpp">
+      <Filter>Header Files\Internal\Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Standard_Library.hpp">
+      <Filter>Header Files\Internal\Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Declarations.hpp">
+      <Filter>Header Files\Internal\Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Utilities.hpp">
+      <Filter>Header Files\Internal\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Math.hpp">
+      <Filter>Header Files\Internal\Utilities</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

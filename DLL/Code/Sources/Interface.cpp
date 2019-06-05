@@ -1,18 +1,13 @@
-#include "pch.h"
-#include <Localization_Tool.hpp>
+#include <pch.h>
+#include <Interface.hpp>
 
-#include <string>
+#include <Utilities.hpp>
 
 namespace prz
 {
-	int add(int a, int b)
-	{
-		return a + b;
-	}
-
 	const char* get_byte_array()
 	{
-		std::string s = "This is a boring test";
+		string s = "This is a boring test";
 
 		int stringLength = s.length() + 1; // + "/0"
 
@@ -24,10 +19,17 @@ namespace prz
 
 		return charArrayToReturn;
 	}
-	
-	int free_memory(char* arrayPtr)
+
+	int free_char_array(char* charArray)
 	{
-		delete[] arrayPtr;
+		delete[] charArray;
 		return 0;
 	}
+
+	int free_pointer(void* ptr)
+	{
+		delete ptr;
+		return 0;
+	}
+
 }

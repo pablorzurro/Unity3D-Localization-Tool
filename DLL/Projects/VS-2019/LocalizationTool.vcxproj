@@ -66,11 +66,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Code\Sources\dllmain.cpp" />
-    <ClCompile Include="..\..\Code\Sources\Localization_Tool.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Interface.cpp" />
     <ClCompile Include="Precompiled Headers\pch.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Code\Headers\Localization_Tool.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Declarations.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Interface.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Nlohmann_JSON_Converter.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Standard_Library.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Math.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Utilities.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
