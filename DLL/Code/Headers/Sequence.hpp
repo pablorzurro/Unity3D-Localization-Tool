@@ -1,15 +1,29 @@
-#pragma once
 
 
+#ifndef LOCALIZATION_TOOL_SEQUENCE_H_
+#define LOCALIZATION_TOOL_SEQUENCE_H_
 
 #include <Declarations.hpp>
 
-class Audio_Track;
-class Text_Track;
-
-class Sequence
+namespace prz
 {
 
-	vector <shared_ptr<Audio_Track>> mAudioTracks;
-	vector <shared_ptr<Text_Track>> mTextTracks;
-};
+	class Audio_Track;
+	class Text_Track;
+
+	class Sequence
+	{
+	public:
+
+		Sequence(){}
+
+	private:
+
+		vector <shared_ptr<Audio_Track>> m_audioTracks;
+		vector <shared_ptr<Text_Track>> m_textTracks;
+	};
+
+} // !namespace prz
+
+
+#endif // !LOCALIZATION_TOOL_SEQUENCE_H_

@@ -1,63 +1,45 @@
-#pragma once
+#ifndef LOCALIZATION_TOOL_CLIP_H_
+#define LOCALIZATION_TOOL_CLIP_H_
+
 
 #include <Declarations.hpp>
 
-class Clip
-{
-public:
 
-	Clip(float startTime, float duration) :
-		mStartTime(startTime),
-		mDuration(duration)
+namespace prz
+{
+
+	class Clip
 	{
-		
-	}
+	public:
 
-	Clip(Clip& other) :
-		mStartTime(other.mStartTime),
-		mDuration(other.mDuration)
-	{}
+		Clip(float startTime, float duration);
+		Clip(Clip& other);
+		Clip() = delete;
 
-	Clip() = delete;
+	public:
 
-private:
+		void set_start_time(float startTime)
+		{
+			mStartTime = startTime;
+		}
 
-	float mStartTime;
-	float mDuration;  
-};
+		void set_duration(float duration)
+		{
+			mDuration = duration;
+		}
 
-class Audio_Clip : public Clip
-{
+	public:
 
-	/**
-	 * @brief Construct a new Audio_Clip
-	 * 
-	 * @param audioFilePath 
-	 * @param startTime 
-	 * @param duration. If the value is -1.0, this audio clip has the same duration as its corresponding file.
-	 * @param startClippingTime. If the start clipping time is 0.0, there is no clipping 
-	 */
-	Audio_Clip
-	(
-		const string& audioFilePath, 
-		float startTime, 
-		float duration = -1.f, 
-		float startClippingTime = 0.f
-	) :
-		Clip(startTime, duration),
-		mFilePath(new char[audioFilePath.length() + 1]),
-		mStartClippingTime(startClippingTime)
-	{}
+		float get_start_time(){ return mStartTime; }
+		float get_duration(){ return mDuration; }
 
-private: 
+	private:
 
-	char* mFilePath;
-	float mStartClippingTime;
+		float mStartTime;
+		float mDuration;
 
-	//uint8_t byteArray[];
-};
+	};
 
-class Text_Clip : public Clip
-{
+} // !namespace prz
 
-};
+#endif // !LOCALIZATION_TOOL_CLIP_H_

@@ -65,18 +65,24 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Code\Headers\Audio_Clip.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Clip.cpp" />
     <ClCompile Include="..\..\Code\Sources\dllmain.cpp" />
     <ClCompile Include="..\..\Code\Sources\Interface.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Text_Clip.cpp" />
     <ClCompile Include="Precompiled Headers\pch.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Code\Headers\Audio_Clip.hpp" />
     <ClInclude Include="..\..\Code\Headers\Clip.hpp" />
     <ClInclude Include="..\..\Code\Headers\Declarations.hpp" />
     <ClInclude Include="..\..\Code\Headers\Interface.hpp" />
     <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Nlohmann_JSON_Converter.hpp" />
     <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Standard_Library.hpp" />
     <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Math.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\String.hpp" />
     <ClInclude Include="..\..\Code\Headers\Sequence.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Text_Clip.hpp" />
     <ClInclude Include="..\..\Code\Headers\Track.hpp" />
     <ClInclude Include="..\..\Code\Headers\Utilities.hpp" />
   </ItemGroup>

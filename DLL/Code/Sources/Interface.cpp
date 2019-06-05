@@ -8,6 +8,13 @@ namespace prz
 	extern "C"
 	{
 
+		char* test_communication(const char* charArray)
+		{
+			string myString = get_string_from(charArray) + " Mode";
+			
+			return get_copy_of(to_char_array(myString));
+		}
+
 		const char* get_byte_array()
 		{
 			string s = "This is a boring test";
@@ -23,23 +30,10 @@ namespace prz
 			return charArrayToReturn;
 		}
 
-		int free_char_array(char* charArray)
-		{
-			delete[] charArray;
-			return 0;
-		}
-
 		int free_pointer(void* ptr)
 		{
 			delete ptr;
 			return 0;
 		}
-
-		int free_memory(void* memory)
-		{
-			if()
-			delete memory;
-		}
-
 	}
 }

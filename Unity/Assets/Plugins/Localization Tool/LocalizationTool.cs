@@ -12,11 +12,12 @@ public unsafe class LocalizationTool : MonoBehaviour
 {
     #region Native
 
-    [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
-    public static extern int add(int a, int b);
 
     [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
     public static extern IntPtr get_byte_array();
+
+    [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+    public static extern IntPtr test_communication(String str);
 
     [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
     public static extern int free_memory(IntPtr ptr);
@@ -34,19 +35,13 @@ public unsafe class LocalizationTool : MonoBehaviour
 
     public static void Test()
     {
-        Debug.Log(GetString(get_byte_array()));
+        String test = "Beast";
+        Debug.Log(GetString(test_communication(test)));
     }
 
-    public static string GetString(IntPtr charArray, bool liberateMemory = false)
+    public static string GetString(IntPtr charArray)
     {
-        string toReturn = Marshal.PtrToStringAnsi(charArray);
-
-        if (liberateMemory)
-        {
-            free_memory(charArray);
-        }
-
-        return toReturn;
+        return Marshal.PtrToStringAnsi(charArray);
     }
 
     #endregion
