@@ -1,6 +1,8 @@
 #include "pch.h"
 #include <Localization_Tool.hpp>
 
+#include <string>
+
 namespace prz
 {
 	int add(int a, int b)
@@ -8,17 +10,19 @@ namespace prz
 		return a + b;
 	}
 
-	char* test_byte_array()
+	const char* get_byte_array()
 	{
-		//Create your array(Allocate memory)
-		char* arrayTest = new char[2];
+		std::string s = "This is a boring test";
 
-		//Do something to the Array
-		arrayTest[0] = 3;
-		arrayTest[1] = 5;
+		int stringLength = s.length() + 1; // + "/0"
 
-		//Return it
-		return arrayTest;
+		char* charArray = new char[stringLength];
+		const char* charArrayToReturn = new char[stringLength];
+
+		strcpy_s(charArray, stringLength, s.c_str());
+		charArrayToReturn = charArray;
+
+		return charArrayToReturn;
 	}
 	
 	int free_memory(char* arrayPtr)

@@ -60,6 +60,9 @@
     <PostBuildEvent>
       <Command>copy "$(TargetPath)" "..\..\..\Unity\Assets\Plugins\Localization Tool"</Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>del /s/q "..\..\..\Unity\Assets\Plugins\Localization Tool\*.dll.meta"</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Code\Sources\dllmain.cpp" />

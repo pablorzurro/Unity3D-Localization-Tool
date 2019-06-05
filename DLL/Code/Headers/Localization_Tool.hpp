@@ -14,7 +14,7 @@ namespace prz
 	{
 		LOCALIZATIONTOOL_API int add(int a, int b);
 
-		LOCALIZATIONTOOL_API char* test_byte_array();
+		LOCALIZATIONTOOL_API const char* get_byte_array();
 		
 		LOCALIZATIONTOOL_API int free_memory(char* arrayPtr);
 	}
