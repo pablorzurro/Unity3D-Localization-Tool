@@ -18,8 +18,6 @@ public:
 		vector<shared_ptr<ClipClass>>*
 	}
 
-	void add_clip
-
 private:
 
 	forward_list<shared_ptr<ClipClass>> mClips;

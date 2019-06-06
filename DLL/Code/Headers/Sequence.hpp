@@ -26,6 +26,17 @@ namespace prz
 
 		Sequence(){}
 
+	public:
+
+		unsigned int get_number_of_audio_tracks()
+		{
+
+		}
+		unsigned int get_number_of_text_tracks()
+		{
+
+		}
+
 	private:
 
 		vector <shared_ptr<Audio_Track>> m_audioTracks;

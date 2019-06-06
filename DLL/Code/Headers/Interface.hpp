@@ -12,12 +12,6 @@
 #ifndef LOCALIZATION_TOOL_INTERFACE_H_
 #define LOCALIZATION_TOOL_INTERFACE_H_
 
-#ifdef LOCALIZATIONTOOL_EXPORTS
-#define LOCALIZATION_TOOL_API __declspec(dllexport)
-#else
-#define LOCALIZATION_TOOL_API __declspec(dllimport)
-#endif
-
 #include <Declarations.hpp>
 
 namespace prz
