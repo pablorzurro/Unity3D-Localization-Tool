@@ -8,7 +8,7 @@ using System;
 
 #if (UNITY_EDITOR)
 
-public unsafe class LocalizationTool : MonoBehaviour
+public unsafe class LocalizationToolWrapper : MonoBehaviour
 {
     #region Native
 

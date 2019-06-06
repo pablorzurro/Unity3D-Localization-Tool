@@ -1,9 +1,18 @@
+/**
+ * @file Clip.hpp
+ * @author Pablo Rodríguez Zurro (przuro@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 06-06-2019
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
+
 #ifndef LOCALIZATION_TOOL_CLIP_H_
 #define LOCALIZATION_TOOL_CLIP_H_
 
-
 #include <Declarations.hpp>
-
 
 namespace prz
 {
@@ -13,30 +22,30 @@ namespace prz
 	public:
 
 		Clip(float startTime, float duration);
-		Clip(Clip& other);
+		Clip(const Clip& other);
 		Clip() = delete;
 
 	public:
 
 		void set_start_time(float startTime)
 		{
-			mStartTime = startTime;
+			m_startTime = startTime;
 		}
 
 		void set_duration(float duration)
 		{
-			mDuration = duration;
+			m_duration = duration;
 		}
 
 	public:
 
-		float get_start_time(){ return mStartTime; }
-		float get_duration(){ return mDuration; }
+		float get_start_time(){ return m_startTime; }
+		float get_duration(){ return m_duration; }
 
-	private:
+	protected:
 
-		float mStartTime;
-		float mDuration;
+		float m_startTime;
+		float m_duration;
 
 	};
 

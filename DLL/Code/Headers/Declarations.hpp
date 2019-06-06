@@ -1,7 +1,7 @@
 /**
  * @file Declarations.hpp
  * @author Pablo Rodríguez Zurro (przuro@gmail.com)
- * @brief Define the custom names of my own library. Also, include external libraries declaration files to avoid repetition.
+ * @brief Define the custom names of my own library. Also, include third-party libraries declaration files to avoid repetition.
  * @version 0.1
  * @date 05-06-2019
  * 

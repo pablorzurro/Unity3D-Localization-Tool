@@ -24,6 +24,6 @@ public class LocalizationToolWindow : EditorWindow
 
     void TestString()
     {
-        LocalizationTool.Test(); 
+        LocalizationToolWrapper.Test(); 
     }
 }

@@ -56,6 +56,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy "$(TargetPath)" "..\..\..\Unity\Assets\Plugins\Localization Tool"</Command>
@@ -65,15 +68,18 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Code\Headers\Audio_Clip.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Audio_Clip.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Audio_Track.cpp" />
     <ClCompile Include="..\..\Code\Sources\Clip.cpp" />
     <ClCompile Include="..\..\Code\Sources\dllmain.cpp" />
     <ClCompile Include="..\..\Code\Sources\Interface.cpp" />
     <ClCompile Include="..\..\Code\Sources\Text_Clip.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Text_Track.cpp" />
     <ClCompile Include="Precompiled Headers\pch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Code\Headers\Audio_Clip.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Audio_Track.hpp" />
     <ClInclude Include="..\..\Code\Headers\Clip.hpp" />
     <ClInclude Include="..\..\Code\Headers\Declarations.hpp" />
     <ClInclude Include="..\..\Code\Headers\Interface.hpp" />

@@ -12,7 +12,7 @@
 #ifndef LOCALIZATION_TOOL_INTERNAL_DECLARATIONS_NLOHMANN_JSON_CONVERTER_H_
 #define LOCALIZATION_TOOL_INTERNAL_DECLARATIONS_NLOHMANN_JSON_CONVERTER_H_
 
-#include "External/nlohmann/json.hpp"
+#include "Third-Party/nlohmann/json.hpp"
 
 namespace prz
 {

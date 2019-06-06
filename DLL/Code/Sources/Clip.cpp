@@ -5,13 +5,13 @@ namespace prz
 {
 
 	Clip::Clip(float startTime, float duration) :
-		mStartTime(startTime),
-		mDuration(duration)
+		m_startTime(startTime),
+		m_duration(duration)
 	{}
 
-	Clip::Clip(Clip& other) :
-		mStartTime(other.mStartTime),
-		mDuration(other.mDuration)
+	Clip::Clip(const Clip& other) :
+		m_startTime(other.m_startTime),
+		m_duration(other.m_duration)
 	{}
 
 

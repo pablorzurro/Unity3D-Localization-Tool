@@ -1,3 +1,14 @@
+/**
+ * @file Audio_Clip.hpp
+ * @author Pablo Rodríguez Zurro (przuro@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 05-06-2019
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
+
 #ifndef LOCALIZATION_TOOL_AUDIO_CLIP_H_
 #define LOCALIZATION_TOOL_AUDIO_CLIP_H_
 
@@ -14,7 +25,7 @@ namespace prz
 		 *
 		 * @param audioFilePath
 		 * @param startTime
-		 * @param duration. If the value is -1.0, this audio clip has the same duration as its corresponding file.
+		 * @param duration. If the value is -1.0, this audio clip has the same duration as the length of the corresponding file.
 		 * @param startClippingTime. If the start clipping time is 0.0, there is no clipping
 		 */
 		Audio_Clip
@@ -23,23 +34,41 @@ namespace prz
 			float startTime,
 			float duration = -1.f,
 			float startClippingTime = 0.f
-		) :
-			Clip(startTime, duration),
-			m_filePath(new char[audioFilePath.length() + 1]),
-			m_startClippingTime(startClippingTime)
-		{}
+		);
 
+		Audio_Clip(const Audio_Clip& other);
 		~Audio_Clip();
+
+	public:
+
+		void remove_clipping();
+
+	public:
+
+		void set_path(const char* path);
+		void set_start_clipping_time(float startClippingTime);
+		void set_file_length(float fileLength);
+
+	public:
+
+		const char* get_file_path() const { return m_originalFilePath; }
+		const char* get_file_name() const { return m_fileName; }
+		float get_start_clipping_time() const { return m_startClippingTime; }
 
 	private:
 
-		char* m_filePath;
+		void extract_name_from(const char* path);
+
+	private:
+
+		char* m_originalFilePath;
+		char* m_currentFilePath;
 		char* m_fileName;
-		char* m_completeFilePath; // File path + name
 
 	private:
 
 		float m_startClippingTime;
+		float m_fileLength;
 
 		//uint8_t m_audioFileBytes[];
 

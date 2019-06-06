@@ -1,4 +1,13 @@
-
+/**
+ * @file Text_Clip.hpp
+ * @author Pablo Rodríguez Zurro (przuro@gmail.com)
+ * @brief Clip that stores a text
+ * @version 0.1
+ * @date 06-06-2019
+ * 
+ * @copyright Copyright (c) 2019
+ * 
+ */
 
 #ifndef LOCALIZATION_TOOL_TEXT_CLIP_H_
 #define LOCALIZATION_TOOL_TEXT_CLIP_H_
@@ -36,7 +45,6 @@ namespace prz
 	private:
 
 		char* m_text;
-		unsigned int textSize;
 
 	};
 

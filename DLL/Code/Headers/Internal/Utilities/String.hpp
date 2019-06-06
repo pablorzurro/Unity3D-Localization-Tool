@@ -17,6 +17,17 @@
 namespace prz
 {
 
+	static bool free_char_array(char* charArray)
+	{
+		if (charArray)
+		{
+			delete[] charArray;
+			return true;
+		}
+
+		return false;
+	}
+
 	static string split_string_by_separator(const string& str, const char* separator)
 	{
 		return str.substr(str.find_last_of(separator) + 1);
@@ -66,20 +77,14 @@ namespace prz
 
 	static void copy(const char* from, char* to)
 	{
-		delete[] to; // Delete the previous memory block 
+		free_char_array(to); // Delete the previous memory block 
 		to = get_copy_of(from);
 	}
 
 	static void copy(const string& from, char* to)
 	{
-		delete[] to; // Delete the previous memory block
+		free_char_array(to);// Delete the previous memory block
 		to = to_char_array(from);
-	}
-
-	static int free_char_array(char* charArray)
-	{
-		delete[] charArray;
-		return 0;
 	}
 
 }
