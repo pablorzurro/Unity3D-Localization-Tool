@@ -24,23 +24,41 @@ namespace prz
 	{
 	public:
 
-		Sequence(){}
+		Sequence
+		(
+			const string& name,
+			vector<shared_ptr<Audio_Track>>& audioTracks,
+			vector<shared_ptr<Text_Track>>& textTracks
+		);
+
+		~Sequence();
 
 	public:
 
 		unsigned int get_number_of_audio_tracks()
 		{
-
+			return m_audioTracks.size();
 		}
+
 		unsigned int get_number_of_text_tracks()
 		{
-
+			return m_textTracks.size();
 		}
+
+	public:
+
+		vector<shared_ptr<Audio_Track>> get_audio_tracks() { return m_audioTracks; }
+		vector<shared_ptr<Text_Track>> get_text_tracks() { return m_textTracks; }
 
 	private:
 
-		vector <shared_ptr<Audio_Track>> m_audioTracks;
-		vector <shared_ptr<Text_Track>> m_textTracks;
+		vector<shared_ptr<Audio_Track>> m_audioTracks;
+		vector<shared_ptr<Text_Track>> m_textTracks;
+
+	private:
+
+		char* m_name;
+
 	};
 
 } // !namespace prz

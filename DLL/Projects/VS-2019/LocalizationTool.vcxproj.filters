@@ -25,6 +25,12 @@
     <ClCompile Include="..\..\Code\Sources\Audio_Track.cpp">
       <Filter>Source Files\Audio</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Sequences_Loader.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Sequence.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
@@ -44,9 +50,6 @@
     </Filter>
     <Filter Include="Header Files\Audio">
       <UniqueIdentifier>{96224521-7020-4fd8-a2a8-f3646bc5b178}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Clips">
-      <UniqueIdentifier>{9c7c4d5f-620e-49a5-8ec5-0019b56dc439}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Text">
       <UniqueIdentifier>{38a18e1a-0760-48d4-854b-94b2186239b7}</UniqueIdentifier>
@@ -111,6 +114,12 @@
       <Filter>Header Files\Core</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Code\Headers\Clip.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Nlohmann_JSON_Converter.hpp">
+      <Filter>Header Files\Core\Internal\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Sequences_Loader.hpp">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
   </ItemGroup>

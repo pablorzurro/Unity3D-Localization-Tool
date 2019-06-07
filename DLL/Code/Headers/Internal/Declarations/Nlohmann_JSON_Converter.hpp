@@ -18,7 +18,8 @@ namespace prz
 {
 	
 	// Include here nlohmann namespace type definitions
-
+	using json = nlohmann::json;
+	using value_json = json::value_type;
 
 } // !namespace prz
 

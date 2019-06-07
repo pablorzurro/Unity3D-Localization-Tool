@@ -7,6 +7,12 @@
 #ifndef PCH_H
 #define PCH_H
 
+#ifdef LOCALIZATIONTOOL_EXPORTS
+#define LOCALIZATION_TOOL_API __declspec(dllexport)
+#else
+#define LOCALIZATION_TOOL_API __declspec(dllimport)
+#endif
+
 // Add headers that you want to pre-compile here
 #include "targetver.h"
 #include "framework.h"
@@ -15,13 +21,6 @@
 #include <Utilities.hpp>
 
 #include <Interface.hpp>
-
-#ifdef LOCALIZATIONTOOL_EXPORTS
-#define LOCALIZATION_TOOL_API __declspec(dllexport)
-#else
-#define LOCALIZATION_TOOL_API __declspec(dllimport)
-#endif
-
 
 #define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers
 // Windows Header Files

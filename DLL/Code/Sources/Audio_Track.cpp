@@ -4,6 +4,14 @@
 namespace prz
 {
 
+	Audio_Track::Audio_Track()
+	{
+	}
+	Audio_Track::~Audio_Track()
+	{
+	}
+
+
 	extern "C"
 	{
 		float get_volume(Audio_Track* audioTrack)
@@ -34,4 +42,5 @@ namespace prz
 			return '/0';
 		}
 	}
+
 }

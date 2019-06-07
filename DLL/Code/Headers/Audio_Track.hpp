@@ -26,6 +26,10 @@ namespace prz
 	{
 	public:
 
+		/**
+		 * @brief Dimension of the digital sound. Pure stereo (2D) or 3D 
+		 * 
+		 */
 		enum Spatial_Blend_Dimension
 		{
 			TWO = 0,
@@ -39,7 +43,18 @@ namespace prz
 
 	public:
 
+		/**
+		 * @brief Get the volume 
+		 * 
+		 * @return float 
+		 */
 		float get_volume() const { return m_volume; }
+
+		/**
+		 * @brief Get the spatial blend dimension 
+		 * 
+		 * @return Spatial_Blend_Dimension 
+		 */
 		Spatial_Blend_Dimension get_spatial_blend_dimension() const { return m_spatialBlendDimension; }
 
 	private:
@@ -54,7 +69,20 @@ namespace prz
 	extern "C"
 	{
 
+		/**
+		 * @brief 
+		 * 
+		 * @param audioTrack 
+		 * @return float. If the input audio track is null, return the min value of float
+		 */
 		LOCALIZATION_TOOL_API float get_volume(Audio_Track* audioTrack);
+
+		/**
+		 * @brief Returns the spatial blend dimension 
+		 * 
+		 * @param audioTrack 
+		 * @return char. '2' for two dimensions, '3' for three dimensions, '/0' for input audio track nullptr
+		 */
 		LOCALIZATION_TOOL_API char get_spatial_blend_dimension(Audio_Track* audioTrack);
 		
 	}

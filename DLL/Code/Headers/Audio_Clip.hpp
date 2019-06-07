@@ -46,14 +46,18 @@ namespace prz
 	public:
 
 		void set_path(const char* path);
-		void set_start_clipping_time(float startClippingTime);
+		void set_start_cut_time(float startClippingTime);
 		void set_file_length(float fileLength);
 
 	public:
 
-		const char* get_file_path() const { return m_originalFilePath; }
+		const char* get_file_path() const { return m_filePath; }
 		const char* get_file_name() const { return m_fileName; }
-		float get_start_clipping_time() const { return m_startClippingTime; }
+		float get_start_clipping_time() const { return m_startCutTime; }
+
+	public:
+
+		json to_json()final override;
 
 	private:
 
@@ -61,13 +65,12 @@ namespace prz
 
 	private:
 
-		char* m_originalFilePath;
-		char* m_currentFilePath;
+		char* m_filePath;
 		char* m_fileName;
 
 	private:
 
-		float m_startClippingTime;
+		float m_startCutTime;
 		float m_fileLength;
 
 		//uint8_t m_audioFileBytes[];
