@@ -120,7 +120,7 @@
       <Filter>Header Files\Core\Internal\Utilities</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Code\Headers\Sequences_Loader.hpp">
-      <Filter>Header Files\Core</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
