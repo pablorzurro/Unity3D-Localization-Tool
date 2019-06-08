@@ -44,7 +44,7 @@ namespace prz
 		if (std::count(str.begin(), str.end(), ':') == 2)
 		{
 			string minutesStr = str; // "Minutes:Seconds:Milliseconds"
-			string secondsStr = split_string_by_separator(minutesStr, ":"); // "Seconds:Milliseconds"
+			string secondsStr = str.substr(str.find_first_of(":") + 1); // "Seconds:Milliseconds"
 			string millisecondsStr = split_string_by_separator(secondsStr, ":");  // "Milliseconds"
 
 			string strToRemoveForMinutes = ":" + secondsStr;  // ":Seconds:Milliseconds"
