@@ -11,89 +11,113 @@ namespace LocalizationTool
 
     public unsafe class LocalizationToolWrapper : MonoBehaviour
     {
-        #region Native
 
-        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
-        public static extern IntPtr get_byte_array();
-
-        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
-        public static extern IntPtr test_communication(String str);
-
-        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
-        public static extern int free_memory(IntPtr ptr);
+    #region Native
 
         #region Clips
 
-        #region Base
-        #endregion // !Base
+            #region Audio Clip 
 
-        #region Audio Clip 
+            public struct AudioClip { }
 
-        public struct AudioClip { }
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern string get_name(AudioClip* audioClip);
 
-        #endregion // !Audio Clip
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern float get_start_time(AudioClip* audioClip);
 
-        #region Text Clip
-        
-        public struct TextClip { }
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern float get_end_time(AudioClip* audioClip);
 
-        #endregion // !Text Clip
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern float get_duration(AudioClip* audioClip);
 
-        #endregion
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern bool get_file_path(AudioClip* audioClip, string filePath);
+
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern bool set_start_cut_time(AudioClip* audioClip, string startCutTime);
+
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern bool set_file_length(AudioClip* audioClip, string fileLength);
+
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern string get_file_path(AudioClip* audioClip);
+
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern string get_file_name(AudioClip* audioClip);
+
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern float get_start_cut_time(AudioClip* audioClip);
+
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern float get_file_length(AudioClip* audioClip);
+
+            #endregion // !Audio Clip
+
+            #region Text Clip
+
+            public struct TextClip { }
+
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern string get_name(TextClip* audioClip);
+
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern float get_start_time(TextClip* audioClip);
+
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern float get_end_time(TextClip* audioClip);
+
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern float get_duration(TextClip* audioClip);
+
+            #endregion // !Text Clip
+
+        #endregion // !Clips
 
         #region Tracks
 
-        #region Base
+            #region Audio Track
 
-        #endregion // !Base Track
+            public struct AudioTrack { }
 
-        #region Audio Track
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern float get_volume(AudioTrack* audioTrack);
 
-        public struct AudioTrack { }
+            [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+            public static extern char* get_spatial_blend_dimension(AudioTrack* audioTrack);
 
-        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
-        public static extern float GetVolume(AudioTrack audioTrack);
+            #endregion // !Audio Track
 
-        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
-        public static extern char GetSpatialBlendDimension(AudioTrack audioTrack);
+            #region Text Track
 
-        #endregion // !Audio Track
-
-        #region Text Track
-
-        public struct TextTrack { }
+            public struct TextTrack { }
 
         #endregion // !Text Track
 
         #endregion // !Tracks
 
-        #endregion // !Native
+        #region Testing
 
-        #region API_Friendly
-
-        //private delegate void Test(int number);
-        //[MonoPInvokeCallback(typeof(Test))]
-        //private static void DelegateMessageReceived(int number)
-        //{
-        //    Debug.Log("MessageReceived " + number);
-        //}
-
-        public static void Test()
-        {
-            String test = "Beast";
-            Debug.Log(GetString(test_communication(test)));
-        }
-
-        public static string GetString(IntPtr charArray)
-        {
-            return Marshal.PtrToStringAnsi(charArray);
-        }
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern float test_get_seconds_from_string(string str);
 
         #endregion
 
+        #endregion // !Native
+
+        #region API Friendly
+
+        public static void Test()
+        {
+            Debug.Log(test_get_seconds_from_string("2:59:940"));
+        }
+
+        #endregion // !API Friendly
+
     }
 
-    #endif
+#endif
 }
 
 
