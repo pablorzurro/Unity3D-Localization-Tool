@@ -21,9 +21,9 @@
 #include <fstream>
 
 #include <cassert>
-#include <cstddef>         // std::size_t
+#include <cstddef> // size_t
 
-#include <filesystem>
+#include <filesystem> // Mainly C++ 17
 
 using namespace std;
 

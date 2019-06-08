@@ -24,8 +24,7 @@ namespace prz
 
 		#pragma region Testing
 
-		LOCALIZATION_TOOL_API char* test_communication(const char* charArray);
-		LOCALIZATION_TOOL_API const char* get_byte_array();
+		LOCALIZATION_TOOL_API float test_get_seconds_from_string(const char* str);
 
 		#pragma endregion
 

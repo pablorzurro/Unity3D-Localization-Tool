@@ -35,7 +35,8 @@ namespace prz
 		 */
 		Text_Clip
 		(
-			const string& text,
+			const vector<uint8_t>& text,
+			const string& name,
 			float startTime,
 			float duration
 		);
@@ -64,14 +65,7 @@ namespace prz
 		 * @return const char* 
 		 */
 		const uint8_t* get_text() const { return m_text.data(); }
-		const unsigned int get_text_size() const { return m_text.size(); }
-		
-		/**
-		 * @brief Get the text as string 
-		 * 
-		 * @return string 
-		 */
-		string get_text_as_string() const;
+		const unsigned int get_text_size() const { return (unsigned int)m_text.size(); }
 
 	public:
 
@@ -93,7 +87,7 @@ namespace prz
 		 * @param textClip 
 		 * @return const char* 
 		 */
-		LOCALIZATION_TOOL_API const uint8_t* get_text(Text_Clip* textClip);
+		LOCALIZATION_TOOL_API const uint8_t* get_text_clip_text(Text_Clip* textClip);
 	}
 
 	#pragma endregion

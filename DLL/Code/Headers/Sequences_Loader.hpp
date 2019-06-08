@@ -21,7 +21,7 @@ namespace prz
 	public:
 
 		void load_file_sequences(const string& filePath);
-		Sequence* create_sequence(const json::value_type& sequenceItem);
+		Sequence* create_sequence(const value_json& sequenceItem);
 
 	public:
 

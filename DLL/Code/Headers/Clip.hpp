@@ -16,13 +16,12 @@
 
 namespace prz
 {
-	class json;
 
 	class Clip
 	{
 	public:
 
-		Clip(const string& name, float startTime, float endTime);
+		Clip(const string& name, float startTime, float duration);
 		Clip(const Clip& other);
 		Clip() = delete;
 
@@ -34,11 +33,10 @@ namespace prz
 
 	public:
 
+		void set_name(const string& name);
 		void set_start_time(float startTime);
-
 		void set_duration(float duration);
 		
-
 	public:
 
 		const char* get_name() { return m_name; }
@@ -68,13 +66,14 @@ namespace prz
 	extern "C"
 	{
 		
-		LOCALIZATION_TOOL_API float get_start_time(Clip* clip);
+		LOCALIZATION_TOOL_API bool set_clip_name(Clip* clip, const string& name);
+		LOCALIZATION_TOOL_API bool set_clip_start_time(Clip* clip, float startTime);
+		LOCALIZATION_TOOL_API bool set_clip_duration(Clip* clip, float duration);
 
-		LOCALIZATION_TOOL_API const char* get_name(Clip* clip);
-
-		LOCALIZATION_TOOL_API float get_end_time(Clip* clip);
-
-		LOCALIZATION_TOOL_API float get_duration(Clip* clip);
+		LOCALIZATION_TOOL_API const char* get_clip_name(Clip* clip);
+		LOCALIZATION_TOOL_API float get_clip_start_time(Clip* clip);
+		LOCALIZATION_TOOL_API float get_clip_end_time(Clip* clip);
+		LOCALIZATION_TOOL_API float get_clip_duration(Clip* clip);
 	}
 
 	#pragma endregion

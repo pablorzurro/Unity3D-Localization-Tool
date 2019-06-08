@@ -11,10 +11,11 @@ namespace prz
 	{
 	}
 
-
+	#pragma region AudioTrackExport
 	extern "C"
 	{
-		float get_volume(Audio_Track* audioTrack)
+
+		float get_audio_track_volume(Audio_Track* audioTrack)
 		{
 			if (audioTrack)
 			{
@@ -24,23 +25,35 @@ namespace prz
 			return float::MinValue;
 		}
 
-		char get_spatial_blend_dimension(Audio_Track* audioTrack)
+		char get_audio_track_spatial_blend_dimension(Audio_Track* audioTrack)
 		{
 			if (audioTrack)
 			{
 				char toReturn;
 				if (audioTrack->get_spatial_blend_dimension() == 0)
 				{
-					toReturn = '2';
+					toReturn = (char)'2';
 				}
 				else
 				{
-					toReturn = '3';
+					toReturn = (char)'3';
 				}
 			}
 
-			return '/0';
+			return (char)'/0';
+		}
+
+		int get_audio_track_number_of_clips(Audio_Track* audioTrack)
+		{
+			if (audioTrack)
+			{
+				return audioTrack->get_number_of_clips();
+
+			}
+
+			return int::MinValue;
 		}
 	}
+	#pragma endregion AudioTrackExport
 
 }

@@ -22,12 +22,23 @@ namespace prz
 	{
 	public:
 	
-		Text_Track();
-		~Text_Track();
+		Text_Track(){}
+		~Text_Track(){}
 
 	private:
 
 	};
+
+	#pragma region TextTrackExport
+
+	extern "C"
+	{
+
+		LOCALIZATION_TOOL_API int get_text_track_number_of_clips(Text_Track* textTrack);	
+
+	}
+
+	#pragma endregion TextTrackExport
 
 } // !namespace prz
 

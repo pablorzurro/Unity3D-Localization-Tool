@@ -6,9 +6,9 @@
 namespace prz
 {
 
-	Text_Clip::Text_Clip(const string& text, float startTime, float duration) :
-		Clip(startTime, duration),
-		m_text(new char[text.length() + 1])
+	Text_Clip::Text_Clip(const vector<uint8_t>& text, const string& name, float startTime, float duration) :
+		Clip(name, startTime, duration),
+		m_text(text)
 	{}
 
 	Text_Clip::Text_Clip(Text_Clip& other) :
@@ -32,7 +32,7 @@ namespace prz
 		return j;
 	}
 
-	const uint8_t* get_text(Text_Clip* textClip)
+	const uint8_t* get_text_clip_text(Text_Clip* textClip)
 	{
 		if (textClip)
 		{

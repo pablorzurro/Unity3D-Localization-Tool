@@ -14,47 +14,99 @@
 
 #include <Declarations.hpp>
 
+#include <Clip.hpp>
+
+
 namespace prz
 {
 	
 	template<class ClipClass>
 	class Track
 	{
+
+		static_assert(std::is_base_of<Clip, ClipClass>::value, "ClipClass must derive from Clip");
+
 	public:
 
 		Track(){}
 
-		Track(forward_list<shared_ptr<ClipClass>>& clips) :
-			m_clips(clips)
-		{}
+		~Track()
+		{
+			size_t nClips = m_clips.size();
+			for (size_t i = 0; i < nClips; i++)
+			{
+				delete m_clips[i];
+			}
+		}
 
 	public:
 
-		bool add_clip(shared_ptr<ClipClass> clip);
-		unsigned int force_add_clip(shared_ptr<ClipClass> clip);
+		bool add_clip(ClipClass* clip)
+		{
+			if (!conflicts_with_clips(clip))
+			{
+				m_clips.push_back(clip);
+			}
+
+			return false;
+		}
 		
 	public:
 
-		bool remove_clip_at(unsigned int index);
-		bool remove_clip(shared_ptr<ClipClass> clip);
+		virtual bool conflicts_with_clips(ClipClass* clip)
+		{
+			bool isConflict = false;
 
-	public:
+			if (clip)
+			{
+				Clip* clipPtr = static_cast<Clip*>(clip);
 
-		vector<shared_ptr<ClipClass>> get_conflictive_clips_with(shared_ptr<ClipClass> clip) 
-		{ 
-			// vector<shared_ptr<ClipClass>>*
+				if (clipPtr)
+				{
+					size_t nClips = get_number_of_clips();
+
+					for (size_t i = 0; i < nClips && !isConflict; i++)
+					{
+						Clip* iClip = static_cast<Clip*>(m_clips[i]);
+
+						if (iClip)
+						{
+							isConflict = iClip->collides_with(*clipPtr);
+						}
+					}
+
+				}
+			}
+
+			return isConflict;
 		}
+		
+	public:
 
 		unsigned int get_number_of_clips()
 		{
-			return m_clips.size();
+			return (unsigned int)m_clips.size();
 		}
+
+	public:
+
+		/*virtual json to_json()
+		{
+			size_t nTracks = get_number_of_clips();
+
+			for (size_t i = 0; i < nTracks; i++)
+			{
+				Clip* iClip = static_cast<Clip*>(m_clips[i]);
+				iClip->to_json();
+			}
+
+		}*/
 
 	private:
 
-		list<shared_ptr<ClipClass>> m_clips;
+		vector<ClipClass*> m_clips;
 
-};
+	};
 
 }
 

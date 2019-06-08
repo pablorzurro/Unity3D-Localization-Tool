@@ -9,7 +9,8 @@ namespace prz
 	Clip::Clip(const string& name, float startTime, float duration) :
 		m_name(to_char_array(name)),
 		m_startTime(startTime),
-		m_duration(duration)
+		m_duration(duration),
+		m_endTime(startTime + duration)
 	{}
 
 	Clip::Clip(const Clip& other) :
@@ -35,6 +36,11 @@ namespace prz
 		return false;
 	}
 
+	void Clip::set_name(const string& name)
+	{
+		m_name = to_char_array(name);
+	}
+
 	void Clip::set_start_time(float startTime)
 	{
 		m_startTime = startTime;
@@ -56,17 +62,40 @@ namespace prz
 	extern "C"
 	{
 
-		float get_start_time(Clip* clip)
+		bool set_clip_name(Clip* clip, const string& name)
 		{
 			if (clip)
 			{
-				return clip->get_start_time();
+				clip->set_name(to_char_array(name));
+				return true;
 			}
 
-			return float::MinValue;
+			return false;
 		}
 
-		const char* get_name(Clip* clip)
+		bool set_clip_start_time(Clip* clip, float startTime)
+		{
+			if (clip)
+			{
+				clip->set_start_time(startTime);
+				return true;
+			}
+
+			return false;
+		}
+
+		bool set_clip_duration(Clip* clip, float duration)
+		{
+			if (clip)
+			{
+				clip->set_duration(duration);
+				return true;
+			}
+
+			return false;
+		}
+
+		const char* get_clip_name(Clip* clip)
 		{
 			if (clip)
 			{
@@ -76,7 +105,17 @@ namespace prz
 			return nullptr;
 		}
 
-		float get_end_time(Clip* clip)
+		float get_clip_start_time(Clip* clip)
+		{
+			if (clip)
+			{
+				return clip->get_start_time();
+			}
+
+			return float::MinValue;
+		}
+
+		float get_clip_end_time(Clip* clip)
 		{
 			if (clip)
 			{
@@ -86,7 +125,7 @@ namespace prz
 			return float::MinValue;
 		}
 
-		float get_duration(Clip* clip)
+		float get_clip_duration(Clip* clip)
 		{
 			if (clip)
 			{

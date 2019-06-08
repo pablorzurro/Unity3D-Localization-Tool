@@ -19,7 +19,7 @@ namespace prz
 				string itKey = it.key();
 				value_json& itValue = it.value();
 
-				if (string_contains(itKey, "equences"))
+				if (string_contains(itKey, "Sequences"))
 				{
 					create_sequence(itValue);
 				}
@@ -27,12 +27,22 @@ namespace prz
 		}
 	}
 
-	Sequence* Sequences_Loader::create_sequence(const json::value_type& sequenceItem)
+	Sequence* Sequences_Loader::create_sequence(const value_json& sequenceItem)
 	{
-		if (sequenceItem.is_array() && sequenceItem.contains("ame") 
-			&& (sequenceItem.contains("ound_clips") || sequenceItem.contains("ubtitle_clips")))
+		if (sequenceItem.is_array() && sequenceItem.contains("Name") 
+			&& (sequenceItem.contains("Sound_Clips") || sequenceItem.contains("Subtitle_Clips")))
 		{
 			Sequence* s = new Sequence();
+
+			value_json soundClipsRoot = sequenceItem.at("Sound_Clips");
+
+			if (!soundClipsRoot.is_null())
+			{
+				if (soundClipsRoot.is_array())
+				{
+					/*soundClipsRoot.get();*/
+				}
+			}
 		}
 
 		return nullptr;

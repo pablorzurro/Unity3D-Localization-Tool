@@ -37,8 +37,17 @@ namespace prz
 		};
 
 	public:
-	
+
+		/**
+		 * @brief Construct a new Audio_Track
+		 * 
+		 */
 		Audio_Track();
+
+		/**
+		 * @brief Destroy the Audio_Track
+		 * 
+		 */
 		~Audio_Track();
 
 	public:
@@ -64,7 +73,7 @@ namespace prz
 	
 	};
 
-	#pragma region AUDIO TRACK EXPORT
+	#pragma region AudioTrackExport
 
 	extern "C"
 	{
@@ -75,7 +84,7 @@ namespace prz
 		 * @param audioTrack 
 		 * @return float. If the input audio track is null, return the min value of float
 		 */
-		LOCALIZATION_TOOL_API float get_volume(Audio_Track* audioTrack);
+		LOCALIZATION_TOOL_API float get_audio_track_volume(Audio_Track* audioTrack);
 
 		/**
 		 * @brief Returns the spatial blend dimension 
@@ -83,7 +92,15 @@ namespace prz
 		 * @param audioTrack 
 		 * @return char. '2' for two dimensions, '3' for three dimensions, '/0' for input audio track nullptr
 		 */
-		LOCALIZATION_TOOL_API char get_spatial_blend_dimension(Audio_Track* audioTrack);
+		LOCALIZATION_TOOL_API char get_audio_track_spatial_blend_dimension(Audio_Track* audioTrack);
+
+		/**
+		 * @brief Return the number of clips of the input audio track
+		 * 
+		 * @param audioTrack 
+		 * @return int 
+		 */
+		LOCALIZATION_TOOL_API int get_audio_track_number_of_clips(Audio_Track* audioTrack);
 		
 	}
 
