@@ -44,15 +44,14 @@ namespace prz
 		if (std::count(str.begin(), str.end(), ':') == 2)
 		{
 			string minutesStr = str; // "Minutes:Seconds:Milliseconds"
-			string secondsStr = split_string_by_separator(str, ":"); // "Seconds:Milliseconds"
+			string secondsStr = split_string_by_separator(minutesStr, ":"); // "Seconds:Milliseconds"
 			string millisecondsStr = split_string_by_separator(secondsStr, ":");  // "Milliseconds"
 
 			string strToRemoveForMinutes = ":" + secondsStr;  // ":Seconds:Milliseconds"
 			string strToRemoveForSeconds = ":" + millisecondsStr; // ":Milliseconds"
 
-
-			std::string::size_type i1 = minutesStr.find(":" + secondsStr);
-			std::string::size_type i2 = secondsStr.find(":" + strToRemoveForSeconds);
+			std::string::size_type i1 = minutesStr.find(strToRemoveForMinutes);
+			std::string::size_type i2 = secondsStr.find(strToRemoveForSeconds);
 
 			if (i1 != std::string::npos)
 			{
