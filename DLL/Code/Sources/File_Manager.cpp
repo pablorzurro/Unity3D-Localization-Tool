@@ -1,14 +1,16 @@
 #include <pch.h>
-#include <Sequences_Loader.hpp>
+#include <File_Manager.hpp>
 
 #include <Sequence.hpp>
+#include <Audio_Track.hpp>
+#include <Audio_Clip.hpp>
 
 #include <Utilities.hpp>
 
 namespace prz
 {
 
-	void Sequences_Loader::load_file(const string& filePath, bool forceReimport)
+	void File_Manager::load_file(const string& filePath, bool forceReimport)
 	{
 		string fileName = split_string_by_separator(filePath, "/");
 		bool isFileLoaded = is_file_loaded_by_name(filePath);
@@ -25,7 +27,7 @@ namespace prz
 		}
 	}
 
-	void Sequences_Loader::load_file_sequences(const string& filePath)
+	void File_Manager::load_file_sequences(const string& filePath)
 	{
 		json json1 = load_json_file(filePath);
 
@@ -45,11 +47,44 @@ namespace prz
 		}
 	}
 
-	Sequence* Sequences_Loader::create_sequence(const value_json& sequenceItem)
+	bool File_Manager::copy_all_audio_clip_files_of_file(const string& fileName, const string& destination)
+	{
+		if (is_file_loaded_by_name(fileName))
+		{
+
+			//            name	   path
+			unordered_map<string, string> tempMapOfAudioClipFilesInfo;
+			auto& sequences = m_sequencesByFile[fileName];
+
+			for (auto& iSequence :  sequences)
+			{
+				auto& audioTracks = iSequence->get_audio_tracks();
+
+				for (auto& iAudioTrack : audioTracks)
+				{
+					auto& audioClips = iAudioTrack->get_clips();
+
+					for (auto& iAudioClip : audioClips)
+					{
+						// If the file to copy exists and the file to copy doesn't exist in the destination path... 
+						if (filesystem::exists(iAudioClip->get_file_path())
+							&& !filesystem::exists(destination + iAudioClip->get_file_name()));
+						{
+							filesystem::copy_file(iAudioClip->get_file_path(), destination);
+						}
+					}
+				}
+			}
+		}
+
+		return false;
+	}
+
+	Sequence* File_Manager::create_sequence(const value_json& sequenceItem)
 	{
 		if (sequenceItem.find("clips") != sequenceItem.end())
 		{
-			Sequence* sequence = new Sequence();
+			Sequence* sequence = new Sequence(sequenceItem["name"]);
 
 			if (sequenceItem["clips"].find("audio") != sequenceItem["clips"].end())
 			{
@@ -70,9 +105,6 @@ namespace prz
 			{
 				for (const auto& iTextClip : sequenceItem["clips"]["text"])
 				{
-
-					vector<uint8_t> textClipText = iTextClip.at("text");
-
 					sequence->create_text_clip
 					(
 						iTextClip.at("name"),
@@ -97,18 +129,18 @@ namespace prz
 		return nullptr;
 	}
 
-	bool Sequences_Loader::is_file_loaded_by_name(const string& fileName)
+	bool File_Manager::is_file_loaded_by_name(const string& fileName)
 	{
 		return m_sequencesByFile.find(fileName) != m_sequencesByFile.end();
 	}
 
-	bool Sequences_Loader::is_file_loaded_by_path(const string& filePath)
+	bool File_Manager::is_file_loaded_by_path(const string& filePath)
 	{
 		return is_file_loaded_by_name(split_string_by_separator(filePath, "/"));
 	}
 
 
-	Sequence** Sequences_Loader::get_file_sequences_by_name(const string& fileName)
+	Sequence** File_Manager::get_file_sequences_by_name(const string& fileName)
 	{
 		if (is_file_loaded_by_name(fileName))
 		{
@@ -118,12 +150,12 @@ namespace prz
 		return nullptr;
 	}
 
-	Sequence** Sequences_Loader::get_file_sequences_by_path(const string& filePath)
+	Sequence** File_Manager::get_file_sequences_by_path(const string& filePath)
 	{
 		return get_file_sequences_by_name(split_string_by_separator(filePath, "/"));
 	}
 
-	int Sequences_Loader::get_file_number_of_sequences_by_name(const string& fileName)
+	int File_Manager::get_file_number_of_sequences_by_name(const string& fileName)
 	{
 		if (is_file_loaded_by_name(fileName))
 		{
@@ -133,12 +165,12 @@ namespace prz
 		return 0;
 	}
 
-	int Sequences_Loader::get_file_number_of_sequences_by_path(const string& filePath)
+	int File_Manager::get_file_number_of_sequences_by_path(const string& filePath)
 	{
 		return get_file_number_of_sequences_by_name(split_string_by_separator(filePath, "/"));
 	}
 
-	Sequences_Loader::~Sequences_Loader()
+	File_Manager::~File_Manager()
 	{
 		for (auto& pair : m_sequencesByFile)
 		{
@@ -146,7 +178,7 @@ namespace prz
 		}
 	}
 
-	void Sequences_Loader::clear_file_sequences(const string& fileName)
+	void File_Manager::clear_file_sequences(const string& fileName)
 	{
 		auto& vectorToClear = m_sequencesByFile[fileName];
 		size_t nSequences = get_file_number_of_sequences_by_name(fileName);
@@ -166,39 +198,39 @@ namespace prz
 
 		Sequence** load_file(const char* jsonFilePath, bool forceReimport)
 		{
-			Sequences_Loader::instance().load_file(jsonFilePath, forceReimport);
+			File_Manager::instance().load_file(jsonFilePath, forceReimport);
 
 			return get_file_sequences_by_path(jsonFilePath);
 		}
 
-		bool is_file_loaded_by_path(const string& filePath)
+		bool is_file_loaded_by_path(const char* filePath)
 		{
-			return Sequences_Loader::instance().is_file_loaded_by_path(filePath);
+			return File_Manager::instance().is_file_loaded_by_path(filePath);
 		}
 
-		bool is_file_loaded_by_name(const string& fileName)
+		bool is_file_loaded_by_name(const char* fileName)
 		{
-			return Sequences_Loader::instance().is_file_loaded_by_name(fileName);
+			return File_Manager::instance().is_file_loaded_by_name(fileName);
 		}
 
-		Sequence** get_file_sequences_by_name(const string& fileName)
+		Sequence** get_file_sequences_by_name(const char* fileName)
 		{
-			return Sequences_Loader::instance().get_file_sequences_by_name(fileName);
+			return File_Manager::instance().get_file_sequences_by_name(fileName);
 		}
 
-		Sequence** get_file_sequences_by_path(const string& filePath)
+		Sequence** get_file_sequences_by_path(const char* filePath)
 		{
-			return get_file_sequences_by_path(filePath);
+			return File_Manager::instance().get_file_sequences_by_path(filePath);
 		}
 
-		int get_file_number_of_sequences_by_name(const string& fileName)
+		int get_file_number_of_sequences_by_name(const char* fileName)
 		{
-			return Sequences_Loader::instance().get_file_number_of_sequences_by_name(fileName);
+			return File_Manager::instance().get_file_number_of_sequences_by_name(fileName);
 		}
 
-		int get_file_number_of_sequences_by_path(const string& filePath)
+		int get_file_number_of_sequences_by_path(const char* filePath)
 		{
-			return Sequences_Loader::instance().get_file_number_of_sequences_by_path(filePath);
+			return File_Manager::instance().get_file_number_of_sequences_by_path(filePath);
 		}
 
 	}

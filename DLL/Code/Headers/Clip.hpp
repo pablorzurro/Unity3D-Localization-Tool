@@ -39,7 +39,7 @@ namespace prz
 		
 	public:
 
-		const char* get_name() { return m_name; }
+		const string& get_name() { return m_name; }
 		float get_start_time() { return m_startTime; }
 		float get_end_time() { return m_endTime; }
 		float get_duration() { return m_duration; }
@@ -54,7 +54,7 @@ namespace prz
 
 	protected:
 
-		char* m_name;
+		string m_name;
 		float m_startTime;
 		float m_endTime;
 		float m_duration;

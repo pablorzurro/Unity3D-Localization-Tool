@@ -8,13 +8,13 @@ namespace prz
 {
 	class Sequence;
 
-	class Sequences_Loader
+	class File_Manager
 	{
 	public:
 
-		static Sequences_Loader& instance()
+		static File_Manager& instance()
 		{
-			static Sequences_Loader instance;
+			static File_Manager instance;
 			return instance;
 		}
 
@@ -25,7 +25,7 @@ namespace prz
 
 	public:
 
-		Sequence* create_sequence(const value_json& sequenceItem);
+		bool copy_all_audio_clip_files_of_file(const string& fileName, const string& destination);
 
 	public:
 
@@ -44,8 +44,13 @@ namespace prz
 
 	private:
 
-		Sequences_Loader(){}
-		~Sequences_Loader();
+		File_Manager(){}
+		~File_Manager();
+
+	private:
+
+		Sequence* create_sequence(const value_json& sequenceItem);
+
 
 	private:
 
@@ -62,12 +67,12 @@ namespace prz
 	extern "C"
 	{
 		LOCALIZATION_TOOL_API Sequence** load_file(const char* jsonFilePath, bool forceReimport);
-		LOCALIZATION_TOOL_API Sequence** get_file_sequences_by_name(const string& fileName);
-		LOCALIZATION_TOOL_API Sequence** get_file_sequences_by_path(const string& filePath);
-		LOCALIZATION_TOOL_API bool is_file_loaded_by_name(const string& fileName);
-		LOCALIZATION_TOOL_API bool is_file_loaded_by_path(const string& filePath);
-		LOCALIZATION_TOOL_API int get_file_number_of_sequences_by_name(const string& fileName);
-		LOCALIZATION_TOOL_API int get_file_number_of_sequences_by_path(const string& filePath);
+		LOCALIZATION_TOOL_API Sequence** get_file_sequences_by_name(const char* fileName);
+		LOCALIZATION_TOOL_API Sequence** get_file_sequences_by_path(const char* filePath);
+		LOCALIZATION_TOOL_API bool is_file_loaded_by_name(const char* fileName);
+		LOCALIZATION_TOOL_API bool is_file_loaded_by_path(const char* filePath);
+		LOCALIZATION_TOOL_API int get_file_number_of_sequences_by_name(const char* fileName);
+		LOCALIZATION_TOOL_API int get_file_number_of_sequences_by_path(const char* filePath);
 	}
 
 	#pragma endregion SequencesLoaderExport

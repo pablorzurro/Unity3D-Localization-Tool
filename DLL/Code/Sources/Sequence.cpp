@@ -6,6 +6,8 @@
 #include <Text_Clip.hpp>
 #include <Text_Track.hpp>
 
+#include <Utilities.hpp>
+
 namespace prz
 {
 
@@ -26,8 +28,6 @@ namespace prz
 		{
 			delete m_textTracks[i];
 		}
-
-		delete[] m_name;
 	}
 
 	Audio_Clip* Sequence::add_audio_clip(Audio_Clip* audioClip)
@@ -52,21 +52,34 @@ namespace prz
 		return nullptr;
 	}
 
-	Audio_Clip* Sequence::create_audio_clip(const string& name, const string& audioFilePath, float startTime, float duration, float startCutTime)
+	Audio_Clip* Sequence::create_audio_clip(const string& name, const string& audioFilePath, const string& startTime, const string& duration, const string& startCutTime)
 	{
 		if (filesystem::exists(audioFilePath))
 		{
-			return new Audio_Clip(name, audioFilePath, startTime, duration, startCutTime);
+			return new Audio_Clip
+			(
+				name,
+				audioFilePath,
+				get_seconds_from_string(startTime),
+				get_seconds_from_string(duration),
+				get_seconds_from_string(startCutTime)
+			);
 		}
 
 		return nullptr;
 	}
 
-	Text_Clip* Sequence::create_text_clip(const vector<uint8_t>& text, const string& name, float startTime, float duration)
+	Text_Clip* Sequence::create_text_clip(const string& text, const string& name, const string& startTime, const string& duration)
 	{
 		if (text.size() != 0) // Disable this check if desired
 		{
-			return new Text_Clip(text, name, startTime, duration);
+			return new Text_Clip
+			(
+				text,
+				name,
+				get_seconds_from_string(startTime),
+				get_seconds_from_string(duration)
+			);
 		}
 
 		return nullptr;
@@ -148,7 +161,7 @@ namespace prz
 		{
 			if(sequence)
 			{
-				sequence->get_name();
+				return sequence->get_name().c_str();
 			}
 
 			return nullptr;

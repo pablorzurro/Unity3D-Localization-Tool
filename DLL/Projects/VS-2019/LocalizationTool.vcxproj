@@ -75,7 +75,7 @@
     <ClCompile Include="..\..\Code\Sources\dllmain.cpp" />
     <ClCompile Include="..\..\Code\Sources\Interface.cpp" />
     <ClCompile Include="..\..\Code\Sources\Sequence.cpp" />
-    <ClCompile Include="..\..\Code\Sources\Sequences_Loader.cpp" />
+    <ClCompile Include="..\..\Code\Sources\File_Manager.cpp" />
     <ClCompile Include="..\..\Code\Sources\Text_Clip.cpp" />
     <ClCompile Include="..\..\Code\Sources\Text_Track.cpp" />
     <ClCompile Include="Precompiled Headers\pch.cpp" />
@@ -85,6 +85,7 @@
     <ClInclude Include="..\..\Code\Headers\Audio_Track.hpp" />
     <ClInclude Include="..\..\Code\Headers\Clip.hpp" />
     <ClInclude Include="..\..\Code\Headers\Declarations.hpp" />
+    <ClInclude Include="..\..\Code\Headers\File_Manager.hpp" />
     <ClInclude Include="..\..\Code\Headers\Interface.hpp" />
     <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Nlohmann_JSON_Converter.hpp" />
     <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Standard_Library.hpp" />
@@ -93,7 +94,6 @@
     <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Nlohmann_JSON_Converter.hpp" />
     <ClInclude Include="..\..\Code\Headers\Internal\Utilities\String.hpp" />
     <ClInclude Include="..\..\Code\Headers\Sequence.hpp" />
-    <ClInclude Include="..\..\Code\Headers\Sequences_Loader.hpp" />
     <ClInclude Include="..\..\Code\Headers\Text_Clip.hpp" />
     <ClInclude Include="..\..\Code\Headers\Text_Track.hpp" />
     <ClInclude Include="..\..\Code\Headers\Track.hpp" />

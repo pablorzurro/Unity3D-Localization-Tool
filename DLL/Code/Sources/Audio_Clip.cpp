@@ -109,7 +109,7 @@ namespace prz
 		{
 			if (audioClip)
 			{
-				return audioClip->get_file_path();
+				return audioClip->get_file_path().c_str();
 			}
 
 			return nullptr;
@@ -119,7 +119,7 @@ namespace prz
 		{
 			if (audioClip)
 			{
-				audioClip->get_file_name();
+				return audioClip->get_file_name().c_str();
 			}
 
 			return nullptr;

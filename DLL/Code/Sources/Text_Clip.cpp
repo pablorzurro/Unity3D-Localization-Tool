@@ -6,7 +6,7 @@
 namespace prz
 {
 
-	Text_Clip::Text_Clip(const vector<uint8_t>& text, const string& name, float startTime, float duration) :
+	Text_Clip::Text_Clip(const string& text, const string& name, float startTime, float duration) :
 		Clip(name, startTime, duration),
 		m_text(text)
 	{}
@@ -15,7 +15,7 @@ namespace prz
 		Clip(other)
 	{}
 
-	void Text_Clip::set_text(const vector<uint8_t>& textStr)
+	void Text_Clip::set_text(const string& textStr)
 	{
 		m_text = textStr;
 	}
@@ -24,7 +24,7 @@ namespace prz
 	{
 		json j;
 
-		j["Name"] = get_string_from(m_name);
+		j["Name"] = m_name;
 		j["Start"] = m_startTime;
 		j["End"] = m_endTime;
 		j["Duration"] = m_duration;
@@ -32,11 +32,11 @@ namespace prz
 		return j;
 	}
 
-	const uint8_t* get_text_clip_text(Text_Clip* textClip)
+	const char* get_text_clip_text(Text_Clip* textClip)
 	{
 		if (textClip)
 		{
-			return textClip->get_text();
+			return textClip->get_text().c_str();
 		}
 
 		return nullptr;
