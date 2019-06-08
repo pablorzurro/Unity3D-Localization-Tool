@@ -74,6 +74,7 @@
     <ClCompile Include="..\..\Code\Sources\Clip.cpp" />
     <ClCompile Include="..\..\Code\Sources\dllmain.cpp" />
     <ClCompile Include="..\..\Code\Sources\Interface.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Internal\Utilities\PString.cpp" />
     <ClCompile Include="..\..\Code\Sources\Sequence.cpp" />
     <ClCompile Include="..\..\Code\Sources\File_Manager.cpp" />
     <ClCompile Include="..\..\Code\Sources\Text_Clip.cpp" />
@@ -92,6 +93,7 @@
     <ClInclude Include="..\..\Code\Headers\Internal\Utilities\IO.hpp" />
     <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Math.hpp" />
     <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Nlohmann_JSON_Converter.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\PString.hpp" />
     <ClInclude Include="..\..\Code\Headers\Internal\Utilities\String.hpp" />
     <ClInclude Include="..\..\Code\Headers\Sequence.hpp" />
     <ClInclude Include="..\..\Code\Headers\Text_Clip.hpp" />

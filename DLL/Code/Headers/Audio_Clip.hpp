@@ -83,14 +83,14 @@ namespace prz
 		 * 
 		 * @return const char* 
 		 */
-		const string& get_file_path() const { return m_filePath.c_str(); }
+		const PString& get_file_path() const { return m_filePath; }
 
 		/**
 		 * @brief Return the file name
 		 * 
 		 * @return const char* 
 		 */
-		const string& get_file_name() const { return m_fileName.c_str(); }
+		const PString& get_file_name() const { return m_fileName; }
 		
 		/**
 		 * @brief Return the start clipping time
@@ -112,8 +112,8 @@ namespace prz
 
 	private:
 
-		string m_filePath;
-		string m_fileName;
+		PString m_filePath;
+		PString m_fileName;
 
 	private:
 
@@ -128,6 +128,11 @@ namespace prz
 
 	extern "C"
 	{
+
+		LOCALIZATION_TOOL_API bool set_audio_clip_name(Audio_Clip* audioClip, const char* name);
+		LOCALIZATION_TOOL_API bool set_audio_clip_start_time(Audio_Clip* audioClip, float startTime);
+		LOCALIZATION_TOOL_API bool set_audio_clip_duration(Audio_Clip* audioClip, float duration);
+
 		/**
 		 * @brief set the audio file path of the input audio clip
 		 * 
@@ -152,13 +157,18 @@ namespace prz
 		 */
 		LOCALIZATION_TOOL_API bool set_audio_clip_file_length(Audio_Clip* audioClip, float fileLength);
 
+		LOCALIZATION_TOOL_API const PString* get_audio_clip_name(Audio_Clip* audioClip);
+		LOCALIZATION_TOOL_API float get_audio_clip_start_time(Audio_Clip* audioClip);
+		LOCALIZATION_TOOL_API float get_audio_clip_end_time(Audio_Clip* audioClip);
+		LOCALIZATION_TOOL_API float get_audio_clip_duration(Audio_Clip* audioClip);
+
 		/**
 		 * @brief get the audio file path of an audio clip
 		 * 
 		 * @param audioClip 
 		 * @return const char*
 		 */
-		LOCALIZATION_TOOL_API const char* get_audio_clip_file_path(Audio_Clip* audioClip);
+		LOCALIZATION_TOOL_API const PString* get_audio_clip_file_path(Audio_Clip* audioClip);
 		
 		/**
 		 * @brief get the file path of an audio clip
@@ -166,7 +176,7 @@ namespace prz
 		 * @param audioClip 
 		 * @return const char*
 		 */
-		LOCALIZATION_TOOL_API const char* get_audio_clip_file_name(Audio_Clip* audioClip);
+		LOCALIZATION_TOOL_API const PString* get_audio_clip_file_name(Audio_Clip* audioClip);
 
 		/**
 		 * @brief get the start cut time of an audio clip
@@ -187,9 +197,6 @@ namespace prz
 	}
 
 	#pragma endregion
-
-
-
 
 } // !namespace prz
 

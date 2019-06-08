@@ -32,14 +32,105 @@ namespace prz
 		return j;
 	}
 
-	const char* get_text_clip_text(Text_Clip* textClip)
+	#pragma region TextClipExport
+	extern "C"
 	{
-		if (textClip)
+
+		bool set_text_clip_name(Text_Clip* textClip, const char* name)
 		{
-			return textClip->get_text().c_str();
+			if (textClip)
+			{
+				textClip->set_name(name);
+				return true;
+			}
+
+			return false;
 		}
 
-		return nullptr;
+		bool set_text_clip_start_time(Text_Clip* textClip, float startTime)
+		{
+			if (textClip)
+			{
+				textClip->set_start_time(startTime);
+				return true;
+			}
+
+			return false;
+		}
+
+		bool set_text_clip_duration(Text_Clip* textClip, float duration)
+		{
+			if (textClip)
+			{
+				textClip->set_duration(duration);
+				return true;
+			}
+
+			return false;
+		}
+
+		bool set_text_clip_text(Text_Clip* textClip, const char* text)
+		{
+			if (textClip)
+			{
+				textClip->set_text(get_string_from(text));
+				return true;
+			}
+
+			return false;
+		}
+
+		const /*PString*/char* get_text_clip_name(Text_Clip* textClip)
+		{
+			if (textClip)
+			{
+				return textClip->get_name();
+			}
+
+			return nullptr;
+		}
+
+		float get_text_clip_start_time(Text_Clip* textClip)
+		{
+			if (textClip)
+			{
+				return textClip->get_start_time();
+			}
+
+			return float::MinValue;
+		}
+
+		float get_text_clip_end_time(Text_Clip* textClip)
+		{
+			if (textClip)
+			{
+				return textClip->get_end_time();
+			}
+
+			return float::MinValue;
+		}
+
+		float get_text_clip_duration(Text_Clip* textClip)
+		{
+			if (textClip)
+			{
+				return textClip->get_duration();
+			}
+
+			return float::MinValue;
+		}
+
+		const PString* get_text_clip_text(Text_Clip* textClip)
+		{
+			if (textClip)
+			{
+				return &textClip->get_text();
+			}
+
+			return nullptr;
+		}
+
 	}
+	#pragma endregion TextClipExport
 
 }

@@ -59,16 +59,25 @@ namespace prz
 
 	public:
 
-		const string& get_text() const { return m_text.data(); }
-		const unsigned int get_text_size() const { return (unsigned int)m_text.size(); }
+		/**
+		 * @brief Return the text
+		 * 
+		 * @return const PString& 
+		 */
+		const PString& get_text() const { return m_text; }
 
 	public:
 
+		/**
+		 * @brief 
+		 * 
+		 * @return json 
+		 */
 		json to_json() final override;
 
 	private:
 
-		string m_text;
+		PString m_text;
 
 	};
 
@@ -76,13 +85,18 @@ namespace prz
 
 	extern "C"
 	{
-		/**
-		 * @brief get the text clip content
-		 * 
-		 * @param textClip 
-		 * @return const char* 
-		 */
-		LOCALIZATION_TOOL_API const char* get_text_clip_text(Text_Clip* textClip);
+		
+		LOCALIZATION_TOOL_API bool set_text_clip_name(Text_Clip* textClip, const char* name);
+		LOCALIZATION_TOOL_API bool set_text_clip_start_time(Text_Clip* textClip, float startTime);
+		LOCALIZATION_TOOL_API bool set_text_clip_duration(Text_Clip* textClip, float duration);
+		LOCALIZATION_TOOL_API bool set_text_clip_text(Text_Clip* textClip, const char* text);
+
+		LOCALIZATION_TOOL_API const /*PString*/char* get_text_clip_name(Text_Clip* textClip);
+		LOCALIZATION_TOOL_API float get_text_clip_start_time(Text_Clip* textClip);
+		LOCALIZATION_TOOL_API float get_text_clip_end_time(Text_Clip* textClip);
+		LOCALIZATION_TOOL_API float get_text_clip_duration(Text_Clip* textClip);
+		LOCALIZATION_TOOL_API const PString* get_text_clip_text(Text_Clip* textClip);
+
 	}
 
 	#pragma endregion

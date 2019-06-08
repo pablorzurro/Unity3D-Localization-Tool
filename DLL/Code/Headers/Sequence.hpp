@@ -150,7 +150,7 @@ namespace prz
 		Text_Track** get_text_tracks_ptr() { return m_textTracks.data(); }
 
 
-		const string& get_name() const { return m_name; }
+		const PString& get_name() const { return m_name; }
 
 	private:
 
@@ -175,7 +175,7 @@ namespace prz
 
 	private:
 
-		string m_name;
+		PString m_name;
 
 	};
 
@@ -184,7 +184,7 @@ namespace prz
 	extern "C"
 	{
 
-		LOCALIZATION_TOOL_API const char* get_sequence_name(Sequence* sequence);
+		LOCALIZATION_TOOL_API const PString* get_sequence_name(Sequence* sequence);
 		LOCALIZATION_TOOL_API int get_sequence_number_of_audio_tracks(Sequence* sequence);
 		LOCALIZATION_TOOL_API int get_sequence_number_of_text_tracks(Sequence* sequence);
 		LOCALIZATION_TOOL_API Audio_Track** get_sequence_audio_tracks(Sequence* sequence);

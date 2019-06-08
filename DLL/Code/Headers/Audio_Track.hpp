@@ -101,6 +101,8 @@ namespace prz
 		 * @return int 
 		 */
 		LOCALIZATION_TOOL_API int get_audio_track_number_of_clips(Audio_Track* audioTrack);
+
+		LOCALIZATION_TOOL_API Audio_Clip** get_audio_track_clips(Audio_Track* audioTrack);
 		
 	}
 

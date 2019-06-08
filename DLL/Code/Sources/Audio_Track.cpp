@@ -53,6 +53,17 @@ namespace prz
 
 			return int::MinValue;
 		}
+
+		Audio_Clip** get_audio_track_clips(Audio_Track* audioTrack)
+		{
+			if (audioTrack)
+			{
+				return audioTrack->get_clips().data();
+			}
+
+			return nullptr;
+		}
+
 	}
 	#pragma endregion AudioTrackExport
 

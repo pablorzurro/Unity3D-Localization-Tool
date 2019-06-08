@@ -2,6 +2,8 @@
 #include <File_Manager.hpp>
 
 #include <Sequence.hpp>
+#include <Text_Clip.hpp>
+#include <Text_Track.hpp>
 #include <Audio_Track.hpp>
 #include <Audio_Clip.hpp>
 
@@ -13,7 +15,7 @@ namespace prz
 	void File_Manager::load_file(const string& filePath, bool forceReimport)
 	{
 		string fileName = split_string_by_separator(filePath, "/");
-		bool isFileLoaded = is_file_loaded_by_name(filePath);
+		bool isFileLoaded = is_file_loaded_by_name(fileName);
 
 		if (isFileLoaded && forceReimport)
 		{
@@ -23,13 +25,18 @@ namespace prz
 
 		if (!isFileLoaded)
 		{
-			load_file_sequences(filePath);
+			Sequence* sequence = new Sequence();
+			sequence->create_text_clip("Test100", "299999999999999", "00:00:940", "00:02:940");
+
+			m_sequencesByFile[fileName].push_back(sequence);
+			//load_file_sequences(filePath);
 		}
 	}
 
 	void File_Manager::load_file_sequences(const string& filePath)
 	{
 		json json1 = load_json_file(filePath);
+		string fileName = split_string_by_separator(filePath, "/");
 
 		if (json1.size() != 0)
 		{
@@ -41,7 +48,11 @@ namespace prz
 
 				for (const auto& item : json1["sequences"]["sequence"])
 				{
-					create_sequence(item);
+					Sequence* sequence = create_sequence(item);
+					if (sequence)
+					{
+						m_sequencesByFile[fileName].push_back(sequence);
+					}
 				}
 			}
 		}
@@ -67,14 +78,19 @@ namespace prz
 					for (auto& iAudioClip : audioClips)
 					{
 						// If the file to copy exists and the file to copy doesn't exist in the destination path... 
-						if (filesystem::exists(iAudioClip->get_file_path())
-							&& !filesystem::exists(destination + iAudioClip->get_file_name()));
+
+						string iAudioClipFilePath = iAudioClip->get_file_path();
+						string iAudioClipFileName = iAudioClip->get_file_name();
+						if (filesystem::exists(iAudioClipFilePath)
+							&& !filesystem::exists(destination + iAudioClipFileName))
 						{
-							filesystem::copy_file(iAudioClip->get_file_path(), destination);
+							filesystem::copy_file(iAudioClipFilePath, destination);
 						}
 					}
 				}
 			}
+
+			return true;
 		}
 
 		return false;
@@ -159,7 +175,7 @@ namespace prz
 	{
 		if (is_file_loaded_by_name(fileName))
 		{
-			(int)m_sequencesByFile[fileName].size();
+			return (int)m_sequencesByFile[fileName].size();
 		}
 
 		return 0;
@@ -198,39 +214,46 @@ namespace prz
 
 		Sequence** load_file(const char* jsonFilePath, bool forceReimport)
 		{
-			File_Manager::instance().load_file(jsonFilePath, forceReimport);
+			string path = get_string_from(jsonFilePath);
+			File_Manager::instance().load_file(path, forceReimport);
 
-			return get_file_sequences_by_path(jsonFilePath);
+			return get_file_sequences_by_path(to_char_array(path));
 		}
 
 		bool is_file_loaded_by_path(const char* filePath)
 		{
-			return File_Manager::instance().is_file_loaded_by_path(filePath);
+			string path = get_string_from(filePath);
+			return File_Manager::instance().is_file_loaded_by_path(path);
 		}
 
 		bool is_file_loaded_by_name(const char* fileName)
 		{
-			return File_Manager::instance().is_file_loaded_by_name(fileName);
+			string name = get_string_from(fileName);
+			return File_Manager::instance().is_file_loaded_by_name(name);
 		}
 
 		Sequence** get_file_sequences_by_name(const char* fileName)
 		{
-			return File_Manager::instance().get_file_sequences_by_name(fileName);
+			string name = get_string_from(fileName);
+			return File_Manager::instance().get_file_sequences_by_name(name);
 		}
 
 		Sequence** get_file_sequences_by_path(const char* filePath)
 		{
-			return File_Manager::instance().get_file_sequences_by_path(filePath);
+			string path = get_string_from(filePath);
+			return File_Manager::instance().get_file_sequences_by_path(path);
 		}
 
 		int get_file_number_of_sequences_by_name(const char* fileName)
 		{
-			return File_Manager::instance().get_file_number_of_sequences_by_name(fileName);
+			string name = get_string_from(fileName);
+			return File_Manager::instance().get_file_number_of_sequences_by_name(name);
 		}
 
 		int get_file_number_of_sequences_by_path(const char* filePath)
 		{
-			return File_Manager::instance().get_file_number_of_sequences_by_path(filePath);
+			string path = get_string_from(filePath);
+			return File_Manager::instance().get_file_number_of_sequences_by_path(path);
 		}
 
 	}

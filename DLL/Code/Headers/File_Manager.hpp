@@ -51,7 +51,6 @@ namespace prz
 
 		Sequence* create_sequence(const value_json& sequenceItem);
 
-
 	private:
 
 		void clear_file_sequences(const string& fileName);

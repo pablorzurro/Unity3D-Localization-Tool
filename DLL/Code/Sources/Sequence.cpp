@@ -56,14 +56,14 @@ namespace prz
 	{
 		if (filesystem::exists(audioFilePath))
 		{
-			return new Audio_Clip
+			return add_audio_clip(new Audio_Clip
 			(
 				name,
 				audioFilePath,
 				get_seconds_from_string(startTime),
 				get_seconds_from_string(duration),
 				get_seconds_from_string(startCutTime)
-			);
+			));
 		}
 
 		return nullptr;
@@ -73,13 +73,13 @@ namespace prz
 	{
 		if (text.size() != 0) // Disable this check if desired
 		{
-			return new Text_Clip
+			return add_text_clip(new Text_Clip
 			(
 				text,
 				name,
 				get_seconds_from_string(startTime),
 				get_seconds_from_string(duration)
-			);
+			));
 		}
 
 		return nullptr;
@@ -157,11 +157,11 @@ namespace prz
 	extern "C"
 	{
 
-		const char* get_sequence_name(Sequence* sequence)
+		const PString* get_sequence_name(Sequence* sequence)
 		{
 			if(sequence)
 			{
-				return sequence->get_name().c_str();
+				return &sequence->get_name();
 			}
 
 			return nullptr;

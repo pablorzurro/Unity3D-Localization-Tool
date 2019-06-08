@@ -19,6 +19,16 @@ namespace prz
 			return int::MinValue;
 		}
 
+		LOCALIZATION_TOOL_API Text_Clip** get_text_track_clips(Text_Track* textTrack)
+		{
+			if (textTrack)
+			{
+				return textTrack->get_clips().data();
+			}
+
+			return nullptr;
+		}
+
 	}
 	#pragma endregion TextTrackExport
 	

@@ -32,7 +32,8 @@ namespace prz
 	extern "C"
 	{
 
-		LOCALIZATION_TOOL_API int get_text_track_number_of_clips(Text_Track* textTrack);	
+		LOCALIZATION_TOOL_API int get_text_track_number_of_clips(Text_Track* textTrack);
+		LOCALIZATION_TOOL_API Text_Clip** get_text_track_clips(Text_Track* audioTrack);
 
 	}
 

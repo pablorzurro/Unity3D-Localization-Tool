@@ -72,6 +72,39 @@ namespace prz
 	extern "C"
 	{
 
+		bool set_audio_clip_name(Audio_Clip* audioClip, const char* name)
+		{
+			if (audioClip)
+			{
+				audioClip->set_name(name);
+				return true;
+			}
+
+			return false;
+		}
+
+		bool set_audio_clip_start_time(Audio_Clip* audioClip, float startTime)
+		{
+			if (audioClip)
+			{
+				audioClip->set_start_time(startTime);
+				return true;
+			}
+
+			return false;
+		}
+
+		bool set_audio_clip_duration(Audio_Clip* audioClip, float duration)
+		{
+			if (audioClip)
+			{
+				audioClip->set_duration(duration);
+				return true;
+			}
+
+			return false;
+		}
+
 		bool set_audio_clip_file_path(Audio_Clip* audioClip, const char* filePath)
 		{
 			if (audioClip)
@@ -105,21 +138,61 @@ namespace prz
 			return false;
 		}
 
-		const char* get_audio_clip_file_path(Audio_Clip* audioClip)
+		const PString* get_audio_clip_name(Audio_Clip* audioClip)
 		{
 			if (audioClip)
 			{
-				return audioClip->get_file_path().c_str();
+				return &audioClip->get_name();
 			}
 
 			return nullptr;
 		}
 
-		const char* get_audio_clip_file_name(Audio_Clip* audioClip)
+		float get_audio_clip_start_time(Audio_Clip* audioClip)
 		{
 			if (audioClip)
 			{
-				return audioClip->get_file_name().c_str();
+				return audioClip->get_start_time();
+			}
+
+			return float::MinValue;
+		}
+
+		float get_audio_clip_end_time(Audio_Clip* audioClip)
+		{
+			if (audioClip)
+			{
+				return audioClip->get_end_time();
+			}
+
+			return float::MinValue;
+		}
+
+		float get_audio_clip_duration(Audio_Clip* audioClip)
+		{
+			if (audioClip)
+			{
+				return audioClip->get_duration();
+			}
+
+			return float::MinValue;
+		}
+
+		const PString* get_audio_clip_file_path(Audio_Clip* audioClip)
+		{
+			if (audioClip)
+			{
+				return &audioClip->get_file_path();
+			}
+
+			return nullptr;
+		}
+
+		const PString* get_audio_clip_file_name(Audio_Clip* audioClip)
+		{
+			if (audioClip)
+			{
+				return &audioClip->get_file_name();
 			}
 
 			return nullptr;

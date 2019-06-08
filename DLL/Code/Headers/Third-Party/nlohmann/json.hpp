@@ -20273,7 +20273,7 @@ class basic_json
         basic_json result = *this;
 
         // the valid JSON Patch operations
-        enum class patch_operations {add, remove, replace, move, copy, test, invalid};
+        enum class patch_operations {add, remove, replace, move, copy, test_me, invalid};
 
         const auto get_op = [](const std::string & op)
         {
@@ -20299,7 +20299,7 @@ class basic_json
             }
             if (op == "test")
             {
-                return patch_operations::test;
+                return patch_operations::test_me;
             }
 
             return patch_operations::invalid;
@@ -20494,7 +20494,7 @@ class basic_json
                     break;
                 }
 
-                case patch_operations::test:
+                case patch_operations::test_me:
                 {
                     bool success = false;
                     JSON_TRY

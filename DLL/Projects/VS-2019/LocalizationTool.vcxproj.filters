@@ -31,6 +31,9 @@
     <ClCompile Include="..\..\Code\Sources\File_Manager.cpp">
       <Filter>Source Files\Core</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Internal\Utilities\PString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
@@ -121,6 +124,9 @@
     </ClInclude>
     <ClInclude Include="..\..\Code\Headers\Sequence.hpp">
       <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\PString.hpp">
+      <Filter>Header Files\Internal\Utilities</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

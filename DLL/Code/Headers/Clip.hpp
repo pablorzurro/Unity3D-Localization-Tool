@@ -39,7 +39,7 @@ namespace prz
 		
 	public:
 
-		const string& get_name() { return m_name; }
+		const PString& get_name() { return m_name; }
 		float get_start_time() { return m_startTime; }
 		float get_end_time() { return m_endTime; }
 		float get_duration() { return m_duration; }
@@ -54,29 +54,12 @@ namespace prz
 
 	protected:
 
-		string m_name;
+		PString m_name;
 		float m_startTime;
 		float m_endTime;
 		float m_duration;
 
 	};
-
-	#pragma region CLIP EXPORT
-
-	extern "C"
-	{
-		
-		LOCALIZATION_TOOL_API bool set_clip_name(Clip* clip, const string& name);
-		LOCALIZATION_TOOL_API bool set_clip_start_time(Clip* clip, float startTime);
-		LOCALIZATION_TOOL_API bool set_clip_duration(Clip* clip, float duration);
-
-		LOCALIZATION_TOOL_API const char* get_clip_name(Clip* clip);
-		LOCALIZATION_TOOL_API float get_clip_start_time(Clip* clip);
-		LOCALIZATION_TOOL_API float get_clip_end_time(Clip* clip);
-		LOCALIZATION_TOOL_API float get_clip_duration(Clip* clip);
-	}
-
-	#pragma endregion
 
 } // !namespace prz
 

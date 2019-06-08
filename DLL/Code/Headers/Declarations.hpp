@@ -14,6 +14,7 @@
 
 #include "Internal/Declarations/Standard_Library.hpp"
 #include "Internal/Declarations/Nlohmann_JSON_Converter.hpp"
+#include "Internal/Utilities/PString.hpp"
 
 namespace prz
 {

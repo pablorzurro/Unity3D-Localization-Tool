@@ -27,7 +27,7 @@ namespace LocalizationTool
 
         void TestString()
         {
-            LocalizationToolWrapper.Test();
+            LocalizationToolWrapper.Test2();
         }
     }
 
