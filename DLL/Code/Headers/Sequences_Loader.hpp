@@ -20,12 +20,27 @@ namespace prz
 
 	public:
 
+		void load_file(const string& filePath, bool forceReimport = false);
 		void load_file_sequences(const string& filePath);
+
+	public:
+
 		Sequence* create_sequence(const value_json& sequenceItem);
 
 	public:
 
-		bool is_file_loaded(const string& fileName);
+		Sequence** get_file_sequences_by_name(const string& fileName);
+		Sequence** get_file_sequences_by_path(const string& filePath);
+
+	public:
+
+		bool is_file_loaded_by_name(const string& fileName);
+		bool is_file_loaded_by_path(const string& filePath);
+
+	public:
+
+		int get_file_number_of_sequences_by_name(const string& fileName);
+		int get_file_number_of_sequences_by_path(const string& filePath);
 
 	private:
 
@@ -34,9 +49,28 @@ namespace prz
 
 	private:
 
-		unordered_map <string, list<Sequence*>> m_sequencesByFile;
+		void clear_file_sequences(const string& fileName);
+
+	private:
+
+		unordered_map <string, vector<Sequence*>> m_sequencesByFile;
 			
 	};
+
+	#pragma region SequencesLoaderExport
+
+	extern "C"
+	{
+		LOCALIZATION_TOOL_API Sequence** load_file(const char* jsonFilePath, bool forceReimport);
+		LOCALIZATION_TOOL_API Sequence** get_file_sequences_by_name(const string& fileName);
+		LOCALIZATION_TOOL_API Sequence** get_file_sequences_by_path(const string& filePath);
+		LOCALIZATION_TOOL_API bool is_file_loaded_by_name(const string& fileName);
+		LOCALIZATION_TOOL_API bool is_file_loaded_by_path(const string& filePath);
+		LOCALIZATION_TOOL_API int get_file_number_of_sequences_by_name(const string& fileName);
+		LOCALIZATION_TOOL_API int get_file_number_of_sequences_by_path(const string& filePath);
+	}
+
+	#pragma endregion SequencesLoaderExport
 	
 } // !namespace prz
 

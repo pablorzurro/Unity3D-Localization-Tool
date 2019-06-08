@@ -20,23 +20,18 @@ namespace prz
 
 	Audio_Clip::Audio_Clip(const Audio_Clip& other) :
 		Clip(other),
-		m_fileName(get_copy_of(other.m_fileName))
+		m_fileName(other.m_fileName)
 	{}
-
-	Audio_Clip::~Audio_Clip()
-	{
-		delete[] m_fileName;
-	}
 
 	void Audio_Clip::remove_start_cut_time()
 	{
 		m_startCutTime = 0.f;
 	}
 
-	void Audio_Clip::set_file_path(const char* path)
+	void Audio_Clip::set_file_path(const string& path)
 	{
-		copy(path, m_filePath);
-		extract_name_from(path);
+		m_filePath = path;
+		m_fileName = split_string_by_separator(path, "/");
 	}
 
 	void Audio_Clip::set_start_cut_time(float startCutTime)
@@ -70,11 +65,6 @@ namespace prz
 		}
 
 		return j;
-	}
-
-	void Audio_Clip::extract_name_from(const char* path)
-	{
-		copy(to_char_array(split_string_by_separator(get_string_from(path), "/")), m_fileName);
 	}
 
 	#pragma region AUDIO CLIP EXPORT
