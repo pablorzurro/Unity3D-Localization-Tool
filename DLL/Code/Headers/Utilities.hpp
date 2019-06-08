@@ -15,6 +15,7 @@
 #include "Internal/Utilities/Math.hpp"
 #include "Internal/Utilities/String.hpp"
 #include "Internal/Utilities/IO.hpp"
+#include "Internal/Utilities/Nlohmann_JSON_Converter.hpp"
 
 namespace prz
 {

@@ -87,6 +87,11 @@ namespace prz
 		to = to_char_array(from);
 	}
 
+	static bool string_contains(const string& str, const string& toSearch)
+	{
+		return str.find(toSearch) != string::npos;
+	}
+
 }
 
 #endif // !LOCALIZATION_TOOL_INTERNAL_UTILITIES_STRING_H_

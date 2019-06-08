@@ -10,20 +10,26 @@
     <ClCompile Include="..\..\Code\Sources\Interface.cpp">
       <Filter>Source Files\Core</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Code\Sources\Audio_Clip.cpp">
-      <Filter>Source Files\Audio</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Code\Sources\Text_Clip.cpp">
-      <Filter>Source Files\Text</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Code\Sources\Clip.cpp">
+    <ClCompile Include="..\..\Code\Sources\Sequences_Loader.cpp">
       <Filter>Source Files\Core</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Code\Sources\Text_Track.cpp">
-      <Filter>Source Files\Text</Filter>
+    <ClCompile Include="..\..\Code\Sources\Sequence.cpp">
+      <Filter>Source Files\Core</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Code\Sources\Audio_Track.cpp">
-      <Filter>Source Files\Audio</Filter>
+      <Filter>Source Files\Tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Text_Track.cpp">
+      <Filter>Source Files\Tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Audio_Clip.cpp">
+      <Filter>Source Files\Clips</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Clip.cpp">
+      <Filter>Source Files\Clips</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Text_Clip.cpp">
+      <Filter>Source Files\Clips</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -42,15 +48,6 @@
     <Filter Include="Source Files\Core">
       <UniqueIdentifier>{828589ba-957c-4926-9e30-3c9ef516ba9b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Audio">
-      <UniqueIdentifier>{96224521-7020-4fd8-a2a8-f3646bc5b178}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Clips">
-      <UniqueIdentifier>{9c7c4d5f-620e-49a5-8ec5-0019b56dc439}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Text">
-      <UniqueIdentifier>{38a18e1a-0760-48d4-854b-94b2186239b7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Core\Internal">
       <UniqueIdentifier>{2b9a4d35-4c0c-4e2f-b5d4-81d9ced3acf0}</UniqueIdentifier>
     </Filter>
@@ -60,11 +57,17 @@
     <Filter Include="Header Files\Core\Internal\Utilities">
       <UniqueIdentifier>{7bb715da-2adb-48e9-8ad6-2d9f5d20c84a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Audio">
-      <UniqueIdentifier>{36079e25-06bb-4098-963c-515aa668b15f}</UniqueIdentifier>
+    <Filter Include="Header Files\Tracks">
+      <UniqueIdentifier>{30fda442-67ff-4140-962b-1cf8c368c5f6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Text">
-      <UniqueIdentifier>{da54f99e-a43d-4c40-a40f-64d87c186bba}</UniqueIdentifier>
+    <Filter Include="Header Files\Clips">
+      <UniqueIdentifier>{515d91c2-1c1c-49bc-a951-87bb43260215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tracks">
+      <UniqueIdentifier>{fa443e97-29de-433d-94a8-047c9dee34e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Clips">
+      <UniqueIdentifier>{ad1ef878-57c9-453b-8447-7a128d078918}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -98,20 +101,29 @@
     <ClInclude Include="..\..\Code\Headers\Internal\Utilities\IO.hpp">
       <Filter>Header Files\Core\Internal\Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Code\Headers\Audio_Clip.hpp">
-      <Filter>Header Files\Audio</Filter>
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Nlohmann_JSON_Converter.hpp">
+      <Filter>Header Files\Core\Internal\Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Code\Headers\Audio_Track.hpp">
-      <Filter>Header Files\Audio</Filter>
+    <ClInclude Include="..\..\Code\Headers\Sequences_Loader.hpp">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Code\Headers\Text_Clip.hpp">
-      <Filter>Header Files\Text</Filter>
+    <ClInclude Include="..\..\Code\Headers\Text_Track.hpp">
+      <Filter>Header Files\Tracks</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Code\Headers\Track.hpp">
-      <Filter>Header Files\Core</Filter>
+      <Filter>Header Files\Tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Audio_Track.hpp">
+      <Filter>Header Files\Tracks</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Code\Headers\Clip.hpp">
-      <Filter>Header Files\Core</Filter>
+      <Filter>Header Files\Clips</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Audio_Clip.hpp">
+      <Filter>Header Files\Clips</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Text_Clip.hpp">
+      <Filter>Header Files\Clips</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

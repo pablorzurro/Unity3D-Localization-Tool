@@ -14,39 +14,84 @@
 
 #include <Clip.hpp>
 
+
 namespace prz
 {
 
+	/**
+	 * @brief Clip that stores a text. It may contain font size aand style information in a future
+	 * 
+	 */
 	class Text_Clip : public Clip
 	{
 	public:
 
+		/**
+		 * @brief Construct a new Text_Clip
+		 * 
+		 * @param text 
+		 * @param startTime 
+		 * @param duration 
+		 */
 		Text_Clip
 		(
-			const string& text,
+			const vector<uint8_t>& text,
+			const string& name,
 			float startTime,
 			float duration
 		);
 
-		Text_Clip(Text_Clip& other) :
-			Clip(other)
-		{}
+		/**
+		 * @brief Construct a new Text_Clip by copy
+		 * 
+		 * @param other 
+		 */
+		Text_Clip(Text_Clip& other);
 
 	public:
 
-		void set_text(const char* text);
-		void set_text(const string& text);
+		/**
+		 * @brief Set the text
+		 * 
+		 * @param text 
+		 */
+		void set_text(const vector<uint8_t>& textStr);
 
 	public:
 
-		const char* get_text() const { return m_text; }
-		string get_text_as_string() const;
+		/**
+		 * @brief Get the text
+		 * 
+		 * @return const char* 
+		 */
+		const uint8_t* get_text() const { return m_text.data(); }
+		const unsigned int get_text_size() const { return (unsigned int)m_text.size(); }
+
+	public:
+
+		json to_json() final override;
 
 	private:
 
-		char* m_text;
+		vector<uint8_t> m_text;
 
 	};
+
+	#pragma region TEXT CLIP EXPORT
+
+	extern "C"
+	{
+		/**
+		 * @brief get the text clip content
+		 * 
+		 * @param textClip 
+		 * @return const char* 
+		 */
+		LOCALIZATION_TOOL_API const uint8_t* get_text_clip_text(Text_Clip* textClip);
+	}
+
+	#pragma endregion
+
 
 } // !namespace prz
 
