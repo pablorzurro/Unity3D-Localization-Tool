@@ -44,12 +44,6 @@ namespace prz
 		 * @param other 
 		 */
 		Audio_Clip(const Audio_Clip& other);
-		
-		/**
-		 * @brief Destroy the Audio_Clip
-		 * 
-		 */
-		~Audio_Clip();
 
 	public:
 		
@@ -66,7 +60,7 @@ namespace prz
 		 * 
 		 * @param path 
 		 */
-		void set_file_path(const char* path);
+		void set_file_path(const string& path);
 
 		/**
 		 * @brief Set the start cut time
@@ -89,14 +83,14 @@ namespace prz
 		 * 
 		 * @return const char* 
 		 */
-		const char* get_file_path() const { return m_filePath; }
+		const string& get_file_path() const { return m_filePath.c_str(); }
 
 		/**
 		 * @brief Return the file name
 		 * 
 		 * @return const char* 
 		 */
-		const char* get_file_name() const { return m_fileName; }
+		const string& get_file_name() const { return m_fileName.c_str(); }
 		
 		/**
 		 * @brief Return the start clipping time
@@ -118,17 +112,8 @@ namespace prz
 
 	private:
 
-		/**
-		 * @brief Extract the name from the path 
-		 * 
-		 * @param path 
-		 */
-		void extract_name_from(const char* path);
-
-	private:
-
-		char* m_filePath;
-		char* m_fileName;
+		string m_filePath;
+		string m_fileName;
 
 	private:
 

@@ -83,6 +83,13 @@ namespace prz
 		
 	public:
 
+		vector<ClipClass*>& get_clips()
+		{
+			return m_clips;
+		}
+
+	public:
+
 		unsigned int get_number_of_clips()
 		{
 			return (unsigned int)m_clips.size();

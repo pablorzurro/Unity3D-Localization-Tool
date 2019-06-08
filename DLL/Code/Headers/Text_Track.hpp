@@ -25,8 +25,6 @@ namespace prz
 		Text_Track(){}
 		~Text_Track(){}
 
-	private:
-
 	};
 
 	#pragma region TextTrackExport

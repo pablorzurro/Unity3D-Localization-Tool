@@ -7,23 +7,21 @@ namespace prz
 {
 
 	Clip::Clip(const string& name, float startTime, float duration) :
-		m_name(to_char_array(name)),
+		m_name(name),
 		m_startTime(startTime),
 		m_duration(duration),
 		m_endTime(startTime + duration)
 	{}
 
 	Clip::Clip(const Clip& other) :
-		m_name(get_copy_of(m_name)),
+		m_name(other.m_name),
 		m_startTime(other.m_startTime),
 		m_endTime(other.m_endTime),
 		m_duration(other.m_duration)
 	{}
 
 	Clip::~Clip()
-	{
-		delete[] m_name;
-	}
+	{}
 
 	bool Clip::collides_with(const Clip & other) const
 	{
@@ -38,7 +36,7 @@ namespace prz
 
 	void Clip::set_name(const string& name)
 	{
-		m_name = to_char_array(name);
+		m_name = name;
 	}
 
 	void Clip::set_start_time(float startTime)
@@ -99,7 +97,7 @@ namespace prz
 		{
 			if (clip)
 			{
-				return clip->get_name();
+				return clip->get_name().c_str();
 			}
 
 			return nullptr;

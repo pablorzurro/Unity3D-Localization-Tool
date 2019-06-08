@@ -80,9 +80,9 @@ namespace prz
 		(
 			const string& name,
 			const string& audioFilePath,
-			float startTime,
-			float duration = -1.f,
-			float startCutTime = 0.f
+			const string& startTime,
+			const string& duration,
+			const string & startCutTime
 		);
 
 		/**
@@ -91,16 +91,16 @@ namespace prz
 		 * @param text 
 		 * @param name 
 		 * @param startTime 
-		 * @param duration 
+		 * @param duration
 		 * @return true 
 		 * @return false 
 		 */
 		Text_Clip* create_text_clip
 		(	
-			const vector<uint8_t>& text,
+			const string& text,
 			const string& name,
-			float startTime,
-			float duration
+			const string& startTime,
+			const string& duration
 		);
 
 	public:
@@ -149,12 +149,8 @@ namespace prz
 		 */
 		Text_Track** get_text_tracks_ptr() { return m_textTracks.data(); }
 
-		/**
-		 * @brief Return the name
-		 * 
-		 * @return const char* 
-		 */
-		const char* get_name() const { return m_name; }
+
+		const string& get_name() const { return m_name; }
 
 	private:
 
@@ -179,7 +175,7 @@ namespace prz
 
 	private:
 
-		char* m_name;
+		string m_name;
 
 	};
 
