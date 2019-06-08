@@ -20,6 +20,8 @@ namespace prz
 
 	// Include here own type definitions
 
+	using uchar_32t = char32_t;
+
 } // !namespace prz
 
 #endif // !LOCALIZATION_TOOL_DECLARATIONS_H_
