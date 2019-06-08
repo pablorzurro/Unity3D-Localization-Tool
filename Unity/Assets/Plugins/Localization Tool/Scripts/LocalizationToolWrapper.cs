@@ -12,13 +12,60 @@ namespace LocalizationTool
     public unsafe class LocalizationToolWrapper : MonoBehaviour
     {
 
-    #region Native
+        #region Native
+
+        #region Sequence
+
+        public struct Sequence { }
+
+
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern string get_sequence_name(Sequence* sequence);
+
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int get_sequence_number_of_audio_tracks(Sequence* sequence);
+
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int get_sequence_number_of_text_tracks(Sequence* sequence);
+
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern AudioTrack*[] get_sequence_of_audio_tracks(Sequence* sequence);
+
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern TextTrack*[] get_sequence_text_tracks(Sequence* sequence);
+
+        #endregion
+
+        #region File(JSON) Loader
+
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern Sequence*[] load_file(string jsonFilePath, bool forceReimport);
+
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern Sequence*[] get_file_sequences_by_name(string fileName);
+
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern Sequence*[] get_file_sequences_by_path(string filePath);
+
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern bool is_file_loaded_by_name(string fileName);
+
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern bool is_file_loaded_by_path(string filePath);
+
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int get_file_number_of_sequences_by_name(string fileName);
+
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int get_file_number_of_sequences_by_path(string filePath);
+
+        #endregion
 
         #region Clips
 
             #region Audio Clip 
 
-            public struct AudioClip { }
+        public struct AudioClip { }
 
             [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
             public static extern string get_name(AudioClip* audioClip);
@@ -110,7 +157,7 @@ namespace LocalizationTool
 
         public static void Test()
         {
-            Debug.Log(test_get_seconds_from_string("2:59:940"));
+            Debug.Log(test_get_seconds_from_string("00:30:040"));
         }
 
         #endregion // !API Friendly

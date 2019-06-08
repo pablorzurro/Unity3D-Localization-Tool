@@ -2,26 +2,7 @@
 
 Language package directories structure example:
 
-
-
-------
-
- :warning:  **¡IMPORTANT!** :warning: 
-
-UTF-8 is used only for text clips value, file names and paths will use standard character encoding (ANSI/ASCII).
-
-:writing_hand: ​**Examples:** :writing_hand:
-
-- Arabic text clip value: "الله", in: "Assets/Ara/arabic_translation.json" 
-- English text clip value: "Hello!", in: "Assets/Eng/english_translation.json"
-
-
-
-
-
 ## JSON Structure
-
-Text 
 
 
 
@@ -57,3 +38,21 @@ Text
 }
 ```
 
+ ⚠️  **¡IMPORTANT!** ⚠️ 
+
+- UTF-8 is used only for all clip "name" fields and text clip "text" field, file names and paths will use standard character encoding (ANSI/ASCII).
+
+- Time format is written strictly as : **"mm:ss:sss"**
+
+  - "mm" refers to minutes
+
+  - "ss" refers seconds 
+
+  - "sss" refers to milliseconds
+
+    ***Result***: "minutes:seconds:milliseconds"
+
+✍️ ​**Examples:** ✍️
+
+- Arabic text clip value: "مرحبا!", in: "Assets/Ara/arabic_translation.json" 
+- English text clip value: "Hello!", in: "Assets/Eng/english_translation.json"
