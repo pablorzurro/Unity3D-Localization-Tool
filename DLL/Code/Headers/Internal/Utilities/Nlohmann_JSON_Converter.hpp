@@ -11,9 +11,12 @@ namespace prz
 	{
 		std::ifstream i(filePath);
 		json j;
-		i >> j;
 
-		i.close();
+		if (i.good())
+		{
+			i >> j;
+		}
+
 		return j;
 	}
 

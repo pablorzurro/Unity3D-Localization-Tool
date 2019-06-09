@@ -91,7 +91,7 @@ namespace prz
 		LOCALIZATION_TOOL_API bool set_text_clip_duration(Text_Clip* textClip, float duration);
 		LOCALIZATION_TOOL_API bool set_text_clip_text(Text_Clip* textClip, const char* text);
 
-		LOCALIZATION_TOOL_API const /*PString*/char* get_text_clip_name(Text_Clip* textClip);
+		LOCALIZATION_TOOL_API const PString* get_text_clip_name(Text_Clip* textClip);
 		LOCALIZATION_TOOL_API float get_text_clip_start_time(Text_Clip* textClip);
 		LOCALIZATION_TOOL_API float get_text_clip_end_time(Text_Clip* textClip);
 		LOCALIZATION_TOOL_API float get_text_clip_duration(Text_Clip* textClip);

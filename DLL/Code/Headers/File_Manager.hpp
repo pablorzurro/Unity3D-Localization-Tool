@@ -20,8 +20,8 @@ namespace prz
 
 	public:
 
-		void load_file(const string& filePath, bool forceReimport = false);
-		void load_file_sequences(const string& filePath);
+		int load_file(const string& filePath, bool forceReimport = false);
+		int load_file_sequences(const string& filePath);
 
 	public:
 
@@ -65,7 +65,8 @@ namespace prz
 
 	extern "C"
 	{
-		LOCALIZATION_TOOL_API Sequence** load_file(const char* jsonFilePath, bool forceReimport);
+		LOCALIZATION_TOOL_API int load_file(const char* jsonFilePath, bool forceReimport);
+		LOCALIZATION_TOOL_API Sequence** load_file_and_get_sequences(const char* jsonFilePath, bool forceReimport);
 		LOCALIZATION_TOOL_API Sequence** get_file_sequences_by_name(const char* fileName);
 		LOCALIZATION_TOOL_API Sequence** get_file_sequences_by_path(const char* filePath);
 		LOCALIZATION_TOOL_API bool is_file_loaded_by_name(const char* fileName);

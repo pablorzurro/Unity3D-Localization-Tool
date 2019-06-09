@@ -80,11 +80,11 @@ namespace prz
 			return false;
 		}
 
-		const /*PString*/char* get_text_clip_name(Text_Clip* textClip)
+		const PString* get_text_clip_name(Text_Clip* textClip)
 		{
 			if (textClip)
 			{
-				return textClip->get_name();
+				return &textClip->get_name();
 			}
 
 			return nullptr;

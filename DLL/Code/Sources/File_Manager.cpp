@@ -12,10 +12,12 @@
 namespace prz
 {
 
-	void File_Manager::load_file(const string& filePath, bool forceReimport)
+	int File_Manager::load_file(const string& filePath, bool forceReimport)
 	{
 		string fileName = split_string_by_separator(filePath, "/");
 		bool isFileLoaded = is_file_loaded_by_name(fileName);
+
+		int nSequencesLoaded = 0;
 
 		if (isFileLoaded && forceReimport)
 		{
@@ -25,46 +27,44 @@ namespace prz
 
 		if (!isFileLoaded)
 		{
-			Sequence* sequence = new Sequence();
-			sequence->create_text_clip("Test100", "299999999999999", "00:00:940", "00:02:940");
-
-			m_sequencesByFile[fileName].push_back(sequence);
-			//load_file_sequences(filePath);
+			nSequencesLoaded = load_file_sequences(filePath);
 		}
+		else
+		{
+			nSequencesLoaded = get_file_number_of_sequences_by_path(filePath); // The file is loaded
+		}
+
+		return nSequencesLoaded;
 	}
 
-	void File_Manager::load_file_sequences(const string& filePath)
+	int File_Manager::load_file_sequences(const string& filePath)
 	{
 		json json1 = load_json_file(filePath);
 		string fileName = split_string_by_separator(filePath, "/");
 
+		int nSequencesLoaded = 0;
+
 		if (json1.size() != 0)
 		{
-			auto iEnd = json1.end();
-			for (auto it = json1.begin(); it != iEnd; ++it)
+			for (const auto& item : json1["sequences"])
 			{
-				string itKey = it.key();
-				value_json& itValue = it.value();
-
-				for (const auto& item : json1["sequences"]["sequence"])
+				Sequence* sequence = create_sequence(item);
+				
+				if (sequence)
 				{
-					Sequence* sequence = create_sequence(item);
-					if (sequence)
-					{
-						m_sequencesByFile[fileName].push_back(sequence);
-					}
+					++nSequencesLoaded;
+					m_sequencesByFile[fileName].push_back(sequence);
 				}
 			}
 		}
+
+		return nSequencesLoaded;
 	}
 
 	bool File_Manager::copy_all_audio_clip_files_of_file(const string& fileName, const string& destination)
 	{
 		if (is_file_loaded_by_name(fileName))
 		{
-
-			//            name	   path
-			unordered_map<string, string> tempMapOfAudioClipFilesInfo;
 			auto& sequences = m_sequencesByFile[fileName];
 
 			for (auto& iSequence :  sequences)
@@ -98,35 +98,38 @@ namespace prz
 
 	Sequence* File_Manager::create_sequence(const value_json& sequenceItem)
 	{
-		if (sequenceItem.find("clips") != sequenceItem.end())
+		if (sequenceItem.find("clips") != sequenceItem.end() && 
+			sequenceItem.find("name") != sequenceItem.end())
 		{
 			Sequence* sequence = new Sequence(sequenceItem["name"]);
 
+			// Load audio clips
 			if (sequenceItem["clips"].find("audio") != sequenceItem["clips"].end())
 			{
 				for (const auto& iAudioClip : sequenceItem["clips"]["audio"])
 				{
 					sequence->create_audio_clip
 					(
-						iAudioClip.at("name"),
-						iAudioClip.at("path"),
-						iAudioClip.at("start"),
-						iAudioClip.at("duration"),
-						iAudioClip.at("start_cut")
+						iAudioClip["name"],
+						iAudioClip["path"],
+						iAudioClip["start"],
+						iAudioClip["duration"],
+						iAudioClip["start_cut"]
 					);
 				}
 			}
 
+			// Load text clips
 			if (sequenceItem["clips"].find("text") != sequenceItem["clips"].end())
 			{
 				for (const auto& iTextClip : sequenceItem["clips"]["text"])
 				{
 					sequence->create_text_clip
 					(
-						iTextClip.at("name"),
-						iTextClip.at("start"),
-						iTextClip.at("duration"),
-						iTextClip.at("text")
+						iTextClip["text"],
+						iTextClip["name"],
+						iTextClip["start"],
+						iTextClip["duration"]
 					);
 				}
 			}
@@ -154,7 +157,6 @@ namespace prz
 	{
 		return is_file_loaded_by_name(split_string_by_separator(filePath, "/"));
 	}
-
 
 	Sequence** File_Manager::get_file_sequences_by_name(const string& fileName)
 	{
@@ -207,17 +209,20 @@ namespace prz
 		m_sequencesByFile.erase(fileName);
 	}
 
-#pragma region SequencesLoaderExport
-
+	#pragma region SequencesLoaderExport
 	extern "C"
 	{
+		int load_file(const char* jsonFilePath, bool forceReimport)
+		{
+			return File_Manager::instance().load_file(jsonFilePath,forceReimport);
+		}
 
-		Sequence** load_file(const char* jsonFilePath, bool forceReimport)
+		Sequence** load_file_and_get_sequences(const char* jsonFilePath, bool forceReimport)
 		{
 			string path = get_string_from(jsonFilePath);
 			File_Manager::instance().load_file(path, forceReimport);
 
-			return get_file_sequences_by_path(to_char_array(path));
+			return File_Manager::instance().get_file_sequences_by_path(path);
 		}
 
 		bool is_file_loaded_by_path(const char* filePath)
@@ -256,8 +261,7 @@ namespace prz
 			return File_Manager::instance().get_file_number_of_sequences_by_path(path);
 		}
 
-	}
-
-#pragma endregion SequencesLoaderExport
+	}	
+	#pragma endregion SequencesLoaderExport
 
 }

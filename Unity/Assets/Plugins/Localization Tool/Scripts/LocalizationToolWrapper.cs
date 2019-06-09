@@ -39,7 +39,10 @@ namespace LocalizationTool
         #region File(JSON) Manager
 
         [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
-        public static extern Sequence** load_file(string jsonFilePath, bool forceReimport = false);
+        public static extern int load_file(string jsonFilePath, bool forceReimport = false);
+
+        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
+        public static extern Sequence** load_file_and_get_sequences(string jsonFilePath, bool forceReimport = false);
 
         [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
         public static extern Sequence** get_file_sequences_by_name(string fileName);
@@ -136,7 +139,7 @@ namespace LocalizationTool
             // Getters
 
             [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
-            public static extern /*PString**/ IntPtr get_text_clip_name(TextClip* clip);
+            public static extern PString* get_text_clip_name(TextClip* clip);
 
             [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
             public static extern float get_text_clip_start_time(TextClip* clip);
@@ -207,10 +210,6 @@ namespace LocalizationTool
 
         #endregion
 
-
-        [DllImport("LocalizationTool", CallingConvention = CallingConvention.Cdecl)]
-        public static extern IntPtr test_me(string s);
-
         #endregion // !Native
 
         #region API Friendly
@@ -218,40 +217,57 @@ namespace LocalizationTool
         public static void Test()
         {
             Debug.Log(test_get_seconds_from_string("00:30:040"));
-
         }
 
         public static void Test2()
         {
-            //Sequence** seq = load_file("Assets/Plugins/Localization Tool/translation_example.json");
+            Sequence** sequences = load_file_and_get_sequences("../DLL/Assets/Import Example/ES/translation_example.json");
 
-            Sequence** seq = load_file("Assets/Plugins/Localization Tool/translation_example.json");
+            Debug.Log(get_file_number_of_sequences_by_path("../DLL/Assets/Import Example/ES/translation_example.json"));
+            Debug.Log(is_file_loaded_by_name("translation_example.json"));
 
-            //Debug.Log(get_sequence_number_of_text_tracks(seq[0]));
-            //Debug.Log(get_sequence_number_of_audio_tracks(seq[0]));
+            string sequenceName = Marshal.PtrToStringAnsi(get_pstring_char_array(get_sequence_name(sequences[0])));
+            Debug.Log("Sequence name: " + sequenceName);
+            Debug.Log("Number of audio tracks in sequence "+ sequenceName + ": " + get_sequence_number_of_audio_tracks(sequences[0]));
+            Debug.Log("Number of text tracks in sequence " + sequenceName + ": " + get_sequence_number_of_text_tracks(sequences[0]));
 
-            TextTrack** tts = get_sequence_text_tracks(seq[0]);
-            TextTrack* tt = tts[0];
-            TextClip** tcs = get_text_track_clips(tt);
-            TextClip* tc = tcs[0];
+            TextTrack** textTracks = get_sequence_text_tracks(sequences[0]);
+            AudioTrack** audioTracks = get_sequence_audio_tracks(sequences[0]);
 
-            //string tcName = Marshal.PtrToStringUni(get_pstring_char_array(get_text_clip_name(tc)));
-            string tcName = Marshal.PtrToStringAnsi(get_text_clip_name(tc));
-            Debug.Log(tcName);
-            //Debug.Log(get_pstring_size(get_text_clip_name(tc)));
-
-            string tcText = Marshal.PtrToStringAnsi(get_pstring_char_array(get_text_clip_text(tc)));
-            Debug.Log(tcText);
-            Debug.Log(get_pstring_size(get_text_clip_text(tc)));
+            Debug.Log("Number of text clips: " + get_text_track_number_of_clips(textTracks[0]));
+            Debug.Log("Number of audio clips: " + get_audio_track_number_of_clips(audioTracks[0]));
 
 
-            string funciooona = Marshal.PtrToStringAnsi(test_me("holaa"));
+            string sequenceName1 = Marshal.PtrToStringAnsi(get_pstring_char_array(get_sequence_name(sequences[1])));
+            Debug.Log("Sequence name: " + sequenceName1);
+            Debug.Log("Number of audio tracks in sequence " + sequenceName1 + ": " + get_sequence_number_of_audio_tracks(sequences[1]));
+            Debug.Log("Number of text tracks in sequence " + sequenceName1 + ": " + get_sequence_number_of_text_tracks(sequences[1]));
 
-            Debug.Log(funciooona);
+            TextTrack** textTracks1 = get_sequence_text_tracks(sequences[1]);
+            AudioTrack** audioTracks1 = get_sequence_audio_tracks(sequences[1]);
 
-            //get_text_clip_text();
+            Debug.Log("Number of text clips: " + get_text_track_number_of_clips(textTracks1[0]));
+            Debug.Log("Number of audio clips: " + get_audio_track_number_of_clips(audioTracks1[0]));
+
+            TextClip** textClips = get_text_track_clips(textTracks[0]);
+
+            //Debug.Log(Marshal.PtrToStringAnsi(get_pstring_char_array(get_text_clip_name(textClips[0]))));
+            //Debug.Log(Marshal.PtrToStringAnsi(get_pstring_char_array(get_text_clip_text(textClips[0]))));
+            //Debug.Log(get_text_clip_start_time(textClips[0]));
+            //Debug.Log(get_text_clip_end_time(textClips[0]));
+            //Debug.Log(get_text_clip_duration(textClips[0]));
+
+            //Debug.Log(Marshal.PtrToStringAnsi(get_pstring_char_array(get_text_clip_name(textClips[1]))));
+            //Debug.Log(Marshal.PtrToStringAnsi(get_pstring_char_array(get_text_clip_text(textClips[1]))));
+            //Debug.Log(get_text_clip_start_time(textClips[1]));
+            //Debug.Log(get_text_clip_end_time(textClips[1]));
+            //Debug.Log(get_text_clip_duration(textClips[1]));
 
 
+            //TextTrack** tts = get_sequence_text_tracks(seq[0]);
+            //TextTrack* tt = tts[0];
+            //TextClip** tcs = get_text_track_clips(tt);
+            //TextClip* tc = tcs[0];
         }
 
         #endregion // !API Friendly

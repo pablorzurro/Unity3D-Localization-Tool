@@ -30,7 +30,7 @@ namespace prz
 
 		~PString()
 		{
-			delete[] m_stringAsCharArray;
+			free_char_array(m_stringAsCharArray);
 		}
 
 	public:
@@ -39,7 +39,9 @@ namespace prz
 		{
 			m_string = str;
 
-			copy(m_string, m_stringAsCharArray);
+			free_char_array(m_stringAsCharArray);
+
+			m_stringAsCharArray = to_char_array(str);
 		}
 
 	public:
@@ -51,12 +53,12 @@ namespace prz
 
 		void operator= (const string& s)
 		{
-			set_string(m_string);
+			set_string(s);
 		}
 
 		void operator= (const char* charArray)
 		{
-			set_string(get_string_from(charArray));
+			set_string(charArray);
 		}
 
 		operator const string& () const
