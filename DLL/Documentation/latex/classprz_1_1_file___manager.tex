@@ -1,0 +1,368 @@
+\hypertarget{classprz_1_1_file___manager}{}\section{prz\+::File\+\_\+\+Manager Class Reference}
+\label{classprz_1_1_file___manager}\index{prz::File\_Manager@{prz::File\_Manager}}
+
+
+Create, load, store and manage sequences and files.  
+
+
+
+
+{\ttfamily \#include $<$File\+\_\+\+Manager.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classprz_1_1_file___manager_aad862a71b68f6bb1870b1750f33e70f4}{load\+\_\+file}} (const string \&file\+Path, bool force\+Reimport=false)
+\begin{DoxyCompactList}\small\item\em Load a file in path. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classprz_1_1_file___manager_a930093b7f609e4f9cf755efb0d91ef46}{load\+\_\+file\+\_\+sequences}} (const string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Load all file sequences. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classprz_1_1_file___manager_a56563f65f4b2cfa34e4393ae34a0afd3}{copy\+\_\+all\+\_\+audio\+\_\+clip\+\_\+files\+\_\+of\+\_\+file}} (const string \&file\+Name, const string \&destination)
+\begin{DoxyCompactList}\small\item\em Copy the audio files by path (that audio clips store) to the destination folder. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_sequence}{Sequence}} $\ast$$\ast$ \mbox{\hyperlink{classprz_1_1_file___manager_a9e617521f5fa135f8ecb4b967eed4b7c}{get\+\_\+file\+\_\+sequences\+\_\+by\+\_\+name}} (const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Get the file sequences by name array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_sequence}{Sequence}} $\ast$$\ast$ \mbox{\hyperlink{classprz_1_1_file___manager_a75c22ac120dc18a061d5c2c68f965d0b}{get\+\_\+file\+\_\+sequences\+\_\+by\+\_\+path}} (const string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Get the file sequences by path array. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classprz_1_1_file___manager_a57fba84490a328ce3b244198272be7f4}{is\+\_\+file\+\_\+loaded\+\_\+by\+\_\+name}} (const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Return if a file is loaded by name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classprz_1_1_file___manager_ab1b6f6447621351af16262236dad73b3}{is\+\_\+file\+\_\+loaded\+\_\+by\+\_\+path}} (const string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Return if a file is loaded by path. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classprz_1_1_file___manager_abdabf8d32f9cca2d8cda41cdd7841312}{get\+\_\+file\+\_\+number\+\_\+of\+\_\+sequences\+\_\+by\+\_\+name}} (const string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Get the file number of sequences by name. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classprz_1_1_file___manager_a14c8b3151837fbb69614eb30499c534a}{get\+\_\+file\+\_\+number\+\_\+of\+\_\+sequences\+\_\+by\+\_\+path}} (const string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Get the file number of sequences by path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classprz_1_1_file___manager}{File\+\_\+\+Manager}} \& \mbox{\hyperlink{classprz_1_1_file___manager_a01f8e98b44d904709af8ec7f9bf91f3a}{instance}} ()
+\begin{DoxyCompactList}\small\item\em Return the instance to the file manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Create, load, store and manage sequences and files. 
+
+
+
+Definition at line 25 of file File\+\_\+\+Manager.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classprz_1_1_file___manager_a56563f65f4b2cfa34e4393ae34a0afd3}\label{classprz_1_1_file___manager_a56563f65f4b2cfa34e4393ae34a0afd3}} 
+\index{prz::File\_Manager@{prz::File\_Manager}!copy\_all\_audio\_clip\_files\_of\_file@{copy\_all\_audio\_clip\_files\_of\_file}}
+\index{copy\_all\_audio\_clip\_files\_of\_file@{copy\_all\_audio\_clip\_files\_of\_file}!prz::File\_Manager@{prz::File\_Manager}}
+\subsubsection{\texorpdfstring{copy\_all\_audio\_clip\_files\_of\_file()}{copy\_all\_audio\_clip\_files\_of\_file()}}
+{\footnotesize\ttfamily bool prz\+::\+File\+\_\+\+Manager\+::copy\+\_\+all\+\_\+audio\+\_\+clip\+\_\+files\+\_\+of\+\_\+file (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name,  }\item[{const string \&}]{destination }\end{DoxyParamCaption})}
+
+
+
+Copy the audio files by path (that audio clips store) to the destination folder. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+{\em destination} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file File\+\_\+\+Manager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classprz_1_1_file___manager_a56563f65f4b2cfa34e4393ae34a0afd3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_file___manager_abdabf8d32f9cca2d8cda41cdd7841312}\label{classprz_1_1_file___manager_abdabf8d32f9cca2d8cda41cdd7841312}} 
+\index{prz::File\_Manager@{prz::File\_Manager}!get\_file\_number\_of\_sequences\_by\_name@{get\_file\_number\_of\_sequences\_by\_name}}
+\index{get\_file\_number\_of\_sequences\_by\_name@{get\_file\_number\_of\_sequences\_by\_name}!prz::File\_Manager@{prz::File\_Manager}}
+\subsubsection{\texorpdfstring{get\_file\_number\_of\_sequences\_by\_name()}{get\_file\_number\_of\_sequences\_by\_name()}}
+{\footnotesize\ttfamily int prz\+::\+File\+\_\+\+Manager\+::get\+\_\+file\+\_\+number\+\_\+of\+\_\+sequences\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Get the file number of sequences by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 176 of file File\+\_\+\+Manager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_file___manager_abdabf8d32f9cca2d8cda41cdd7841312_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_file___manager_abdabf8d32f9cca2d8cda41cdd7841312_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_file___manager_a14c8b3151837fbb69614eb30499c534a}\label{classprz_1_1_file___manager_a14c8b3151837fbb69614eb30499c534a}} 
+\index{prz::File\_Manager@{prz::File\_Manager}!get\_file\_number\_of\_sequences\_by\_path@{get\_file\_number\_of\_sequences\_by\_path}}
+\index{get\_file\_number\_of\_sequences\_by\_path@{get\_file\_number\_of\_sequences\_by\_path}!prz::File\_Manager@{prz::File\_Manager}}
+\subsubsection{\texorpdfstring{get\_file\_number\_of\_sequences\_by\_path()}{get\_file\_number\_of\_sequences\_by\_path()}}
+{\footnotesize\ttfamily int prz\+::\+File\+\_\+\+Manager\+::get\+\_\+file\+\_\+number\+\_\+of\+\_\+sequences\+\_\+by\+\_\+path (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Get the file number of sequences by path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 186 of file File\+\_\+\+Manager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_file___manager_a14c8b3151837fbb69614eb30499c534a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_file___manager_a9e617521f5fa135f8ecb4b967eed4b7c}\label{classprz_1_1_file___manager_a9e617521f5fa135f8ecb4b967eed4b7c}} 
+\index{prz::File\_Manager@{prz::File\_Manager}!get\_file\_sequences\_by\_name@{get\_file\_sequences\_by\_name}}
+\index{get\_file\_sequences\_by\_name@{get\_file\_sequences\_by\_name}!prz::File\_Manager@{prz::File\_Manager}}
+\subsubsection{\texorpdfstring{get\_file\_sequences\_by\_name()}{get\_file\_sequences\_by\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classprz_1_1_sequence}{Sequence}} $\ast$$\ast$ prz\+::\+File\+\_\+\+Manager\+::get\+\_\+file\+\_\+sequences\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Get the file sequences by name array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sequence$\ast$$\ast$ 
+\end{DoxyReturn}
+
+
+Definition at line 161 of file File\+\_\+\+Manager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_file___manager_a9e617521f5fa135f8ecb4b967eed4b7c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_file___manager_a9e617521f5fa135f8ecb4b967eed4b7c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_file___manager_a75c22ac120dc18a061d5c2c68f965d0b}\label{classprz_1_1_file___manager_a75c22ac120dc18a061d5c2c68f965d0b}} 
+\index{prz::File\_Manager@{prz::File\_Manager}!get\_file\_sequences\_by\_path@{get\_file\_sequences\_by\_path}}
+\index{get\_file\_sequences\_by\_path@{get\_file\_sequences\_by\_path}!prz::File\_Manager@{prz::File\_Manager}}
+\subsubsection{\texorpdfstring{get\_file\_sequences\_by\_path()}{get\_file\_sequences\_by\_path()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classprz_1_1_sequence}{Sequence}} $\ast$$\ast$ prz\+::\+File\+\_\+\+Manager\+::get\+\_\+file\+\_\+sequences\+\_\+by\+\_\+path (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Get the file sequences by path array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sequence$\ast$$\ast$ 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file File\+\_\+\+Manager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_file___manager_a75c22ac120dc18a061d5c2c68f965d0b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_file___manager_a01f8e98b44d904709af8ec7f9bf91f3a}\label{classprz_1_1_file___manager_a01f8e98b44d904709af8ec7f9bf91f3a}} 
+\index{prz::File\_Manager@{prz::File\_Manager}!instance@{instance}}
+\index{instance@{instance}!prz::File\_Manager@{prz::File\_Manager}}
+\subsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classprz_1_1_file___manager}{File\+\_\+\+Manager}}\& prz\+::\+File\+\_\+\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return the instance to the file manager. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classprz_1_1_file___manager}{File\+\_\+\+Manager}}\& 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file File\+\_\+\+Manager.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classprz_1_1_file___manager_a01f8e98b44d904709af8ec7f9bf91f3a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_file___manager_a57fba84490a328ce3b244198272be7f4}\label{classprz_1_1_file___manager_a57fba84490a328ce3b244198272be7f4}} 
+\index{prz::File\_Manager@{prz::File\_Manager}!is\_file\_loaded\_by\_name@{is\_file\_loaded\_by\_name}}
+\index{is\_file\_loaded\_by\_name@{is\_file\_loaded\_by\_name}!prz::File\_Manager@{prz::File\_Manager}}
+\subsubsection{\texorpdfstring{is\_file\_loaded\_by\_name()}{is\_file\_loaded\_by\_name()}}
+{\footnotesize\ttfamily bool prz\+::\+File\+\_\+\+Manager\+::is\+\_\+file\+\_\+loaded\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Return if a file is loaded by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Definition at line 151 of file File\+\_\+\+Manager.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_file___manager_a57fba84490a328ce3b244198272be7f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_file___manager_ab1b6f6447621351af16262236dad73b3}\label{classprz_1_1_file___manager_ab1b6f6447621351af16262236dad73b3}} 
+\index{prz::File\_Manager@{prz::File\_Manager}!is\_file\_loaded\_by\_path@{is\_file\_loaded\_by\_path}}
+\index{is\_file\_loaded\_by\_path@{is\_file\_loaded\_by\_path}!prz::File\_Manager@{prz::File\_Manager}}
+\subsubsection{\texorpdfstring{is\_file\_loaded\_by\_path()}{is\_file\_loaded\_by\_path()}}
+{\footnotesize\ttfamily bool prz\+::\+File\+\_\+\+Manager\+::is\+\_\+file\+\_\+loaded\+\_\+by\+\_\+path (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Return if a file is loaded by path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Definition at line 156 of file File\+\_\+\+Manager.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_file___manager_ab1b6f6447621351af16262236dad73b3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_file___manager_aad862a71b68f6bb1870b1750f33e70f4}\label{classprz_1_1_file___manager_aad862a71b68f6bb1870b1750f33e70f4}} 
+\index{prz::File\_Manager@{prz::File\_Manager}!load\_file@{load\_file}}
+\index{load\_file@{load\_file}!prz::File\_Manager@{prz::File\_Manager}}
+\subsubsection{\texorpdfstring{load\_file()}{load\_file()}}
+{\footnotesize\ttfamily int prz\+::\+File\+\_\+\+Manager\+::load\+\_\+file (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Path,  }\item[{bool}]{force\+Reimport = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Load a file in path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & \\
+\hline
+{\em force\+Reimport} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int. The number of sequences loaded by file 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file File\+\_\+\+Manager.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classprz_1_1_file___manager_aad862a71b68f6bb1870b1750f33e70f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_file___manager_a930093b7f609e4f9cf755efb0d91ef46}\label{classprz_1_1_file___manager_a930093b7f609e4f9cf755efb0d91ef46}} 
+\index{prz::File\_Manager@{prz::File\_Manager}!load\_file\_sequences@{load\_file\_sequences}}
+\index{load\_file\_sequences@{load\_file\_sequences}!prz::File\_Manager@{prz::File\_Manager}}
+\subsubsection{\texorpdfstring{load\_file\_sequences()}{load\_file\_sequences()}}
+{\footnotesize\ttfamily int prz\+::\+File\+\_\+\+Manager\+::load\+\_\+file\+\_\+sequences (\begin{DoxyParamCaption}\item[{const string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Load all file sequences. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int. The number of sequences loaded by file 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file File\+\_\+\+Manager.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Code/\+Headers/\mbox{\hyperlink{_file___manager_8hpp}{File\+\_\+\+Manager.\+hpp}}\item 
+Code/\+Sources/File\+\_\+\+Manager.\+cpp\end{DoxyCompactItemize}

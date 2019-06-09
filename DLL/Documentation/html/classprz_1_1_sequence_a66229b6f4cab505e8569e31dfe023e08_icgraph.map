@@ -1,0 +1,4 @@
+<map id="prz::Sequence::add_text_clip" name="prz::Sequence::add_text_clip">
+<area shape="rect" id="node1" title="Add a text clip to the first available track." alt="" coords="204,5,339,47"/>
+<area shape="rect" id="node2" href="$classprz_1_1_sequence.html#a2179bcb2b410d08a589d60543d09c87f" title="Create a text clip and save it in the first available track, if there aren&#39;t any tracks available,..." alt="" coords="5,5,156,47"/>
+</map>

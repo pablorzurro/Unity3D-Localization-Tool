@@ -1,0 +1,5 @@
+<map id="prz::load_file" name="prz::load_file">
+<area shape="rect" id="node1" title="load file" alt="" coords="5,46,100,73"/>
+<area shape="rect" id="node2" href="$classprz_1_1_file___manager.html#a01f8e98b44d904709af8ec7f9bf91f3a" title="Return the instance to the file manager." alt="" coords="148,5,283,47"/>
+<area shape="rect" id="node3" href="$classprz_1_1_file___manager.html#aad862a71b68f6bb1870b1750f33e70f4" title="Load a file in path." alt="" coords="148,71,283,112"/>
+</map>

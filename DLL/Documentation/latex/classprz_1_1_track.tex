@@ -1,0 +1,186 @@
+\hypertarget{classprz_1_1_track}{}\section{prz\+::Track$<$ Clip\+Class $>$ Class Template Reference}
+\label{classprz_1_1_track}\index{prz::Track$<$ ClipClass $>$@{prz::Track$<$ ClipClass $>$}}
+
+
+Set of clips(of any kind) aligned in time.  
+
+
+
+
+{\ttfamily \#include $<$Track.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classprz_1_1_track_a65d3d9efb5a6640f94c5f22cacadd625}{Track}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classprz_1_1_track}{Track}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_track_a84507a3e2e1cbb97d21298e73b7a24e3}{$\sim$\+Track}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classprz_1_1_track}{Track}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classprz_1_1_track_aa818d00358690b7dd76ae6e1eb788838}{add\+\_\+clip}} (Clip\+Class $\ast$clip)
+\item 
+virtual bool \mbox{\hyperlink{classprz_1_1_track_a2f2314165a05c4748d684fca42b2f76a}{conflicts\+\_\+with\+\_\+clips}} (Clip\+Class $\ast$clip)
+\item 
+vector$<$ Clip\+Class $\ast$ $>$ \& \mbox{\hyperlink{classprz_1_1_track_a54eb44634d26680f1851077e64991419}{get\+\_\+clips}} ()
+\begin{DoxyCompactList}\small\item\em Get the clips. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classprz_1_1_track_a776b6d37978d945f406fc4922981a2a1}{get\+\_\+number\+\_\+of\+\_\+clips}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of clips. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Clip\+Class$>$\newline
+class prz\+::\+Track$<$ Clip\+Class $>$}
+
+Set of clips(of any kind) aligned in time. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Clip\+Class} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 28 of file Track.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classprz_1_1_track_a65d3d9efb5a6640f94c5f22cacadd625}\label{classprz_1_1_track_a65d3d9efb5a6640f94c5f22cacadd625}} 
+\index{prz::Track$<$ ClipClass $>$@{prz::Track$<$ ClipClass $>$}!Track@{Track}}
+\index{Track@{Track}!prz::Track$<$ ClipClass $>$@{prz::Track$<$ ClipClass $>$}}
+\subsubsection{\texorpdfstring{Track()}{Track()}}
+{\footnotesize\ttfamily template$<$class Clip\+Class$>$ \\
+\mbox{\hyperlink{classprz_1_1_track}{prz\+::\+Track}}$<$ Clip\+Class $>$\+::\mbox{\hyperlink{classprz_1_1_track}{Track}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classprz_1_1_track}{Track}}. 
+
+
+
+Definition at line 39 of file Track.\+hpp.
+
+\mbox{\Hypertarget{classprz_1_1_track_a84507a3e2e1cbb97d21298e73b7a24e3}\label{classprz_1_1_track_a84507a3e2e1cbb97d21298e73b7a24e3}} 
+\index{prz::Track$<$ ClipClass $>$@{prz::Track$<$ ClipClass $>$}!````~Track@{$\sim$Track}}
+\index{````~Track@{$\sim$Track}!prz::Track$<$ ClipClass $>$@{prz::Track$<$ ClipClass $>$}}
+\subsubsection{\texorpdfstring{$\sim$Track()}{~Track()}}
+{\footnotesize\ttfamily template$<$class Clip\+Class$>$ \\
+\mbox{\hyperlink{classprz_1_1_track}{prz\+::\+Track}}$<$ Clip\+Class $>$\+::$\sim$\mbox{\hyperlink{classprz_1_1_track}{Track}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy the \mbox{\hyperlink{classprz_1_1_track}{Track}}. 
+
+
+
+Definition at line 45 of file Track.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classprz_1_1_track_aa818d00358690b7dd76ae6e1eb788838}\label{classprz_1_1_track_aa818d00358690b7dd76ae6e1eb788838}} 
+\index{prz::Track$<$ ClipClass $>$@{prz::Track$<$ ClipClass $>$}!add\_clip@{add\_clip}}
+\index{add\_clip@{add\_clip}!prz::Track$<$ ClipClass $>$@{prz::Track$<$ ClipClass $>$}}
+\subsubsection{\texorpdfstring{add\_clip()}{add\_clip()}}
+{\footnotesize\ttfamily template$<$class Clip\+Class$>$ \\
+bool \mbox{\hyperlink{classprz_1_1_track}{prz\+::\+Track}}$<$ Clip\+Class $>$\+::add\+\_\+clip (\begin{DoxyParamCaption}\item[{Clip\+Class $\ast$}]{clip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file Track.\+hpp.
+
+\mbox{\Hypertarget{classprz_1_1_track_a2f2314165a05c4748d684fca42b2f76a}\label{classprz_1_1_track_a2f2314165a05c4748d684fca42b2f76a}} 
+\index{prz::Track$<$ ClipClass $>$@{prz::Track$<$ ClipClass $>$}!conflicts\_with\_clips@{conflicts\_with\_clips}}
+\index{conflicts\_with\_clips@{conflicts\_with\_clips}!prz::Track$<$ ClipClass $>$@{prz::Track$<$ ClipClass $>$}}
+\subsubsection{\texorpdfstring{conflicts\_with\_clips()}{conflicts\_with\_clips()}}
+{\footnotesize\ttfamily template$<$class Clip\+Class$>$ \\
+virtual bool \mbox{\hyperlink{classprz_1_1_track}{prz\+::\+Track}}$<$ Clip\+Class $>$\+::conflicts\+\_\+with\+\_\+clips (\begin{DoxyParamCaption}\item[{Clip\+Class $\ast$}]{clip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Definition at line 82 of file Track.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classprz_1_1_track_a2f2314165a05c4748d684fca42b2f76a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_track_a54eb44634d26680f1851077e64991419}\label{classprz_1_1_track_a54eb44634d26680f1851077e64991419}} 
+\index{prz::Track$<$ ClipClass $>$@{prz::Track$<$ ClipClass $>$}!get\_clips@{get\_clips}}
+\index{get\_clips@{get\_clips}!prz::Track$<$ ClipClass $>$@{prz::Track$<$ ClipClass $>$}}
+\subsubsection{\texorpdfstring{get\_clips()}{get\_clips()}}
+{\footnotesize\ttfamily template$<$class Clip\+Class$>$ \\
+vector$<$Clip\+Class$\ast$$>$\& \mbox{\hyperlink{classprz_1_1_track}{prz\+::\+Track}}$<$ Clip\+Class $>$\+::get\+\_\+clips (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the clips. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Clip\+Class$\ast$$>$\& 
+\end{DoxyReturn}
+
+
+Definition at line 117 of file Track.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classprz_1_1_track_a54eb44634d26680f1851077e64991419_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_track_a776b6d37978d945f406fc4922981a2a1}\label{classprz_1_1_track_a776b6d37978d945f406fc4922981a2a1}} 
+\index{prz::Track$<$ ClipClass $>$@{prz::Track$<$ ClipClass $>$}!get\_number\_of\_clips@{get\_number\_of\_clips}}
+\index{get\_number\_of\_clips@{get\_number\_of\_clips}!prz::Track$<$ ClipClass $>$@{prz::Track$<$ ClipClass $>$}}
+\subsubsection{\texorpdfstring{get\_number\_of\_clips()}{get\_number\_of\_clips()}}
+{\footnotesize\ttfamily template$<$class Clip\+Class$>$ \\
+unsigned int \mbox{\hyperlink{classprz_1_1_track}{prz\+::\+Track}}$<$ Clip\+Class $>$\+::get\+\_\+number\+\_\+of\+\_\+clips (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of clips. 
+
+\begin{DoxyReturn}{Returns}
+unsigned int 
+\end{DoxyReturn}
+
+
+Definition at line 129 of file Track.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classprz_1_1_track_a776b6d37978d945f406fc4922981a2a1_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Code/\+Headers/\mbox{\hyperlink{_track_8hpp}{Track.\+hpp}}\end{DoxyCompactItemize}

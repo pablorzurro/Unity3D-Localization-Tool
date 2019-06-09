@@ -1,0 +1,5 @@
+<map id="prz::Sequence::get_number_of_audio_tracks" name="prz::Sequence::get_number_of_audio_tracks">
+<area shape="rect" id="node1" title="Return the number of audio tracks." alt="" coords="233,39,404,81"/>
+<area shape="rect" id="node2" href="$classprz_1_1_sequence.html#aee7da60c0b19a1565ee44265a6738c43" title="Destroy the Sequence." alt="" coords="5,5,185,32"/>
+<area shape="rect" id="node3" href="$_sequence_8hpp.html#a261fb90bd1c2cd3d75ceea90968338ed" title="Get the sequence number of audio tracks." alt="" coords="6,81,185,122"/>
+</map>

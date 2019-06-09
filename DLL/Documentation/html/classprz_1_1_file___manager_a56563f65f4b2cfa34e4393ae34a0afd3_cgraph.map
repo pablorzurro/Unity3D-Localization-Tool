@@ -1,0 +1,4 @@
+<map id="prz::File_Manager::copy_all_audio_clip_files_of_file" name="prz::File_Manager::copy_all_audio_clip_files_of_file">
+<area shape="rect" id="node1" title="Copy the audio files by path (that audio clips store) to the destination folder." alt="" coords="5,5,140,61"/>
+<area shape="rect" id="node2" href="$classprz_1_1_file___manager.html#a57fba84490a328ce3b244198272be7f4" title="Return if a file is loaded by name." alt="" coords="188,13,348,54"/>
+</map>

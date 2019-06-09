@@ -1,0 +1,5 @@
+<map id="prz::Audio_Clip" name="prz::Audio_Clip">
+<area shape="rect" id="node1" title="A clip with the information of an audio file." alt="" coords="5,171,116,197"/>
+<area shape="rect" id="node2" href="$classprz_1_1_clip.html" title="Store the basic information of any object of a timeline." alt="" coords="25,95,96,121"/>
+<area shape="rect" id="node3" href="$classprz_1_1_p_string.html" title=" " alt="" coords="15,5,106,32"/>
+</map>

@@ -1,0 +1,340 @@
+\hypertarget{classprz_1_1_audio___clip}{}\section{prz\+::Audio\+\_\+\+Clip Class Reference}
+\label{classprz_1_1_audio___clip}\index{prz::Audio\_Clip@{prz::Audio\_Clip}}
+
+
+A clip with the information of an audio file.  
+
+
+
+
+{\ttfamily \#include $<$Audio\+\_\+\+Clip.\+hpp$>$}
+
+
+
+Inheritance diagram for prz\+::Audio\+\_\+\+Clip\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classprz_1_1_audio___clip__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for prz\+::Audio\+\_\+\+Clip\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classprz_1_1_audio___clip__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classprz_1_1_audio___clip_a61d02225b90c12fbba9df216df4d13cc}{Audio\+\_\+\+Clip}} (const string \&name, const string \&audio\+File\+Path, float start\+Time, float duration=-\/1.f, float start\+Cut\+Time=0.f)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_audio___clip_ad5019492bd71d9ad0faad9e7d71609ca}{Audio\+\_\+\+Clip}} (const \mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}} \&other)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}} by copy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classprz_1_1_audio___clip_a07044f0528a26e2fe0afb5d7c645f13d}{remove\+\_\+start\+\_\+cut\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em Put the start cut time to 0. To cut. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classprz_1_1_audio___clip_aa098aaf21788bfdf5410cb1895566391}{set\+\_\+file\+\_\+path}} (const string \&path)
+\begin{DoxyCompactList}\small\item\em Set the path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classprz_1_1_audio___clip_ae2daaa8e064720fdecf051c63660edd5}{set\+\_\+start\+\_\+cut\+\_\+time}} (float start\+Cut\+Time)
+\begin{DoxyCompactList}\small\item\em Set the start cut time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classprz_1_1_audio___clip_ab45f2a30cf63261040e4212af3dc08d7}{set\+\_\+file\+\_\+length}} (float file\+Length)
+\begin{DoxyCompactList}\small\item\em Set the file length. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classprz_1_1_p_string}{P\+String}} \& \mbox{\hyperlink{classprz_1_1_audio___clip_a06d95e1ba1b854e8f00b2ec3602d3c5f}{get\+\_\+file\+\_\+path}} () const
+\begin{DoxyCompactList}\small\item\em Get the file path. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classprz_1_1_p_string}{P\+String}} \& \mbox{\hyperlink{classprz_1_1_audio___clip_a548005698eae9ec6499fe1f02f69ecf1}{get\+\_\+file\+\_\+name}} () const
+\begin{DoxyCompactList}\small\item\em Get the file name. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classprz_1_1_audio___clip_a0000a44ffec1e064301fd93750806aab}{get\+\_\+start\+\_\+cut\+\_\+time}} () const
+\begin{DoxyCompactList}\small\item\em Get the start cut time. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classprz_1_1_audio___clip_aa64143bed59cae5e2809284ad5765b52}{get\+\_\+file\+\_\+length}} () const
+\begin{DoxyCompactList}\small\item\em Get the file length. \end{DoxyCompactList}\item 
+json \mbox{\hyperlink{classprz_1_1_audio___clip_a15fdef4e8547e25d06785d816be71a12}{to\+\_\+json}} () final override
+\begin{DoxyCompactList}\small\item\em create a json object with this audio clip attributes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A clip with the information of an audio file. 
+
+
+
+Definition at line 24 of file Audio\+\_\+\+Clip.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classprz_1_1_audio___clip_a61d02225b90c12fbba9df216df4d13cc}\label{classprz_1_1_audio___clip_a61d02225b90c12fbba9df216df4d13cc}} 
+\index{prz::Audio\_Clip@{prz::Audio\_Clip}!Audio\_Clip@{Audio\_Clip}}
+\index{Audio\_Clip@{Audio\_Clip}!prz::Audio\_Clip@{prz::Audio\_Clip}}
+\subsubsection{\texorpdfstring{Audio\_Clip()}{Audio\_Clip()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily prz\+::\+Audio\+\_\+\+Clip\+::\+Audio\+\_\+\+Clip (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{const string \&}]{audio\+File\+Path,  }\item[{float}]{start\+Time,  }\item[{float}]{duration = {\ttfamily -\/1.f},  }\item[{float}]{start\+Cut\+Time = {\ttfamily 0.f} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em audio\+File\+Path} & \\
+\hline
+{\em start\+Time} & \\
+\hline
+{\em duration} & \\
+\hline
+{\em start\+Cut\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file Audio\+\_\+\+Clip.\+cpp.
+
+\mbox{\Hypertarget{classprz_1_1_audio___clip_ad5019492bd71d9ad0faad9e7d71609ca}\label{classprz_1_1_audio___clip_ad5019492bd71d9ad0faad9e7d71609ca}} 
+\index{prz::Audio\_Clip@{prz::Audio\_Clip}!Audio\_Clip@{Audio\_Clip}}
+\index{Audio\_Clip@{Audio\_Clip}!prz::Audio\_Clip@{prz::Audio\_Clip}}
+\subsubsection{\texorpdfstring{Audio\_Clip()}{Audio\_Clip()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily prz\+::\+Audio\+\_\+\+Clip\+::\+Audio\+\_\+\+Clip (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}} by copy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 21 of file Audio\+\_\+\+Clip.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classprz_1_1_audio___clip_aa64143bed59cae5e2809284ad5765b52}\label{classprz_1_1_audio___clip_aa64143bed59cae5e2809284ad5765b52}} 
+\index{prz::Audio\_Clip@{prz::Audio\_Clip}!get\_file\_length@{get\_file\_length}}
+\index{get\_file\_length@{get\_file\_length}!prz::Audio\_Clip@{prz::Audio\_Clip}}
+\subsubsection{\texorpdfstring{get\_file\_length()}{get\_file\_length()}}
+{\footnotesize\ttfamily float prz\+::\+Audio\+\_\+\+Clip\+::get\+\_\+file\+\_\+length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the file length. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+Definition at line 112 of file Audio\+\_\+\+Clip.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classprz_1_1_audio___clip_aa64143bed59cae5e2809284ad5765b52_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_audio___clip_a548005698eae9ec6499fe1f02f69ecf1}\label{classprz_1_1_audio___clip_a548005698eae9ec6499fe1f02f69ecf1}} 
+\index{prz::Audio\_Clip@{prz::Audio\_Clip}!get\_file\_name@{get\_file\_name}}
+\index{get\_file\_name@{get\_file\_name}!prz::Audio\_Clip@{prz::Audio\_Clip}}
+\subsubsection{\texorpdfstring{get\_file\_name()}{get\_file\_name()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classprz_1_1_p_string}{P\+String}}\& prz\+::\+Audio\+\_\+\+Clip\+::get\+\_\+file\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the file name. 
+
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{classprz_1_1_p_string}{P\+String}}\& 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file Audio\+\_\+\+Clip.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classprz_1_1_audio___clip_a548005698eae9ec6499fe1f02f69ecf1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_audio___clip_a06d95e1ba1b854e8f00b2ec3602d3c5f}\label{classprz_1_1_audio___clip_a06d95e1ba1b854e8f00b2ec3602d3c5f}} 
+\index{prz::Audio\_Clip@{prz::Audio\_Clip}!get\_file\_path@{get\_file\_path}}
+\index{get\_file\_path@{get\_file\_path}!prz::Audio\_Clip@{prz::Audio\_Clip}}
+\subsubsection{\texorpdfstring{get\_file\_path()}{get\_file\_path()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classprz_1_1_p_string}{P\+String}}\& prz\+::\+Audio\+\_\+\+Clip\+::get\+\_\+file\+\_\+path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the file path. 
+
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{classprz_1_1_p_string}{P\+String}}\& 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file Audio\+\_\+\+Clip.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classprz_1_1_audio___clip_a06d95e1ba1b854e8f00b2ec3602d3c5f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_audio___clip_a0000a44ffec1e064301fd93750806aab}\label{classprz_1_1_audio___clip_a0000a44ffec1e064301fd93750806aab}} 
+\index{prz::Audio\_Clip@{prz::Audio\_Clip}!get\_start\_cut\_time@{get\_start\_cut\_time}}
+\index{get\_start\_cut\_time@{get\_start\_cut\_time}!prz::Audio\_Clip@{prz::Audio\_Clip}}
+\subsubsection{\texorpdfstring{get\_start\_cut\_time()}{get\_start\_cut\_time()}}
+{\footnotesize\ttfamily float prz\+::\+Audio\+\_\+\+Clip\+::get\+\_\+start\+\_\+cut\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the start cut time. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file Audio\+\_\+\+Clip.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classprz_1_1_audio___clip_a0000a44ffec1e064301fd93750806aab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_audio___clip_a07044f0528a26e2fe0afb5d7c645f13d}\label{classprz_1_1_audio___clip_a07044f0528a26e2fe0afb5d7c645f13d}} 
+\index{prz::Audio\_Clip@{prz::Audio\_Clip}!remove\_start\_cut\_time@{remove\_start\_cut\_time}}
+\index{remove\_start\_cut\_time@{remove\_start\_cut\_time}!prz::Audio\_Clip@{prz::Audio\_Clip}}
+\subsubsection{\texorpdfstring{remove\_start\_cut\_time()}{remove\_start\_cut\_time()}}
+{\footnotesize\ttfamily void prz\+::\+Audio\+\_\+\+Clip\+::remove\+\_\+start\+\_\+cut\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Put the start cut time to 0. To cut. 
+
+
+
+Definition at line 26 of file Audio\+\_\+\+Clip.\+cpp.
+
+\mbox{\Hypertarget{classprz_1_1_audio___clip_ab45f2a30cf63261040e4212af3dc08d7}\label{classprz_1_1_audio___clip_ab45f2a30cf63261040e4212af3dc08d7}} 
+\index{prz::Audio\_Clip@{prz::Audio\_Clip}!set\_file\_length@{set\_file\_length}}
+\index{set\_file\_length@{set\_file\_length}!prz::Audio\_Clip@{prz::Audio\_Clip}}
+\subsubsection{\texorpdfstring{set\_file\_length()}{set\_file\_length()}}
+{\footnotesize\ttfamily void prz\+::\+Audio\+\_\+\+Clip\+::set\+\_\+file\+\_\+length (\begin{DoxyParamCaption}\item[{float}]{file\+Length }\end{DoxyParamCaption})}
+
+
+
+Set the file length. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Length} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file Audio\+\_\+\+Clip.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classprz_1_1_audio___clip_ab45f2a30cf63261040e4212af3dc08d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_audio___clip_aa098aaf21788bfdf5410cb1895566391}\label{classprz_1_1_audio___clip_aa098aaf21788bfdf5410cb1895566391}} 
+\index{prz::Audio\_Clip@{prz::Audio\_Clip}!set\_file\_path@{set\_file\_path}}
+\index{set\_file\_path@{set\_file\_path}!prz::Audio\_Clip@{prz::Audio\_Clip}}
+\subsubsection{\texorpdfstring{set\_file\_path()}{set\_file\_path()}}
+{\footnotesize\ttfamily void prz\+::\+Audio\+\_\+\+Clip\+::set\+\_\+file\+\_\+path (\begin{DoxyParamCaption}\item[{const string \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Set the path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file Audio\+\_\+\+Clip.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classprz_1_1_audio___clip_aa098aaf21788bfdf5410cb1895566391_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_audio___clip_ae2daaa8e064720fdecf051c63660edd5}\label{classprz_1_1_audio___clip_ae2daaa8e064720fdecf051c63660edd5}} 
+\index{prz::Audio\_Clip@{prz::Audio\_Clip}!set\_start\_cut\_time@{set\_start\_cut\_time}}
+\index{set\_start\_cut\_time@{set\_start\_cut\_time}!prz::Audio\_Clip@{prz::Audio\_Clip}}
+\subsubsection{\texorpdfstring{set\_start\_cut\_time()}{set\_start\_cut\_time()}}
+{\footnotesize\ttfamily void prz\+::\+Audio\+\_\+\+Clip\+::set\+\_\+start\+\_\+cut\+\_\+time (\begin{DoxyParamCaption}\item[{float}]{start\+Cut\+Time }\end{DoxyParamCaption})}
+
+
+
+Set the start cut time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Cut\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Audio\+\_\+\+Clip.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classprz_1_1_audio___clip_ae2daaa8e064720fdecf051c63660edd5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_audio___clip_a15fdef4e8547e25d06785d816be71a12}\label{classprz_1_1_audio___clip_a15fdef4e8547e25d06785d816be71a12}} 
+\index{prz::Audio\_Clip@{prz::Audio\_Clip}!to\_json@{to\_json}}
+\index{to\_json@{to\_json}!prz::Audio\_Clip@{prz::Audio\_Clip}}
+\subsubsection{\texorpdfstring{to\_json()}{to\_json()}}
+{\footnotesize\ttfamily json prz\+::\+Audio\+\_\+\+Clip\+::to\+\_\+json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+create a json object with this audio clip attributes 
+
+\begin{DoxyReturn}{Returns}
+json 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classprz_1_1_clip_a4959ada0fab0fbac6cb5239578ac3ec6}{prz\+::\+Clip}}.
+
+
+
+Definition at line 47 of file Audio\+\_\+\+Clip.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Code/\+Headers/\mbox{\hyperlink{_audio___clip_8hpp}{Audio\+\_\+\+Clip.\+hpp}}\item 
+Code/\+Sources/Audio\+\_\+\+Clip.\+cpp\end{DoxyCompactItemize}
