@@ -332,7 +332,7 @@ namespace LocalizationTool
 
                         AudioClip audioClip = AssetDatabase.LoadAssetAtPath<AudioClip>(audioPath);
 
-                        var audioPlayableAsset = clip.asset as AudioPlayableAsset;
+                        AudioPlayableAsset audioPlayableAsset = clip.asset as AudioPlayableAsset;
                         audioPlayableAsset.clip = audioClip;
                     }
                 }

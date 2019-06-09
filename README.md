@@ -1,41 +1,37 @@
 # Localization Tool's Users Guide
 
-Language package directories structure example:
+## User Guide
+
+
+
+1. Select the Localization Tool window
+
+   
+
+![1560097156582](C:\Users\Pablo\AppData\Roaming\Typora\typora-user-images\1560097156582.png)
+
+2. A window will now open. Introduce the paths to the JSON file and the destination folder of the sequences.
+
+   - If you enable the reimport, all previous loaded sequences will be discarded and deleted.
+
+     ![1560097092928](C:\Users\Pablo\AppData\Roaming\Typora\typora-user-images\1560097092928.png)
+
+     
+
+   - Until the paths to 
+
+     
+
+    
+
+
 
 ## JSON Structure
 
 
 
-```
-{
+```json
 
-​    "Sequences":
-​    [
-​        {
-​            "Name": "Sequence001",
-​            "Audio clips":
-​            [
-​                {
-​                    "Name": "birds_sound.mp3",
-​                    "Location": "Assets/Global/Audio/MP3/birds_sound.mp3",
-​                    "Start": "00:00:00:000",
-					 "End":  "00:00:17:940",
-​                    "Clip Start": "00:01:00:000",
-​                    "Clip End": "-"
-​                }
-​            ],
-​           "Subtitle clips": 
-​            [
-​                {
-​                    "Name": "ST_001",
-​                    "Start": "00:00:00:000",
-​                    "End":  "00:00:17:940",
-​                    "Text": "[Birds singing]"
-​                }
-​            ]
-​        }
-​    ]
-}
 ```
 
  ⚠️  **¡IMPORTANT!** ⚠️ 
@@ -50,7 +46,19 @@ Language package directories structure example:
 
   - "sss" refers to milliseconds
 
-    ***Result***: "minutes:seconds:milliseconds"
+    ***Result***: "minutes:seconds:milliseconds", or to be clear,"00:02:940"
+  
+- All audio clip and destination sequences folder paths must be relative to Unity's Asset folder:
+
+  ```
+  "Assets/YourFolder/archive.mp3" audio clip example
+  ```
+
+  ```
+  "Assets/Sequences/
+  ```
+
+  
 
 ✍️ ​**Examples:** ✍️
 
