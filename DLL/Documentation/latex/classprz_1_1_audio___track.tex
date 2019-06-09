@@ -1,0 +1,214 @@
+\hypertarget{classprz_1_1_audio___track}{}\section{prz\+::Audio\+\_\+\+Track Class Reference}
+\label{classprz_1_1_audio___track}\index{prz::Audio\_Track@{prz::Audio\_Track}}
+
+
+\mbox{\hyperlink{classprz_1_1_track}{Track}} of audio clips.  
+
+
+
+
+{\ttfamily \#include $<$Audio\+\_\+\+Track.\+hpp$>$}
+
+
+
+Inheritance diagram for prz\+::Audio\+\_\+\+Track\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classprz_1_1_audio___track__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for prz\+::Audio\+\_\+\+Track\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classprz_1_1_audio___track__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classprz_1_1_audio___track_a4fb1dc3dd45713ba4c3e56918721d12a}{Spatial\+\_\+\+Blend\+\_\+\+Dimension}} \{ \mbox{\hyperlink{classprz_1_1_audio___track_a4fb1dc3dd45713ba4c3e56918721d12aa43821963797a936302adb2b0909da866}{T\+WO}} = 0, 
+\mbox{\hyperlink{classprz_1_1_audio___track_a4fb1dc3dd45713ba4c3e56918721d12aae008fd40b2713ad1259054014d113239}{T\+H\+R\+EE}} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Dimension of the digital sound. Pure stereo (2D) or 3D. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classprz_1_1_audio___track_ad37bc5741cd0823f8f9277d00a81f50f}{Audio\+\_\+\+Track}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classprz_1_1_audio___track}{Audio\+\_\+\+Track}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_audio___track_a32d24bf61b957d9d5e483eb4c4fbf5c2}{$\sim$\+Audio\+\_\+\+Track}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classprz_1_1_audio___track}{Audio\+\_\+\+Track}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classprz_1_1_audio___track_a6487c33aca7d2d496ca39037f5f75170}{conflicts\+\_\+with\+\_\+clip}} (\mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}} $\ast$clip) final override
+\begin{DoxyCompactList}\small\item\em Check if the input clip conflicts with this track. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classprz_1_1_audio___track_ad3a1f86e10f7e128a5589b621ff28b45}{get\+\_\+volume}} () const
+\begin{DoxyCompactList}\small\item\em Get the volume. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_audio___track_a4fb1dc3dd45713ba4c3e56918721d12a}{Spatial\+\_\+\+Blend\+\_\+\+Dimension}} \mbox{\hyperlink{classprz_1_1_audio___track_ac10fc428fddc350fb7e6b4d29d287a3a}{get\+\_\+spatial\+\_\+blend\+\_\+dimension}} () const
+\begin{DoxyCompactList}\small\item\em Get the spatial blend dimension. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classprz_1_1_track}{Track}} of audio clips. 
+
+
+
+Definition at line 25 of file Audio\+\_\+\+Track.\+hpp.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classprz_1_1_audio___track_a4fb1dc3dd45713ba4c3e56918721d12a}\label{classprz_1_1_audio___track_a4fb1dc3dd45713ba4c3e56918721d12a}} 
+\index{prz::Audio\_Track@{prz::Audio\_Track}!Spatial\_Blend\_Dimension@{Spatial\_Blend\_Dimension}}
+\index{Spatial\_Blend\_Dimension@{Spatial\_Blend\_Dimension}!prz::Audio\_Track@{prz::Audio\_Track}}
+\subsubsection{\texorpdfstring{Spatial\_Blend\_Dimension}{Spatial\_Blend\_Dimension}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classprz_1_1_audio___track_a4fb1dc3dd45713ba4c3e56918721d12a}{prz\+::\+Audio\+\_\+\+Track\+::\+Spatial\+\_\+\+Blend\+\_\+\+Dimension}}}
+
+
+
+Dimension of the digital sound. Pure stereo (2D) or 3D. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TWO@{TWO}!prz::Audio\_Track@{prz::Audio\_Track}}\index{prz::Audio\_Track@{prz::Audio\_Track}!TWO@{TWO}}}\mbox{\Hypertarget{classprz_1_1_audio___track_a4fb1dc3dd45713ba4c3e56918721d12aa43821963797a936302adb2b0909da866}\label{classprz_1_1_audio___track_a4fb1dc3dd45713ba4c3e56918721d12aa43821963797a936302adb2b0909da866}} 
+T\+WO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{THREE@{THREE}!prz::Audio\_Track@{prz::Audio\_Track}}\index{prz::Audio\_Track@{prz::Audio\_Track}!THREE@{THREE}}}\mbox{\Hypertarget{classprz_1_1_audio___track_a4fb1dc3dd45713ba4c3e56918721d12aae008fd40b2713ad1259054014d113239}\label{classprz_1_1_audio___track_a4fb1dc3dd45713ba4c3e56918721d12aae008fd40b2713ad1259054014d113239}} 
+T\+H\+R\+EE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 33 of file Audio\+\_\+\+Track.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classprz_1_1_audio___track_ad37bc5741cd0823f8f9277d00a81f50f}\label{classprz_1_1_audio___track_ad37bc5741cd0823f8f9277d00a81f50f}} 
+\index{prz::Audio\_Track@{prz::Audio\_Track}!Audio\_Track@{Audio\_Track}}
+\index{Audio\_Track@{Audio\_Track}!prz::Audio\_Track@{prz::Audio\_Track}}
+\subsubsection{\texorpdfstring{Audio\_Track()}{Audio\_Track()}}
+{\footnotesize\ttfamily prz\+::\+Audio\+\_\+\+Track\+::\+Audio\+\_\+\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classprz_1_1_audio___track}{Audio\+\_\+\+Track}}. 
+
+
+
+Definition at line 7 of file Audio\+\_\+\+Track.\+cpp.
+
+\mbox{\Hypertarget{classprz_1_1_audio___track_a32d24bf61b957d9d5e483eb4c4fbf5c2}\label{classprz_1_1_audio___track_a32d24bf61b957d9d5e483eb4c4fbf5c2}} 
+\index{prz::Audio\_Track@{prz::Audio\_Track}!````~Audio\_Track@{$\sim$Audio\_Track}}
+\index{````~Audio\_Track@{$\sim$Audio\_Track}!prz::Audio\_Track@{prz::Audio\_Track}}
+\subsubsection{\texorpdfstring{$\sim$Audio\_Track()}{~Audio\_Track()}}
+{\footnotesize\ttfamily prz\+::\+Audio\+\_\+\+Track\+::$\sim$\+Audio\+\_\+\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classprz_1_1_audio___track}{Audio\+\_\+\+Track}}. 
+
+
+
+Definition at line 10 of file Audio\+\_\+\+Track.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classprz_1_1_audio___track_a6487c33aca7d2d496ca39037f5f75170}\label{classprz_1_1_audio___track_a6487c33aca7d2d496ca39037f5f75170}} 
+\index{prz::Audio\_Track@{prz::Audio\_Track}!conflicts\_with\_clip@{conflicts\_with\_clip}}
+\index{conflicts\_with\_clip@{conflicts\_with\_clip}!prz::Audio\_Track@{prz::Audio\_Track}}
+\subsubsection{\texorpdfstring{conflicts\_with\_clip()}{conflicts\_with\_clip()}}
+{\footnotesize\ttfamily bool prz\+::\+Audio\+\_\+\+Track\+::conflicts\+\_\+with\+\_\+clip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}} $\ast$}]{clip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the input clip conflicts with this track. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classprz_1_1_track_aefad1eca406d312dbafec624435b4420}{prz\+::\+Track$<$ Audio\+\_\+\+Clip $>$}}.
+
+
+
+Definition at line 14 of file Audio\+\_\+\+Track.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_audio___track_a6487c33aca7d2d496ca39037f5f75170_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_audio___track_ac10fc428fddc350fb7e6b4d29d287a3a}\label{classprz_1_1_audio___track_ac10fc428fddc350fb7e6b4d29d287a3a}} 
+\index{prz::Audio\_Track@{prz::Audio\_Track}!get\_spatial\_blend\_dimension@{get\_spatial\_blend\_dimension}}
+\index{get\_spatial\_blend\_dimension@{get\_spatial\_blend\_dimension}!prz::Audio\_Track@{prz::Audio\_Track}}
+\subsubsection{\texorpdfstring{get\_spatial\_blend\_dimension()}{get\_spatial\_blend\_dimension()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classprz_1_1_audio___track_a4fb1dc3dd45713ba4c3e56918721d12a}{Spatial\+\_\+\+Blend\+\_\+\+Dimension}} prz\+::\+Audio\+\_\+\+Track\+::get\+\_\+spatial\+\_\+blend\+\_\+dimension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the spatial blend dimension. 
+
+\begin{DoxyReturn}{Returns}
+Spatial\+\_\+\+Blend\+\_\+\+Dimension 
+\end{DoxyReturn}
+
+
+Definition at line 71 of file Audio\+\_\+\+Track.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_audio___track_ac10fc428fddc350fb7e6b4d29d287a3a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_audio___track_ad3a1f86e10f7e128a5589b621ff28b45}\label{classprz_1_1_audio___track_ad3a1f86e10f7e128a5589b621ff28b45}} 
+\index{prz::Audio\_Track@{prz::Audio\_Track}!get\_volume@{get\_volume}}
+\index{get\_volume@{get\_volume}!prz::Audio\_Track@{prz::Audio\_Track}}
+\subsubsection{\texorpdfstring{get\_volume()}{get\_volume()}}
+{\footnotesize\ttfamily float prz\+::\+Audio\+\_\+\+Track\+::get\+\_\+volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the volume. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file Audio\+\_\+\+Track.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classprz_1_1_audio___track_ad3a1f86e10f7e128a5589b621ff28b45_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Repositories/\+Unity3\+D-\/\+Localization-\/\+Tool/\+D\+L\+L/\+Code/\+Headers/\mbox{\hyperlink{_audio___track_8hpp}{Audio\+\_\+\+Track.\+hpp}}\item 
+D\+:/\+Repositories/\+Unity3\+D-\/\+Localization-\/\+Tool/\+D\+L\+L/\+Code/\+Sources/\mbox{\hyperlink{_audio___track_8cpp}{Audio\+\_\+\+Track.\+cpp}}\end{DoxyCompactItemize}

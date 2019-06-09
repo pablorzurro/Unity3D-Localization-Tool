@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{F9877BDC-809E-4FF8-B863-B5C69DF0B9F0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LocalizationManager</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>LOCALIZATIONTOOL_EXPORTS;NDEBUG;LOCALIZATIONMANAGER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\Code\Headers;Precompiled Headers</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" "..\..\..\Unity\Assets\Plugins\Localization Tool"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>del /s/q "..\..\..\Unity\Assets\Plugins\Localization Tool\*.dll.meta"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Code\Sources\Audio_Clip.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Audio_Track.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Clip.cpp" />
+    <ClCompile Include="..\..\Code\Sources\dllmain.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Interface.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Internal\Utilities\PString.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Sequence.cpp" />
+    <ClCompile Include="..\..\Code\Sources\File_Manager.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Text_Clip.cpp" />
+    <ClCompile Include="..\..\Code\Sources\Text_Track.cpp" />
+    <ClCompile Include="Precompiled Headers\pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Code\Headers\Audio_Clip.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Audio_Track.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Clip.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Declarations.hpp" />
+    <ClInclude Include="..\..\Code\Headers\File_Manager.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Interface.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Nlohmann_JSON_Converter.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Standard_Library.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\IO.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Math.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Nlohmann_JSON_Converter.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\PString.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\String.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Sequence.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Text_Clip.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Text_Track.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Track.hpp" />
+    <ClInclude Include="..\..\Code\Headers\Utilities.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

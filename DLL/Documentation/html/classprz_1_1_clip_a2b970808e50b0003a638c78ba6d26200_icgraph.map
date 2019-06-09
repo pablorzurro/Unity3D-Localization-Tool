@@ -1,0 +1,9 @@
+<map id="prz::Clip::refresh_end_time" name="prz::Clip::refresh_end_time">
+<area shape="rect" id="node1" title=" " alt="" coords="393,104,511,145"/>
+<area shape="rect" id="node2" href="$classprz_1_1_clip.html#a7cbb55c3a344ab273d655f3b1e3fe5d1" title="Set the start time." alt="" coords="184,78,345,105"/>
+<area shape="rect" id="node5" href="$classprz_1_1_clip.html#a7555fe34e45f6032ea282ca6d605ace6" title="Set the duration." alt="" coords="190,143,339,170"/>
+<area shape="rect" id="node3" href="$namespaceprz.html#ac8b09f14a5b58fe5ca2521460856443d" title="Set the audio clip start time." alt="" coords="5,5,136,47"/>
+<area shape="rect" id="node4" href="$namespaceprz.html#aa7768ced397410c261e9ac6d1fecade5" title="Set the text clip start time." alt="" coords="9,71,132,112"/>
+<area shape="rect" id="node6" href="$namespaceprz.html#a6f3d46bb8898e0ab0f8200ff01e68b83" title="Set the audio clip duration." alt="" coords="5,136,136,177"/>
+<area shape="rect" id="node7" href="$namespaceprz.html#a0b38209c4d846727812a74f44085daef" title="Set the text clip duration." alt="" coords="9,201,132,243"/>
+</map>

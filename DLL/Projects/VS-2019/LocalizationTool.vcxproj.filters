@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Code\Sources\dllmain.cpp">
+      <Filter>Source Files\Program Essentials</Filter>
+    </ClCompile>
+    <ClCompile Include="Precompiled Headers\pch.cpp">
+      <Filter>Source Files\Program Essentials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Interface.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Sequence.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Audio_Track.cpp">
+      <Filter>Source Files\Tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Text_Track.cpp">
+      <Filter>Source Files\Tracks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Audio_Clip.cpp">
+      <Filter>Source Files\Clips</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Clip.cpp">
+      <Filter>Source Files\Clips</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Text_Clip.cpp">
+      <Filter>Source Files\Clips</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\File_Manager.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Sources\Internal\Utilities\PString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4c2e4587-a2a8-49c1-b60f-45843234c205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{efc10258-08f7-4805-ba01-b1c4cb0b6cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{073aac98-61fb-4d68-b3ac-e4c383c41719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Program Essentials">
+      <UniqueIdentifier>{b7932871-bda7-406e-8d63-32df9e9a6266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{828589ba-957c-4926-9e30-3c9ef516ba9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tracks">
+      <UniqueIdentifier>{30fda442-67ff-4140-962b-1cf8c368c5f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Clips">
+      <UniqueIdentifier>{515d91c2-1c1c-49bc-a951-87bb43260215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tracks">
+      <UniqueIdentifier>{fa443e97-29de-433d-94a8-047c9dee34e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Clips">
+      <UniqueIdentifier>{ad1ef878-57c9-453b-8447-7a128d078918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Internal">
+      <UniqueIdentifier>{2b9a4d35-4c0c-4e2f-b5d4-81d9ced3acf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Internal\Declarations">
+      <UniqueIdentifier>{6db3d8b5-4ed9-438f-8104-7cf12d12f955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Internal\Utilities">
+      <UniqueIdentifier>{7bb715da-2adb-48e9-8ad6-2d9f5d20c84a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Code\Headers\Interface.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Nlohmann_JSON_Converter.hpp">
+      <Filter>Header Files\Internal\Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Internal\Declarations\Standard_Library.hpp">
+      <Filter>Header Files\Internal\Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Declarations.hpp">
+      <Filter>Header Files\Internal\Declarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Utilities.hpp">
+      <Filter>Header Files\Internal\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Math.hpp">
+      <Filter>Header Files\Internal\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\String.hpp">
+      <Filter>Header Files\Internal\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\IO.hpp">
+      <Filter>Header Files\Internal\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\Nlohmann_JSON_Converter.hpp">
+      <Filter>Header Files\Internal\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Text_Track.hpp">
+      <Filter>Header Files\Tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Track.hpp">
+      <Filter>Header Files\Tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Audio_Track.hpp">
+      <Filter>Header Files\Tracks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Clip.hpp">
+      <Filter>Header Files\Clips</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Audio_Clip.hpp">
+      <Filter>Header Files\Clips</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Text_Clip.hpp">
+      <Filter>Header Files\Clips</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\File_Manager.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Sequence.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Headers\Internal\Utilities\PString.hpp">
+      <Filter>Header Files\Internal\Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint">
+      <Filter>Source Files\Program Essentials</Filter>
+    </None>
+  </ItemGroup>
+</Project>

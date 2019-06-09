@@ -1,0 +1,82 @@
+\hypertarget{_audio___clip_8hpp}{}\section{D\+:/\+Repositories/\+Unity3\+D-\/\+Localization-\/\+Tool/\+D\+L\+L/\+Code/\+Headers/\+Audio\+\_\+\+Clip.hpp File Reference}
+\label{_audio___clip_8hpp}\index{D:/Repositories/Unity3D-\/Localization-\/Tool/DLL/Code/Headers/Audio\_Clip.hpp@{D:/Repositories/Unity3D-\/Localization-\/Tool/DLL/Code/Headers/Audio\_Clip.hpp}}
+
+
+A clip with the information of an audio file.  
+
+
+{\ttfamily \#include $<$Clip.\+hpp$>$}\newline
+Include dependency graph for Audio\+\_\+\+Clip.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_audio___clip_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_audio___clip_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classprz_1_1_audio___clip}{prz\+::\+Audio\+\_\+\+Clip}}
+\begin{DoxyCompactList}\small\item\em A clip with the information of an audio file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceprz}{prz}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI bool \mbox{\hyperlink{namespaceprz_abbc097e730e2a3eb42a2f205fd714bf2}{prz\+::set\+\_\+audio\+\_\+clip\+\_\+name}} (Audio\+\_\+\+Clip $\ast$audio\+Clip, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Set the audio clip name. \end{DoxyCompactList}\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI bool \mbox{\hyperlink{namespaceprz_ac8b09f14a5b58fe5ca2521460856443d}{prz\+::set\+\_\+audio\+\_\+clip\+\_\+start\+\_\+time}} (Audio\+\_\+\+Clip $\ast$audio\+Clip, float start\+Time)
+\begin{DoxyCompactList}\small\item\em Set the audio clip start time. \end{DoxyCompactList}\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI bool \mbox{\hyperlink{namespaceprz_a6f3d46bb8898e0ab0f8200ff01e68b83}{prz\+::set\+\_\+audio\+\_\+clip\+\_\+duration}} (Audio\+\_\+\+Clip $\ast$audio\+Clip, float duration)
+\begin{DoxyCompactList}\small\item\em Set the audio clip duration. \end{DoxyCompactList}\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI bool \mbox{\hyperlink{namespaceprz_ade1afd9da96172eda2c255f074e82608}{prz\+::set\+\_\+audio\+\_\+clip\+\_\+file\+\_\+path}} (Audio\+\_\+\+Clip $\ast$audio\+Clip, const char $\ast$file\+Path)
+\begin{DoxyCompactList}\small\item\em set the audio file path of the input audio clip \end{DoxyCompactList}\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI bool \mbox{\hyperlink{namespaceprz_a8ed2ed05812cc89ec640c5fe96182e94}{prz\+::set\+\_\+audio\+\_\+clip\+\_\+start\+\_\+cut\+\_\+time}} (Audio\+\_\+\+Clip $\ast$, float start\+Cut\+Time)
+\begin{DoxyCompactList}\small\item\em set the start cut time of the input audio clip \end{DoxyCompactList}\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI bool \mbox{\hyperlink{namespaceprz_a9722a82e0324e8ddf5fa0923298a8797}{prz\+::set\+\_\+audio\+\_\+clip\+\_\+file\+\_\+length}} (Audio\+\_\+\+Clip $\ast$audio\+Clip, float file\+Length)
+\begin{DoxyCompactList}\small\item\em set the start cut time of the input audio clip \end{DoxyCompactList}\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI const P\+String $\ast$ \mbox{\hyperlink{namespaceprz_a34ace91843bd282282f609752f6ba309}{prz\+::get\+\_\+audio\+\_\+clip\+\_\+name}} (Audio\+\_\+\+Clip $\ast$audio\+Clip)
+\begin{DoxyCompactList}\small\item\em Get the audio clip name. \end{DoxyCompactList}\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI float \mbox{\hyperlink{namespaceprz_ae887fdd042262bc94a29ad81d9737093}{prz\+::get\+\_\+audio\+\_\+clip\+\_\+start\+\_\+time}} (Audio\+\_\+\+Clip $\ast$audio\+Clip)
+\begin{DoxyCompactList}\small\item\em Get the audio clip start time. \end{DoxyCompactList}\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI float \mbox{\hyperlink{namespaceprz_ab424e7684c53c76bd12b24e549df8d32}{prz\+::get\+\_\+audio\+\_\+clip\+\_\+end\+\_\+time}} (Audio\+\_\+\+Clip $\ast$audio\+Clip)
+\begin{DoxyCompactList}\small\item\em Get the audio clip end time. \end{DoxyCompactList}\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI float \mbox{\hyperlink{namespaceprz_adf1775cc377a8c1a6b92ba0e648d98f1}{prz\+::get\+\_\+audio\+\_\+clip\+\_\+duration}} (Audio\+\_\+\+Clip $\ast$audio\+Clip)
+\begin{DoxyCompactList}\small\item\em Get the audio clip duration. \end{DoxyCompactList}\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI const P\+String $\ast$ \mbox{\hyperlink{namespaceprz_a1e56bb34b7529aa4bebbc720221ab7c8}{prz\+::get\+\_\+audio\+\_\+clip\+\_\+file\+\_\+path}} (Audio\+\_\+\+Clip $\ast$audio\+Clip)
+\begin{DoxyCompactList}\small\item\em Get the audio clip file path. \end{DoxyCompactList}\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI const P\+String $\ast$ \mbox{\hyperlink{namespaceprz_a1e806a9ab1fe1af94256d0e0efccd999}{prz\+::get\+\_\+audio\+\_\+clip\+\_\+file\+\_\+name}} (Audio\+\_\+\+Clip $\ast$audio\+Clip)
+\begin{DoxyCompactList}\small\item\em get the file path of an audio clip \end{DoxyCompactList}\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI float \mbox{\hyperlink{namespaceprz_a80b9123c3664ba7b0e6bcceed4362dfc}{prz\+::get\+\_\+audio\+\_\+clip\+\_\+start\+\_\+cut\+\_\+time}} (Audio\+\_\+\+Clip $\ast$audio\+Clip)
+\begin{DoxyCompactList}\small\item\em get the start cut time of an audio clip \end{DoxyCompactList}\item 
+L\+O\+C\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+T\+O\+O\+L\+\_\+\+A\+PI float \mbox{\hyperlink{namespaceprz_aa29f4f6bfb3146f21ba0e8e9a446fc11}{prz\+::get\+\_\+audio\+\_\+clip\+\_\+file\+\_\+length}} (Audio\+\_\+\+Clip $\ast$audio\+Clip)
+\begin{DoxyCompactList}\small\item\em get the audio file length of an audio clip \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A clip with the information of an audio file. 
+
+\begin{DoxyAuthor}{Author}
+Pablo Rodríguez Zurro (\href{mailto:przuro@gmail.com}{\texttt{ przuro@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05-\/06-\/2019
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2019 
+\end{DoxyCopyright}

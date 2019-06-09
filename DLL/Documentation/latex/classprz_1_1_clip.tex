@@ -1,0 +1,462 @@
+\hypertarget{classprz_1_1_clip}{}\section{prz\+::Clip Class Reference}
+\label{classprz_1_1_clip}\index{prz::Clip@{prz::Clip}}
+
+
+Store the basic information of any object of a timeline.  
+
+
+
+
+{\ttfamily \#include $<$Clip.\+hpp$>$}
+
+
+
+Inheritance diagram for prz\+::Clip\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classprz_1_1_clip__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for prz\+::Clip\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classprz_1_1_clip__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classprz_1_1_clip_a8ca22ea87ef621e73273048b7f950918}{Clip}} (const string \&name, float start\+Time, float duration)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classprz_1_1_clip}{Clip}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_clip_aaa01a03347274e920e2c1957ff05afc5}{Clip}} (const \mbox{\hyperlink{classprz_1_1_clip}{Clip}} \&other)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classprz_1_1_clip}{Clip}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_clip_ad6f80ee3d0daf8dace945abf9494180e}{Clip}} ()=delete
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classprz_1_1_clip}{Clip}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_clip_ad59d81a794768f8fac2285b704b26ceb}{$\sim$\+Clip}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classprz_1_1_clip}{Clip}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classprz_1_1_clip_a9dfa0b18535130c4b1f69e2f25d08c05}{collides\+\_\+with}} (const \mbox{\hyperlink{classprz_1_1_clip}{Clip}} \&other) const
+\begin{DoxyCompactList}\small\item\em return true if this clip is is overlapping with the other \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classprz_1_1_clip_a4228c95183be5c9e2bd9eabd58828243}{set\+\_\+name}} (const string \&name)
+\begin{DoxyCompactList}\small\item\em Set the name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classprz_1_1_clip_a7cbb55c3a344ab273d655f3b1e3fe5d1}{set\+\_\+start\+\_\+time}} (float start\+Time)
+\begin{DoxyCompactList}\small\item\em Set the start time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classprz_1_1_clip_a7555fe34e45f6032ea282ca6d605ace6}{set\+\_\+duration}} (float duration)
+\begin{DoxyCompactList}\small\item\em Set the duration. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classprz_1_1_p_string}{P\+String}} \& \mbox{\hyperlink{classprz_1_1_clip_accaf42d7a82d41ad70032870981f8d83}{get\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classprz_1_1_clip_a65df9388088c8a607e90b73506550cd5}{get\+\_\+start\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em Get the start time. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classprz_1_1_clip_acfe08e188c11afa8ca32b334907fe9f9}{get\+\_\+end\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em Get the end time. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classprz_1_1_clip_a6e870ff68a0f4ff4759007ddb4853f03}{get\+\_\+duration}} ()
+\begin{DoxyCompactList}\small\item\em Get the duration. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespaceprz_a2d8e9eeb62cf098759f1fff869da67f7}{json}} \mbox{\hyperlink{classprz_1_1_clip_a4959ada0fab0fbac6cb5239578ac3ec6}{to\+\_\+json}} ()=0
+\begin{DoxyCompactList}\small\item\em Method to convert the information of this clip to a json object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classprz_1_1_clip_a2b970808e50b0003a638c78ba6d26200}{refresh\+\_\+end\+\_\+time}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classprz_1_1_p_string}{P\+String}} \mbox{\hyperlink{classprz_1_1_clip_a9480162480731a020244153ada1219aa}{m\+\_\+name}}
+\item 
+float \mbox{\hyperlink{classprz_1_1_clip_ae9023bc80aedb38fcf1b9bc619a6f70c}{m\+\_\+start\+Time}}
+\item 
+float \mbox{\hyperlink{classprz_1_1_clip_abca99f03f5bc3963ee2c813b33a52d8e}{m\+\_\+end\+Time}}
+\item 
+float \mbox{\hyperlink{classprz_1_1_clip_abf582141d0a2385e1ec2e94cc9eca70b}{m\+\_\+duration}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Store the basic information of any object of a timeline. 
+
+
+
+Definition at line 23 of file Clip.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classprz_1_1_clip_a8ca22ea87ef621e73273048b7f950918}\label{classprz_1_1_clip_a8ca22ea87ef621e73273048b7f950918}} 
+\index{prz::Clip@{prz::Clip}!Clip@{Clip}}
+\index{Clip@{Clip}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{Clip()}{Clip()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily prz\+::\+Clip\+::\+Clip (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{float}]{start\+Time,  }\item[{float}]{duration }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classprz_1_1_clip}{Clip}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em start\+Time} & \\
+\hline
+{\em duration} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file Clip.\+cpp.
+
+\mbox{\Hypertarget{classprz_1_1_clip_aaa01a03347274e920e2c1957ff05afc5}\label{classprz_1_1_clip_aaa01a03347274e920e2c1957ff05afc5}} 
+\index{prz::Clip@{prz::Clip}!Clip@{Clip}}
+\index{Clip@{Clip}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{Clip()}{Clip()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily prz\+::\+Clip\+::\+Clip (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classprz_1_1_clip}{Clip}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classprz_1_1_clip}{Clip}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file Clip.\+cpp.
+
+\mbox{\Hypertarget{classprz_1_1_clip_ad6f80ee3d0daf8dace945abf9494180e}\label{classprz_1_1_clip_ad6f80ee3d0daf8dace945abf9494180e}} 
+\index{prz::Clip@{prz::Clip}!Clip@{Clip}}
+\index{Clip@{Clip}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{Clip()}{Clip()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily prz\+::\+Clip\+::\+Clip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Construct a new \mbox{\hyperlink{classprz_1_1_clip}{Clip}}. 
+
+\mbox{\Hypertarget{classprz_1_1_clip_ad59d81a794768f8fac2285b704b26ceb}\label{classprz_1_1_clip_ad59d81a794768f8fac2285b704b26ceb}} 
+\index{prz::Clip@{prz::Clip}!````~Clip@{$\sim$Clip}}
+\index{````~Clip@{$\sim$Clip}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{$\sim$Clip()}{~Clip()}}
+{\footnotesize\ttfamily prz\+::\+Clip\+::$\sim$\+Clip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classprz_1_1_clip}{Clip}}. 
+
+
+
+Definition at line 23 of file Clip.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classprz_1_1_clip_a9dfa0b18535130c4b1f69e2f25d08c05}\label{classprz_1_1_clip_a9dfa0b18535130c4b1f69e2f25d08c05}} 
+\index{prz::Clip@{prz::Clip}!collides\_with@{collides\_with}}
+\index{collides\_with@{collides\_with}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{collides\_with()}{collides\_with()}}
+{\footnotesize\ttfamily bool prz\+::\+Clip\+::collides\+\_\+with (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classprz_1_1_clip}{Clip}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+return true if this clip is is overlapping with the other 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file Clip.\+cpp.
+
+\mbox{\Hypertarget{classprz_1_1_clip_a6e870ff68a0f4ff4759007ddb4853f03}\label{classprz_1_1_clip_a6e870ff68a0f4ff4759007ddb4853f03}} 
+\index{prz::Clip@{prz::Clip}!get\_duration@{get\_duration}}
+\index{get\_duration@{get\_duration}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{get\_duration()}{get\_duration()}}
+{\footnotesize\ttfamily float prz\+::\+Clip\+::get\+\_\+duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the duration. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+Definition at line 117 of file Clip.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classprz_1_1_clip_a6e870ff68a0f4ff4759007ddb4853f03_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_clip_acfe08e188c11afa8ca32b334907fe9f9}\label{classprz_1_1_clip_acfe08e188c11afa8ca32b334907fe9f9}} 
+\index{prz::Clip@{prz::Clip}!get\_end\_time@{get\_end\_time}}
+\index{get\_end\_time@{get\_end\_time}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{get\_end\_time()}{get\_end\_time()}}
+{\footnotesize\ttfamily float prz\+::\+Clip\+::get\+\_\+end\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the end time. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+Definition at line 110 of file Clip.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classprz_1_1_clip_acfe08e188c11afa8ca32b334907fe9f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_clip_accaf42d7a82d41ad70032870981f8d83}\label{classprz_1_1_clip_accaf42d7a82d41ad70032870981f8d83}} 
+\index{prz::Clip@{prz::Clip}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classprz_1_1_p_string}{P\+String}}\& prz\+::\+Clip\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name. 
+
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{classprz_1_1_p_string}{P\+String}}\& 
+\end{DoxyReturn}
+
+
+Definition at line 96 of file Clip.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classprz_1_1_clip_accaf42d7a82d41ad70032870981f8d83_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_clip_a65df9388088c8a607e90b73506550cd5}\label{classprz_1_1_clip_a65df9388088c8a607e90b73506550cd5}} 
+\index{prz::Clip@{prz::Clip}!get\_start\_time@{get\_start\_time}}
+\index{get\_start\_time@{get\_start\_time}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{get\_start\_time()}{get\_start\_time()}}
+{\footnotesize\ttfamily float prz\+::\+Clip\+::get\+\_\+start\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the start time. 
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+Definition at line 103 of file Clip.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classprz_1_1_clip_a65df9388088c8a607e90b73506550cd5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_clip_a2b970808e50b0003a638c78ba6d26200}\label{classprz_1_1_clip_a2b970808e50b0003a638c78ba6d26200}} 
+\index{prz::Clip@{prz::Clip}!refresh\_end\_time@{refresh\_end\_time}}
+\index{refresh\_end\_time@{refresh\_end\_time}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{refresh\_end\_time()}{refresh\_end\_time()}}
+{\footnotesize\ttfamily void prz\+::\+Clip\+::refresh\+\_\+end\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 54 of file Clip.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_clip_a2b970808e50b0003a638c78ba6d26200_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_clip_a7555fe34e45f6032ea282ca6d605ace6}\label{classprz_1_1_clip_a7555fe34e45f6032ea282ca6d605ace6}} 
+\index{prz::Clip@{prz::Clip}!set\_duration@{set\_duration}}
+\index{set\_duration@{set\_duration}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{set\_duration()}{set\_duration()}}
+{\footnotesize\ttfamily void prz\+::\+Clip\+::set\+\_\+duration (\begin{DoxyParamCaption}\item[{float}]{duration }\end{DoxyParamCaption})}
+
+
+
+Set the duration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file Clip.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classprz_1_1_clip_a7555fe34e45f6032ea282ca6d605ace6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classprz_1_1_clip_a7555fe34e45f6032ea282ca6d605ace6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_clip_a4228c95183be5c9e2bd9eabd58828243}\label{classprz_1_1_clip_a4228c95183be5c9e2bd9eabd58828243}} 
+\index{prz::Clip@{prz::Clip}!set\_name@{set\_name}}
+\index{set\_name@{set\_name}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{set\_name()}{set\_name()}}
+{\footnotesize\ttfamily void prz\+::\+Clip\+::set\+\_\+name (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Set the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Clip.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classprz_1_1_clip_a4228c95183be5c9e2bd9eabd58828243_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_clip_a7cbb55c3a344ab273d655f3b1e3fe5d1}\label{classprz_1_1_clip_a7cbb55c3a344ab273d655f3b1e3fe5d1}} 
+\index{prz::Clip@{prz::Clip}!set\_start\_time@{set\_start\_time}}
+\index{set\_start\_time@{set\_start\_time}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{set\_start\_time()}{set\_start\_time()}}
+{\footnotesize\ttfamily void prz\+::\+Clip\+::set\+\_\+start\+\_\+time (\begin{DoxyParamCaption}\item[{float}]{start\+Time }\end{DoxyParamCaption})}
+
+
+
+Set the start time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file Clip.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classprz_1_1_clip_a7cbb55c3a344ab273d655f3b1e3fe5d1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classprz_1_1_clip_a7cbb55c3a344ab273d655f3b1e3fe5d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_clip_a4959ada0fab0fbac6cb5239578ac3ec6}\label{classprz_1_1_clip_a4959ada0fab0fbac6cb5239578ac3ec6}} 
+\index{prz::Clip@{prz::Clip}!to\_json@{to\_json}}
+\index{to\_json@{to\_json}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{to\_json()}{to\_json()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespaceprz_a2d8e9eeb62cf098759f1fff869da67f7}{json}} prz\+::\+Clip\+::to\+\_\+json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method to convert the information of this clip to a json object. 
+
+\begin{DoxyReturn}{Returns}
+json 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classprz_1_1_audio___clip_a15fdef4e8547e25d06785d816be71a12}{prz\+::\+Audio\+\_\+\+Clip}}, and \mbox{\hyperlink{classprz_1_1_text___clip_a4e78e6e36c130ed42ec7f75772e3baed}{prz\+::\+Text\+\_\+\+Clip}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classprz_1_1_clip_abf582141d0a2385e1ec2e94cc9eca70b}\label{classprz_1_1_clip_abf582141d0a2385e1ec2e94cc9eca70b}} 
+\index{prz::Clip@{prz::Clip}!m\_duration@{m\_duration}}
+\index{m\_duration@{m\_duration}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{m\_duration}{m\_duration}}
+{\footnotesize\ttfamily float prz\+::\+Clip\+::m\+\_\+duration\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 141 of file Clip.\+hpp.
+
+\mbox{\Hypertarget{classprz_1_1_clip_abca99f03f5bc3963ee2c813b33a52d8e}\label{classprz_1_1_clip_abca99f03f5bc3963ee2c813b33a52d8e}} 
+\index{prz::Clip@{prz::Clip}!m\_endTime@{m\_endTime}}
+\index{m\_endTime@{m\_endTime}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{m\_endTime}{m\_endTime}}
+{\footnotesize\ttfamily float prz\+::\+Clip\+::m\+\_\+end\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 140 of file Clip.\+hpp.
+
+\mbox{\Hypertarget{classprz_1_1_clip_a9480162480731a020244153ada1219aa}\label{classprz_1_1_clip_a9480162480731a020244153ada1219aa}} 
+\index{prz::Clip@{prz::Clip}!m\_name@{m\_name}}
+\index{m\_name@{m\_name}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{m\_name}{m\_name}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classprz_1_1_p_string}{P\+String}} prz\+::\+Clip\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 138 of file Clip.\+hpp.
+
+\mbox{\Hypertarget{classprz_1_1_clip_ae9023bc80aedb38fcf1b9bc619a6f70c}\label{classprz_1_1_clip_ae9023bc80aedb38fcf1b9bc619a6f70c}} 
+\index{prz::Clip@{prz::Clip}!m\_startTime@{m\_startTime}}
+\index{m\_startTime@{m\_startTime}!prz::Clip@{prz::Clip}}
+\subsubsection{\texorpdfstring{m\_startTime}{m\_startTime}}
+{\footnotesize\ttfamily float prz\+::\+Clip\+::m\+\_\+start\+Time\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 139 of file Clip.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Repositories/\+Unity3\+D-\/\+Localization-\/\+Tool/\+D\+L\+L/\+Code/\+Headers/\mbox{\hyperlink{_clip_8hpp}{Clip.\+hpp}}\item 
+D\+:/\+Repositories/\+Unity3\+D-\/\+Localization-\/\+Tool/\+D\+L\+L/\+Code/\+Sources/\mbox{\hyperlink{_clip_8cpp}{Clip.\+cpp}}\end{DoxyCompactItemize}

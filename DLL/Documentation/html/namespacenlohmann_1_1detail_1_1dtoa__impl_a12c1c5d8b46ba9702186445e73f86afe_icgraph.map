@@ -1,0 +1,4 @@
+<map id="nlohmann::detail::dtoa_impl::format_buffer" name="nlohmann::detail::dtoa_impl::format_buffer">
+<area shape="rect" id="node1" title="prettify v = buf * 10^decimal_exponent" alt="" coords="189,5,340,47"/>
+<area shape="rect" id="node2" href="$namespacenlohmann_1_1detail.html#a18759c536d89c4dd3a118bd3ecb790da" title="generates a decimal representation of the floating&#45;point number value in [first, last)." alt="" coords="5,5,141,47"/>
+</map>

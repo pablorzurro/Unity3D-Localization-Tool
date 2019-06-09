@@ -1,0 +1,17 @@
+<map id="nlohmann::basic_json::merge_patch" name="nlohmann::basic_json::merge_patch">
+<area shape="rect" id="node1" title="applies a JSON Merge Patch" alt="" coords="5,124,153,165"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="201,25,349,67"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#aaf509a7c029100d292187068f61c99b8" title="explicitly create an object from an initializer list" alt="" coords="201,91,349,132"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1basic__json.html#a068a16e76be178e83da6a192916923ed" title="remove element given an iterator" alt="" coords="201,156,349,197"/>
+<area shape="rect" id="node12" href="$classnlohmann_1_1basic__json.html#ac871e3b03fb2eeca9a8de4db2bea760f" title="access specified array element" alt="" coords="201,287,349,328"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1invalid__iterator.html#a4e849260a3caa1b288c7e619130c6c09" title=" " alt="" coords="406,5,566,47"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1basic__json.html#a13e032a02a7fd8a93fdddc2fcbc4763c" title="returns an iterator to one past the last element" alt="" coords="397,71,575,98"/>
+<area shape="rect" id="node9" href="$classnlohmann_1_1basic__json.html#a69b596a4a6683b362095c9a139637396" title="return whether value is a string" alt="" coords="412,123,560,164"/>
+<area shape="rect" id="node10" href="$classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="411,188,561,229"/>
+<area shape="rect" id="node11" href="$classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="412,253,560,295"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="623,97,804,139"/>
+<area shape="rect" id="node7" href="$namespacenlohmann.html#a6ce645a0b8717757e096a5b5773b7a16" title="user&#45;defined to_string function for JSON values" alt="" coords="852,105,988,131"/>
+<area shape="rect" id="node13" href="$classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="412,319,560,360"/>
+<area shape="rect" id="node14" href="$classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="412,384,560,425"/>
+<area shape="rect" id="node15" href="$classnlohmann_1_1basic__json.html#aed115142bd0c6c66c864700e0467df55" title="create an empty value with a given type" alt="" coords="412,449,560,491"/>
+</map>

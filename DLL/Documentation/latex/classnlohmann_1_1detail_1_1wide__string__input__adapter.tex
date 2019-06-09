@@ -1,0 +1,84 @@
+\hypertarget{classnlohmann_1_1detail_1_1wide__string__input__adapter}{}\section{nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter$<$ Wide\+String\+Type $>$ Class Template Reference}
+\label{classnlohmann_1_1detail_1_1wide__string__input__adapter}\index{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}}
+
+
+{\ttfamily \#include $<$json.\+hpp$>$}
+
+
+
+Inheritance diagram for nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter$<$ Wide\+String\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classnlohmann_1_1detail_1_1wide__string__input__adapter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter$<$ Wide\+String\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classnlohmann_1_1detail_1_1wide__string__input__adapter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter_a85c8bddae20bc00d64dd7a2c87109357}{wide\+\_\+string\+\_\+input\+\_\+adapter}} (const Wide\+String\+Type \&w) noexcept
+\item 
+std\+::char\+\_\+traits$<$ char $>$\+::int\+\_\+type \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter_abb62b34cf77e557ce5321b7f2490c3b0}{get\+\_\+character}} () noexcept override
+\begin{DoxyCompactList}\small\item\em get a character \mbox{[}0,255\mbox{]} or std\+::char\+\_\+traits$<$char$>$\+::eof(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Wide\+String\+Type$>$\newline
+class nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter$<$ Wide\+String\+Type $>$}
+
+
+
+Definition at line 2557 of file json.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1wide__string__input__adapter_a85c8bddae20bc00d64dd7a2c87109357}\label{classnlohmann_1_1detail_1_1wide__string__input__adapter_a85c8bddae20bc00d64dd7a2c87109357}} 
+\index{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}!wide\_string\_input\_adapter@{wide\_string\_input\_adapter}}
+\index{wide\_string\_input\_adapter@{wide\_string\_input\_adapter}!nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}}
+\subsubsection{\texorpdfstring{wide\_string\_input\_adapter()}{wide\_string\_input\_adapter()}}
+{\footnotesize\ttfamily template$<$typename Wide\+String\+Type $>$ \\
+\mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter}{nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter}}$<$ Wide\+String\+Type $>$\+::\mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter}{wide\+\_\+string\+\_\+input\+\_\+adapter}} (\begin{DoxyParamCaption}\item[{const Wide\+String\+Type \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line 2560 of file json.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1wide__string__input__adapter_abb62b34cf77e557ce5321b7f2490c3b0}\label{classnlohmann_1_1detail_1_1wide__string__input__adapter_abb62b34cf77e557ce5321b7f2490c3b0}} 
+\index{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}!get\_character@{get\_character}}
+\index{get\_character@{get\_character}!nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$@{nlohmann::detail::wide\_string\_input\_adapter$<$ WideStringType $>$}}
+\subsubsection{\texorpdfstring{get\_character()}{get\_character()}}
+{\footnotesize\ttfamily template$<$typename Wide\+String\+Type $>$ \\
+std\+::char\+\_\+traits$<$char$>$\+::int\+\_\+type \mbox{\hyperlink{classnlohmann_1_1detail_1_1wide__string__input__adapter}{nlohmann\+::detail\+::wide\+\_\+string\+\_\+input\+\_\+adapter}}$<$ Wide\+String\+Type $>$\+::get\+\_\+character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+get a character \mbox{[}0,255\mbox{]} or std\+::char\+\_\+traits$<$char$>$\+::eof(). 
+
+
+
+Implements \mbox{\hyperlink{structnlohmann_1_1detail_1_1input__adapter__protocol_aac10a6a4048a8ce8e2ed50277692a3ca}{nlohmann\+::detail\+::input\+\_\+adapter\+\_\+protocol}}.
+
+
+
+Definition at line 2564 of file json.\+hpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Repositories/\+Unity3\+D-\/\+Localization-\/\+Tool/\+D\+L\+L/\+Code/\+Headers/\+Third-\/\+Party/nlohmann/\mbox{\hyperlink{json_8hpp}{json.\+hpp}}\end{DoxyCompactItemize}

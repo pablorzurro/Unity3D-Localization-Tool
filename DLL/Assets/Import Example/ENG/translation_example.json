@@ -1,0 +1,43 @@
+{
+    "sequences":
+    [
+        {
+            "name": "Sequence001",
+            "clips":
+            {
+                "audio":
+                [
+                    {
+                        "name": "Tearing apart",
+                        "path": "Assets/Plugins/Localization Tool/Example Assets/Audio/TearingMeApartLisa.mp3",
+                        "start": "00:00:000",
+                        "duration": "00:02:000",
+                        "start_cut": "00:01:001"   
+                    },
+                    {
+                        "name": "narrator_dialogue.wav",
+                        "path": "Assets/Audio/ENG/WAV/narrator_dialogue.wav",
+                        "start": "00:00:000",
+                        "duration": "00:03:940",
+                        "start_cut": "00:01:001"  
+                    }
+                ],
+                "text": 
+                [
+                    {
+                        "name": "ST_001",
+                        "start": "00:05:000",
+                        "duration": "00:17:940",
+                        "text": "你好"
+                    },
+                    {
+                        "name": "ST_002",
+                        "start": "00:00:000",
+                        "duration": "00:04:000",
+                        "text": "çççççç"
+                    }
+                ]
+            }
+        }
+    ]
+}

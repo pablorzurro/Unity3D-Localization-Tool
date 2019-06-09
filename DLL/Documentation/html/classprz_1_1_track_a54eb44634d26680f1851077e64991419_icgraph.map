@@ -1,0 +1,5 @@
+<map id="prz::Track::get_clips" name="prz::Track::get_clips">
+<area shape="rect" id="node1" title="Get the clips." alt="" coords="193,46,333,73"/>
+<area shape="rect" id="node2" href="$namespaceprz.html#a291fc379c9ff52af1a7aaa0ac7736567" title="Get the audio track clips." alt="" coords="5,5,145,47"/>
+<area shape="rect" id="node3" href="$namespaceprz.html#abd2d4f20a28459ce750fa2d4de97ab92" title="Get the text track clips." alt="" coords="10,71,141,112"/>
+</map>

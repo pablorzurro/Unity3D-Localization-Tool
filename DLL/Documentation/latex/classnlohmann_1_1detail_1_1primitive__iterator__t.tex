@@ -1,0 +1,242 @@
+\hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t}{}\section{nlohmann\+::detail\+::primitive\+\_\+iterator\+\_\+t Class Reference}
+\label{classnlohmann_1_1detail_1_1primitive__iterator__t}\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+
+
+{\ttfamily \#include $<$json.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr difference\+\_\+type \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_ae952990886ca1756229f916661a8af81}{get\+\_\+value}} () const noexcept
+\item 
+\mbox{\hyperlink{namespacenlohmann_1_1detail_a59fca69799f6b9e366710cb9043aa77d}{void}} \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_a9d9b005906106e12aed738f97d7fee42}{set\+\_\+begin}} () noexcept
+\begin{DoxyCompactList}\small\item\em set iterator to a defined beginning \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacenlohmann_1_1detail_a59fca69799f6b9e366710cb9043aa77d}{void}} \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_ad26a823483846a12d890c3feed3097eb}{set\+\_\+end}} () noexcept
+\begin{DoxyCompactList}\small\item\em set iterator to a defined past the end \end{DoxyCompactList}\item 
+constexpr bool \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_a8d1a7d46b3fcd06edd034f04ededb5e4}{is\+\_\+begin}} () const noexcept
+\begin{DoxyCompactList}\small\item\em return whether the iterator can be dereferenced \end{DoxyCompactList}\item 
+constexpr bool \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_a45a7e301c23b5b90417baf2277f40b1d}{is\+\_\+end}} () const noexcept
+\begin{DoxyCompactList}\small\item\em return whether the iterator is at end \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_a00ce828d0fe58046c10e0445504df7bf}{operator+}} (difference\+\_\+type n) noexcept
+\item 
+\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} \& \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_ad26511012fc88f3ec5d9e1cb708732fd}{operator++}} () noexcept
+\item 
+\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} const \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_aa011863621357b3cf891670bf63a48b1}{operator++}} (int) noexcept
+\item 
+\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} \& \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_abecbf0c73c7fe963a699738065177bc3}{operator-\/-\/}} () noexcept
+\item 
+\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} const \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_aef3b5dfeb2cb04dc9d0a024fc1898b98}{operator-\/-\/}} (int) noexcept
+\item 
+\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} \& \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_aee01535df0b3b40137d9241029a9a203}{operator+=}} (difference\+\_\+type n) noexcept
+\item 
+\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} \& \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_a0bf83ab08abe1ae4b51c790c85cdf151}{operator-\/=}} (difference\+\_\+type n) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+constexpr bool \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_aae1e1e2ec0e229d1291d69de57d76bbe}{operator==}} (\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} lhs, \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} rhs) noexcept
+\item 
+constexpr bool \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_a901a95e6d73c9509d3dcde914f6c8a9d}{operator$<$}} (\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} lhs, \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} rhs) noexcept
+\item 
+constexpr difference\+\_\+type \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t_ac6d902d6ec9a02dabed5452d3ae78f7e}{operator-\/}} (\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} lhs, \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} rhs) noexcept
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7570 of file json.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_ae952990886ca1756229f916661a8af81}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_ae952990886ca1756229f916661a8af81}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!get\_value@{get\_value}}
+\index{get\_value@{get\_value}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{get\_value()}{get\_value()}}
+{\footnotesize\ttfamily constexpr difference\+\_\+type nlohmann\+::detail\+::primitive\+\_\+iterator\+\_\+t\+::get\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line 7581 of file json.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnlohmann_1_1detail_1_1primitive__iterator__t_ae952990886ca1756229f916661a8af81_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_a8d1a7d46b3fcd06edd034f04ededb5e4}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_a8d1a7d46b3fcd06edd034f04ededb5e4}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!is\_begin@{is\_begin}}
+\index{is\_begin@{is\_begin}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{is\_begin()}{is\_begin()}}
+{\footnotesize\ttfamily constexpr bool nlohmann\+::detail\+::primitive\+\_\+iterator\+\_\+t\+::is\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+return whether the iterator can be dereferenced 
+
+
+
+Definition at line 7599 of file json.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnlohmann_1_1detail_1_1primitive__iterator__t_a8d1a7d46b3fcd06edd034f04ededb5e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_a45a7e301c23b5b90417baf2277f40b1d}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_a45a7e301c23b5b90417baf2277f40b1d}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!is\_end@{is\_end}}
+\index{is\_end@{is\_end}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{is\_end()}{is\_end()}}
+{\footnotesize\ttfamily constexpr bool nlohmann\+::detail\+::primitive\+\_\+iterator\+\_\+t\+::is\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+return whether the iterator is at end 
+
+
+
+Definition at line 7605 of file json.\+hpp.
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_a00ce828d0fe58046c10e0445504df7bf}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_a00ce828d0fe58046c10e0445504df7bf}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!operator+@{operator+}}
+\index{operator+@{operator+}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} nlohmann\+::detail\+::primitive\+\_\+iterator\+\_\+t\+::operator+ (\begin{DoxyParamCaption}\item[{difference\+\_\+type}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line 7620 of file json.\+hpp.
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_ad26511012fc88f3ec5d9e1cb708732fd}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_ad26511012fc88f3ec5d9e1cb708732fd}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!operator++@{operator++}}
+\index{operator++@{operator++}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}}\& nlohmann\+::detail\+::primitive\+\_\+iterator\+\_\+t\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line 7632 of file json.\+hpp.
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_aa011863621357b3cf891670bf63a48b1}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_aa011863621357b3cf891670bf63a48b1}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!operator++@{operator++}}
+\index{operator++@{operator++}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} const nlohmann\+::detail\+::primitive\+\_\+iterator\+\_\+t\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line 7638 of file json.\+hpp.
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_aee01535df0b3b40137d9241029a9a203}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_aee01535df0b3b40137d9241029a9a203}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}}\& nlohmann\+::detail\+::primitive\+\_\+iterator\+\_\+t\+::operator+= (\begin{DoxyParamCaption}\item[{difference\+\_\+type}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line 7658 of file json.\+hpp.
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_abecbf0c73c7fe963a699738065177bc3}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_abecbf0c73c7fe963a699738065177bc3}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}}\& nlohmann\+::detail\+::primitive\+\_\+iterator\+\_\+t\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line 7645 of file json.\+hpp.
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_aef3b5dfeb2cb04dc9d0a024fc1898b98}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_aef3b5dfeb2cb04dc9d0a024fc1898b98}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}} const nlohmann\+::detail\+::primitive\+\_\+iterator\+\_\+t\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line 7651 of file json.\+hpp.
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_a0bf83ab08abe1ae4b51c790c85cdf151}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_a0bf83ab08abe1ae4b51c790c85cdf151}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}}\& nlohmann\+::detail\+::primitive\+\_\+iterator\+\_\+t\+::operator-\/= (\begin{DoxyParamCaption}\item[{difference\+\_\+type}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line 7664 of file json.\+hpp.
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_a9d9b005906106e12aed738f97d7fee42}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_a9d9b005906106e12aed738f97d7fee42}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!set\_begin@{set\_begin}}
+\index{set\_begin@{set\_begin}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{set\_begin()}{set\_begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacenlohmann_1_1detail_a59fca69799f6b9e366710cb9043aa77d}{void}} nlohmann\+::detail\+::primitive\+\_\+iterator\+\_\+t\+::set\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+set iterator to a defined beginning 
+
+
+
+Definition at line 7587 of file json.\+hpp.
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_ad26a823483846a12d890c3feed3097eb}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_ad26a823483846a12d890c3feed3097eb}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!set\_end@{set\_end}}
+\index{set\_end@{set\_end}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{set\_end()}{set\_end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacenlohmann_1_1detail_a59fca69799f6b9e366710cb9043aa77d}{void}} nlohmann\+::detail\+::primitive\+\_\+iterator\+\_\+t\+::set\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+set iterator to a defined past the end 
+
+
+
+Definition at line 7593 of file json.\+hpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_ac6d902d6ec9a02dabed5452d3ae78f7e}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_ac6d902d6ec9a02dabed5452d3ae78f7e}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{operator-\/}{operator-}}
+{\footnotesize\ttfamily constexpr difference\+\_\+type operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}}}]{lhs,  }\item[{\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 7627 of file json.\+hpp.
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_a901a95e6d73c9509d3dcde914f6c8a9d}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_a901a95e6d73c9509d3dcde914f6c8a9d}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{operator$<$}{operator<}}
+{\footnotesize\ttfamily constexpr bool operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}}}]{lhs,  }\item[{\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 7615 of file json.\+hpp.
+
+\mbox{\Hypertarget{classnlohmann_1_1detail_1_1primitive__iterator__t_aae1e1e2ec0e229d1291d69de57d76bbe}\label{classnlohmann_1_1detail_1_1primitive__iterator__t_aae1e1e2ec0e229d1291d69de57d76bbe}} 
+\index{nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}!operator==@{operator==}}
+\index{operator==@{operator==}!nlohmann::detail::primitive\_iterator\_t@{nlohmann::detail::primitive\_iterator\_t}}
+\subsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily constexpr bool operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}}}]{lhs,  }\item[{\mbox{\hyperlink{classnlohmann_1_1detail_1_1primitive__iterator__t}{primitive\+\_\+iterator\+\_\+t}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 7610 of file json.\+hpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Repositories/\+Unity3\+D-\/\+Localization-\/\+Tool/\+D\+L\+L/\+Code/\+Headers/\+Third-\/\+Party/nlohmann/\mbox{\hyperlink{json_8hpp}{json.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="prz::Text_Clip" name="prz::Text_Clip">
+<area shape="rect" id="node1" title="Clip that stores a text. It may contain font size aand style information in a future." alt="" coords="5,171,108,197"/>
+<area shape="rect" id="node2" href="$classprz_1_1_clip.html" title="Store the basic information of any object of a timeline." alt="" coords="21,95,92,121"/>
+<area shape="rect" id="node3" href="$classprz_1_1_p_string.html" title=" " alt="" coords="11,5,102,32"/>
+</map>

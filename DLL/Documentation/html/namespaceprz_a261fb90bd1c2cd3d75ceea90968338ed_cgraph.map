@@ -1,0 +1,4 @@
+<map id="prz::get_sequence_number_of_audio_tracks" name="prz::get_sequence_number_of_audio_tracks">
+<area shape="rect" id="node1" title="Get the sequence number of audio tracks." alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node2" href="$classprz_1_1_sequence.html#a2d0ac9ea8804465100b36bb36a687799" title="Return the number of audio tracks." alt="" coords="232,5,403,47"/>
+</map>

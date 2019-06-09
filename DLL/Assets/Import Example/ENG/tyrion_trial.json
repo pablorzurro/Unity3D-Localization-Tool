@@ -1,0 +1,79 @@
+{
+    "sequences":
+    [
+        {
+            "name": "Tyrion_Trial-ENG",
+            "clips":
+            {
+                "audio":
+                [
+                    {
+                        "name": "Tyrion trial",
+                        "path": "Assets/Plugins/Localization Tool/Example Assets/Audio/Game of Thrones - Epic Tyrion speech during trial.mp3",
+                        "start": "00:00:000",
+                        "duration": "00:56:000",
+                        "start_cut": "00:00:000"   
+                    }
+                ],
+                "text": 
+                [
+                    {
+                        "name": "ST_001",
+                        "start": "00:00:000",
+                        "duration": "00:02:200",
+                        "text": "Shae."
+                    },
+                    {
+                        "name": "ST_002",
+                        "start": "00:04:000",
+                        "duration": "00:02:200",
+                        "text": "Please don't."
+                    },
+                    {
+                        "name": "ST_003",
+                        "start": "00:09:000",
+                        "duration": "00:02:200",
+                        "text": "I am a whore, remember?"
+                    },
+                    {
+                        "name": "ST_004",
+                        "start": "00:15:000",
+                        "duration": "00:02:200",
+                        "text": "That was before he married Sansa."
+                    },
+                    {
+                        "name": "ST_005",
+                        "start": "00:17:000",
+                        "duration": "00:02:200",
+                        "text": "After that, all he wanted was her. But she wouldn't let him into her bed. So he promised to kill King Joffrey for her."
+                    },
+                    {
+                        "name": "ST_006",
+                        "start": "00:36:000",
+                        "duration": "00:02:200",
+                        "text": "Father, I wish to confess!"
+                    },
+                    {
+                        "name": "ST_007",
+                        "start": "00:42:000",
+                        "duration": "00:02:200",
+                        "text": "I wish to confess!"
+                    },
+                    {
+                        "name": "ST_008",
+                        "start": "00:47:000",
+                        "duration": "00:02:200",
+                        "text": "You wish to confess?"
+                    },
+                    {
+                        "name": "ST_009",
+                        "start": "00:52:000",
+                        "duration": "00:02:200",
+                        "text": "I saved you. I saved this city and all your worthless lives. I should have let Stannis kill you all--"
+                    }
+                ]
+            },
+            "link": "https://www.youtube.com/watch?v=e4Uq8O5ZhUA"
+        }
+    ]
+}

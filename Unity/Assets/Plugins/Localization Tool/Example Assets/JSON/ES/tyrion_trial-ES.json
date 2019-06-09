@@ -1,0 +1,79 @@
+{
+    "sequences":
+    [
+        {
+            "name": "Tyrion_Trial-ES",
+            "clips":
+            {
+                "audio":
+                [
+                    {
+                        "name": "Tyrion trial",
+                        "path": "Assets/Plugins/Localization Tool/Example Assets/Audio/Game of Thrones - Epic Tyrion speech during trial.mp3",
+                        "start": "00:00:000",
+                        "duration": "00:56:000",
+                        "start_cut": "00:00:000"   
+                    }
+                ],
+                "text": 
+                [
+                    {
+                        "name": "ST_001",
+                        "start": "00:00:000",
+                        "duration": "00:02:200",
+                        "text": "Shae"
+                    },
+                    {
+                        "name": "ST_002",
+                        "start": "00:04:000",
+                        "duration": "00:02:200",
+                        "text": "Por favor no"
+                    },
+                    {
+                        "name": "ST_003",
+                        "start": "00:09:000",
+                        "duration": "00:02:200",
+                        "text": "Soy una puta, ¿recuerdas?"
+                    },
+                    {
+                        "name": "ST_004",
+                        "start": "00:15:000",
+                        "duration": "00:02:200",
+                        "text": "Fue antes de que se casara con Sansa"
+                    },
+                    {
+                        "name": "ST_005",
+                        "start": "00:17:000",
+                        "duration": "00:02:200",
+                        "text": "Después de eso, todo lo que él quería era a ella. Pero ella no lo dejaría estar en su cama. Entonces él prometió matar al rey Joffrey para ella"
+                    },
+                    {
+                        "name": "ST_006",
+                        "start": "00:36:000",
+                        "duration": "00:02:200",
+                        "text": "Padre, deseo confesar"
+                    },
+                    {
+                        "name": "ST_007",
+                        "start": "00:42:000",
+                        "duration": "00:02:200",
+                        "text": "Deseo confesar"
+                    },
+                    {
+                        "name": "ST_008",
+                        "start": "00:47:000",
+                        "duration": "00:02:200",
+                        "text": "¿Deseas confesar?"
+                    },
+                    {
+                        "name": "ST_009",
+                        "start": "00:52:000",
+                        "duration": "00:02:200",
+                        "text": "Los salve. Salve esta ciudad y todas sus inútiles vidas. Debí dejar que Stannis los matara a todos"
+                    }
+                ]
+            },
+            "link": "https://www.youtube.com/watch?v=e4Uq8O5ZhUA"
+        }
+    ]
+}

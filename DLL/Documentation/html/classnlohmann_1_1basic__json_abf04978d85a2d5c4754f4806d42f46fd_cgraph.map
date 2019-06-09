@@ -1,0 +1,10 @@
+<map id="nlohmann::basic_json::operator+=" name="nlohmann::basic_json::operator+=">
+<area shape="rect" id="node1" title="add an object to an object" alt="" coords="5,104,153,145"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="201,104,349,145"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="399,5,547,47"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="399,71,547,112"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="397,136,548,177"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="399,201,547,243"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="596,136,777,177"/>
+<area shape="rect" id="node7" href="$namespacenlohmann.html#a6ce645a0b8717757e096a5b5773b7a16" title="user&#45;defined to_string function for JSON values" alt="" coords="825,143,961,170"/>
+</map>

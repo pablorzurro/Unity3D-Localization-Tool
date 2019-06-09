@@ -221,5 +221,4 @@ _Pvt_Extensions
 
 # Whitelist
 
-!libraries/Assimp/lib/*
-!assets/**
+!Assets/**

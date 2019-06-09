@@ -1,0 +1,5 @@
+<map id="prz::Sequence::get_number_of_text_tracks" name="prz::Sequence::get_number_of_text_tracks">
+<area shape="rect" id="node1" title="Return the number of text tracks." alt="" coords="233,27,395,69"/>
+<area shape="rect" id="node2" href="$classprz_1_1_sequence.html#aee7da60c0b19a1565ee44265a6738c43" title="Destroy the Sequence." alt="" coords="5,5,185,32"/>
+<area shape="rect" id="node3" href="$namespaceprz.html#adc24118c391c79c034821170e7249c4d" title="Get the sequence number of text tracks." alt="" coords="6,57,185,98"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="operator&quot;&quot;_json" name="operator&quot;&quot;_json">
+<area shape="rect" id="node1" title="user&#45;defined string literal for JSON values" alt="" coords="5,224,116,251"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#afd4ef1ac8ad50a5894a9afebca69140a" title="deserialize from a compatible input" alt="" coords="164,217,312,258"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="360,217,521,258"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="579,5,759,61"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1lexer.html#abf5143501435f9f79898c1ff238c2622" title="return position of last read token" alt="" coords="592,86,745,127"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="592,151,745,193"/>
+<area shape="rect" id="node7" href="$classnlohmann_1_1detail_1_1parse__error.html#a137ea4d27de45d8a844fd13451d40f3d" title="create a parse error exception" alt="" coords="590,217,747,258"/>
+<area shape="rect" id="node10" href="$classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="579,283,759,339"/>
+<area shape="rect" id="node11" href="$classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="569,363,768,405"/>
+<area shape="rect" id="node12" href="$classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="573,429,764,470"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="816,217,997,258"/>
+<area shape="rect" id="node9" href="$namespacenlohmann.html#a6ce645a0b8717757e096a5b5773b7a16" title="user&#45;defined to_string function for JSON values" alt="" coords="1045,224,1181,251"/>
+</map>

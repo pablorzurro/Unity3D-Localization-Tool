@@ -1,0 +1,15 @@
+<map id="D:/Repositories/Unity3D&#45;Localization&#45;Tool/DLL/Code/Headers/Clip.hpp" name="D:/Repositories/Unity3D&#45;Localization&#45;Tool/DLL/Code/Headers/Clip.hpp">
+<area shape="rect" id="node1" title="Store the basic information of any object of a timeline." alt="" coords="573,5,735,61"/>
+<area shape="rect" id="node2" href="$_audio___clip_8hpp.html" title="A clip with the information of an audio file." alt="" coords="245,109,444,165"/>
+<area shape="rect" id="node8" href="$_text___clip_8hpp.html" title="Clip that stores a text." alt="" coords="661,109,852,165"/>
+<area shape="rect" id="node12" href="$_track_8hpp.html" title="Set of clips(of any kind) aligned in time." alt="" coords="468,109,637,165"/>
+<area shape="rect" id="node13" href="$_clip_8cpp.html" title=" " alt="" coords="876,109,1037,165"/>
+<area shape="rect" id="node3" href="$_audio___track_8hpp.html" title="Track of audio clips." alt="" coords="280,213,489,269"/>
+<area shape="rect" id="node5" href="$_file___manager_8cpp.html" title=" " alt="" coords="557,317,772,373"/>
+<area shape="rect" id="node6" href="$_sequence_8cpp.html" title=" " alt="" coords="338,317,533,373"/>
+<area shape="rect" id="node7" href="$_audio___clip_8cpp.html" title=" " alt="" coords="5,213,204,269"/>
+<area shape="rect" id="node4" href="$_audio___track_8cpp.html" title=" " alt="" coords="104,317,313,373"/>
+<area shape="rect" id="node9" href="$_text___track_8hpp.html" title="A track of text clips." alt="" coords="616,213,817,269"/>
+<area shape="rect" id="node11" href="$_text___clip_8cpp.html" title=" " alt="" coords="893,213,1084,269"/>
+<area shape="rect" id="node10" href="$_text___track_8cpp.html" title=" " alt="" coords="796,317,997,373"/>
+</map>
