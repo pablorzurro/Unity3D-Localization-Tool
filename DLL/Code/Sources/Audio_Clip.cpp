@@ -14,7 +14,8 @@ namespace prz
 		float startCutTime
 	) :
 		Clip(name, startTime, duration),
-		m_filePath(to_char_array(audioFilePath)),
+		m_filePath(audioFilePath),
+		m_fileName(split_string_by_separator(m_filePath, "/")),
 		m_startCutTime(startCutTime)
 	{}
 
@@ -202,7 +203,7 @@ namespace prz
 		{
 			if (audioClip)
 			{
-				audioClip->get_start_cut_time();
+				return audioClip->get_start_cut_time();
 			}
 
 			return float::MinValue;
@@ -212,7 +213,7 @@ namespace prz
 		{
 			if (audioClip)
 			{
-				audioClip->get_file_length();
+				return audioClip->get_file_length();
 			}
 
 			return float::MinValue;

@@ -1,0 +1,7 @@
+<map id="prz::get_file_sequences_by_path" name="prz::get_file_sequences_by_path">
+<area shape="rect" id="node1" title="Get the file sequences by path." alt="" coords="5,39,164,80"/>
+<area shape="rect" id="node2" href="$classprz_1_1_file___manager.html#a01f8e98b44d904709af8ec7f9bf91f3a" title="Return the instance to the file manager." alt="" coords="238,5,373,47"/>
+<area shape="rect" id="node3" href="$classprz_1_1_file___manager.html#a75c22ac120dc18a061d5c2c68f965d0b" title="Get the file sequences by path array." alt="" coords="212,71,399,112"/>
+<area shape="rect" id="node4" href="$classprz_1_1_file___manager.html#a9e617521f5fa135f8ecb4b967eed4b7c" title="Get the file sequences by name array." alt="" coords="447,71,640,112"/>
+<area shape="rect" id="node5" href="$classprz_1_1_file___manager.html#a57fba84490a328ce3b244198272be7f4" title="Return if a file is loaded by name." alt="" coords="688,71,848,112"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="prz::File_Manager::get_file_number_of_sequences_by_path" name="prz::File_Manager::get_file_number_of_sequences_by_path">
+<area shape="rect" id="node1" title="Get the file number of sequences by path." alt="" coords="387,53,587,109"/>
+<area shape="rect" id="node2" href="$classprz_1_1_file___manager.html#aad862a71b68f6bb1870b1750f33e70f4" title="Load a file in path." alt="" coords="190,27,325,69"/>
+<area shape="rect" id="node5" href="$namespaceprz.html#aea902bbb73266b76bd53325b0c23da4c" title="Get the file number of sequences by path." alt="" coords="176,93,339,134"/>
+<area shape="rect" id="node3" href="$namespaceprz.html#a53f06f7dabea7f0219ac751039a82e3c" title="load file" alt="" coords="19,5,114,32"/>
+<area shape="rect" id="node4" href="$namespaceprz.html#ad91b0a2618b7c9ce3a9bf792a3979e55" title="load file and return the sequences array" alt="" coords="5,57,128,98"/>
+</map>

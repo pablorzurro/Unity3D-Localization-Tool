@@ -1,0 +1,9 @@
+<map id="nlohmann::basic_json::size" name="nlohmann::basic_json::size">
+<area shape="rect" id="node1" title="returns the number of elements" alt="" coords="555,71,703,112"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#a88cbcefe9a3f4d294bed0653550a5cb9" title="remove element from a JSON array given an index" alt="" coords="359,5,507,47"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#a2f47d3c6a441c57dd2be00449fbb88e1" title="returns the maximum possible number of elements" alt="" coords="359,71,507,112"/>
+<area shape="rect" id="node4" href="$classprz_1_1_file___manager.html#a930093b7f609e4f9cf755efb0d91ef46" title="Load all file sequences." alt="" coords="363,136,502,177"/>
+<area shape="rect" id="node5" href="$classprz_1_1_file___manager.html#aad862a71b68f6bb1870b1750f33e70f4" title="Load a file in path." alt="" coords="176,136,311,177"/>
+<area shape="rect" id="node6" href="$namespaceprz.html#a53f06f7dabea7f0219ac751039a82e3c" title="load file" alt="" coords="19,114,114,141"/>
+<area shape="rect" id="node7" href="$namespaceprz.html#ad91b0a2618b7c9ce3a9bf792a3979e55" title="load file and return the sequences array" alt="" coords="5,165,128,207"/>
+</map>

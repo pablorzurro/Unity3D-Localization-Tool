@@ -35,7 +35,10 @@ Collaboration diagram for prz\+::Text\+\_\+\+Track\+:
 \mbox{\hyperlink{classprz_1_1_text___track_ac87a34649f6084c8a048b0fa3ebcef33}{Text\+\_\+\+Track}} ()
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classprz_1_1_text___track}{Text\+\_\+\+Track}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classprz_1_1_text___track_afc271eaf47473488c65986d56c9bdc51}{$\sim$\+Text\+\_\+\+Track}} ()
-\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classprz_1_1_text___track}{Text\+\_\+\+Track}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classprz_1_1_text___track}{Text\+\_\+\+Track}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classprz_1_1_text___track_af19070ff05eb7922539baa043441145c}{conflicts\+\_\+with\+\_\+clip}} (\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$text\+Clip) final override
+\begin{DoxyCompactList}\small\item\em Check if the input clip conflicts with this track. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -78,6 +81,46 @@ Definition at line 39 of file Text\+\_\+\+Track.\+hpp.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classprz_1_1_text___track_af19070ff05eb7922539baa043441145c}\label{classprz_1_1_text___track_af19070ff05eb7922539baa043441145c}} 
+\index{prz::Text\_Track@{prz::Text\_Track}!conflicts\_with\_clip@{conflicts\_with\_clip}}
+\index{conflicts\_with\_clip@{conflicts\_with\_clip}!prz::Text\_Track@{prz::Text\_Track}}
+\subsubsection{\texorpdfstring{conflicts\_with\_clip()}{conflicts\_with\_clip()}}
+{\footnotesize\ttfamily bool prz\+::\+Text\+\_\+\+Track\+::conflicts\+\_\+with\+\_\+clip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$}]{clip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the input clip conflicts with this track. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classprz_1_1_track_aefad1eca406d312dbafec624435b4420}{prz\+::\+Track$<$ Text\+\_\+\+Clip $>$}}.
+
+
+
+Definition at line 35 of file Text\+\_\+\+Track.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_text___track_af19070ff05eb7922539baa043441145c_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Code/\+Headers/\mbox{\hyperlink{_text___track_8hpp}{Text\+\_\+\+Track.\+hpp}}\end{DoxyCompactItemize}
+D\+:/\+Repositories/\+Unity3\+D-\/\+Localization-\/\+Tool/\+D\+L\+L/\+Code/\+Headers/\mbox{\hyperlink{_text___track_8hpp}{Text\+\_\+\+Track.\+hpp}}\item 
+D\+:/\+Repositories/\+Unity3\+D-\/\+Localization-\/\+Tool/\+D\+L\+L/\+Code/\+Sources/\mbox{\hyperlink{_text___track_8cpp}{Text\+\_\+\+Track.\+cpp}}\end{DoxyCompactItemize}

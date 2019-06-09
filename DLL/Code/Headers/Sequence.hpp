@@ -195,7 +195,7 @@ namespace prz
 		 * @param sequence 
 		 * @return const PString* 
 		 */
-		/*LOCALIZATION_TOOL_API*/ const PString* get_sequence_name(Sequence* sequence);
+		LOCALIZATION_TOOL_API const PString* get_sequence_name(Sequence* sequence);
 
 		/**
 		 * @brief Get the sequence number of audio tracks 
@@ -203,7 +203,7 @@ namespace prz
 		 * @param sequence 
 		 * @return int 
 		 */
-		/*LOCALIZATION_TOOL_API*/ int get_sequence_number_of_audio_tracks(Sequence* sequence);
+		LOCALIZATION_TOOL_API int get_sequence_number_of_audio_tracks(Sequence* sequence);
 
 		/**
 		 * @brief Get the sequence number of text tracks 
@@ -211,7 +211,7 @@ namespace prz
 		 * @param sequence 
 		 * @return int 
 		 */
-		/*LOCALIZATION_TOOL_API*/ int get_sequence_number_of_text_tracks(Sequence* sequence);
+		LOCALIZATION_TOOL_API int get_sequence_number_of_text_tracks(Sequence* sequence);
 
 		/**
 		 * @brief Get the sequence audio tracks 
@@ -219,7 +219,7 @@ namespace prz
 		 * @param sequence 
 		 * @return Audio_Track** 
 		 */
-		/*LOCALIZATION_TOOL_API*/ Audio_Track** get_sequence_audio_tracks(Sequence* sequence);
+		LOCALIZATION_TOOL_API Audio_Track** get_sequence_audio_tracks(Sequence* sequence);
 
 		/**
 		 * @brief Get the sequence text tracks 
@@ -227,7 +227,7 @@ namespace prz
 		 * @param sequence 
 		 * @return Text_Track** 
 		 */
-		/*LOCALIZATION_TOOL_API*/ Text_Track** get_sequence_text_tracks(Sequence* sequence);
+		LOCALIZATION_TOOL_API Text_Track** get_sequence_text_tracks(Sequence* sequence);
 
 	}
 

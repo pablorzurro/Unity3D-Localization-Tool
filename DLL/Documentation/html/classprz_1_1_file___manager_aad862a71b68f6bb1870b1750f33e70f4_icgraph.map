@@ -1,4 +1,5 @@
 <map id="prz::File_Manager::load_file" name="prz::File_Manager::load_file">
-<area shape="rect" id="node1" title="Load a file in path." alt="" coords="148,22,283,63"/>
-<area shape="rect" id="node2" href="$_file___manager_8hpp.html#a53f06f7dabea7f0219ac751039a82e3c" title="load file" alt="" coords="5,29,100,56"/>
+<area shape="rect" id="node1" title="Load a file in path." alt="" coords="176,27,311,69"/>
+<area shape="rect" id="node2" href="$namespaceprz.html#a53f06f7dabea7f0219ac751039a82e3c" title="load file" alt="" coords="19,5,114,32"/>
+<area shape="rect" id="node3" href="$namespaceprz.html#ad91b0a2618b7c9ce3a9bf792a3979e55" title="load file and return the sequences array" alt="" coords="5,57,128,98"/>
 </map>

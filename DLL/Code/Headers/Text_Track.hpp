@@ -38,6 +38,10 @@ namespace prz
 		 */
 		~Text_Track(){}
 
+	public:
+
+		bool conflicts_with_clip(Text_Clip* textClip) final override;
+
 	};
 
 	#pragma region TextTrackExport

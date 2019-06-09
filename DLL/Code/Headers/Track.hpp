@@ -54,7 +54,7 @@ namespace prz
 	public:
 
 		/**
-		 * @brief 
+		 * @brief add a clip
 		 * 
 		 * @param clip 
 		 * @return true 
@@ -62,9 +62,10 @@ namespace prz
 		 */
 		bool add_clip(ClipClass* clip)
 		{
-			if (!conflicts_with_clips(clip))
+			if (!conflicts_with_clip(clip))
 			{
 				m_clips.push_back(clip);
+				return true;
 			}
 
 			return false;
@@ -73,39 +74,13 @@ namespace prz
 	public:
 
 		/**
-		 * @brief 
+		 * @brief Check if the input clip conflicts with this track 
 		 * 
 		 * @param clip 
 		 * @return true 
 		 * @return false 
 		 */
-		virtual bool conflicts_with_clips(ClipClass* clip)
-		{
-			bool isConflict = false;
-
-			if (clip)
-			{
-				Clip* clipPtr = static_cast<Clip*>(clip);
-
-				if (clipPtr)
-				{
-					size_t nClips = get_number_of_clips();
-
-					for (size_t i = 0; i < nClips && !isConflict; i++)
-					{
-						Clip* iClip = static_cast<Clip*>(m_clips[i]);
-
-						if (iClip)
-						{
-							isConflict = iClip->collides_with(*clipPtr);
-						}
-					}
-
-				}
-			}
-
-			return isConflict;
-		}
+		virtual bool conflicts_with_clip(ClipClass* clip) = 0;
 		
 	public:
 
@@ -145,7 +120,7 @@ namespace prz
 
 		}*/
 
-	private:
+	protected:
 
 		vector<ClipClass*> m_clips;
 

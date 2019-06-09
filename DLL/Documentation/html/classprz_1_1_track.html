@@ -63,15 +63,16 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>prz</b></li><li class="navelem"><a class="el" href="classprz_1_1_track.html">Track</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceprz.html">prz</a></li><li class="navelem"><a class="el" href="classprz_1_1_track.html">Track</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classprz_1_1_track-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">prz::Track&lt; ClipClass &gt; Class Template Reference</div>  </div>
+<div class="title">prz::Track&lt; ClipClass &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -89,15 +90,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a84507a3e2e1cbb97d21298e73b7a24e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="classprz_1_1_track.html" title="Set of clips(of any kind) aligned in time.">Track</a>.  <a href="#a84507a3e2e1cbb97d21298e73b7a24e3">More...</a><br /></td></tr>
 <tr class="separator:a84507a3e2e1cbb97d21298e73b7a24e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa818d00358690b7dd76ae6e1eb788838"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprz_1_1_track.html#aa818d00358690b7dd76ae6e1eb788838">add_clip</a> (ClipClass *clip)</td></tr>
+<tr class="memdesc:aa818d00358690b7dd76ae6e1eb788838"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a clip  <a href="#aa818d00358690b7dd76ae6e1eb788838">More...</a><br /></td></tr>
 <tr class="separator:aa818d00358690b7dd76ae6e1eb788838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f2314165a05c4748d684fca42b2f76a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprz_1_1_track.html#a2f2314165a05c4748d684fca42b2f76a">conflicts_with_clips</a> (ClipClass *clip)</td></tr>
-<tr class="separator:a2f2314165a05c4748d684fca42b2f76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefad1eca406d312dbafec624435b4420"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprz_1_1_track.html#aefad1eca406d312dbafec624435b4420">conflicts_with_clip</a> (ClipClass *clip)=0</td></tr>
+<tr class="memdesc:aefad1eca406d312dbafec624435b4420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the input clip conflicts with this track.  <a href="#aefad1eca406d312dbafec624435b4420">More...</a><br /></td></tr>
+<tr class="separator:aefad1eca406d312dbafec624435b4420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54eb44634d26680f1851077e64991419"><td class="memItemLeft" align="right" valign="top">vector&lt; ClipClass * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprz_1_1_track.html#a54eb44634d26680f1851077e64991419">get_clips</a> ()</td></tr>
 <tr class="memdesc:a54eb44634d26680f1851077e64991419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the clips.  <a href="#a54eb44634d26680f1851077e64991419">More...</a><br /></td></tr>
 <tr class="separator:a54eb44634d26680f1851077e64991419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a776b6d37978d945f406fc4922981a2a1"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprz_1_1_track.html#a776b6d37978d945f406fc4922981a2a1">get_number_of_clips</a> ()</td></tr>
 <tr class="memdesc:a776b6d37978d945f406fc4922981a2a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of clips.  <a href="#a776b6d37978d945f406fc4922981a2a1">More...</a><br /></td></tr>
 <tr class="separator:a776b6d37978d945f406fc4922981a2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a9f10f83e79d7271343b4b0d5c3db8bff"><td class="memItemLeft" align="right" valign="top">vector&lt; ClipClass * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprz_1_1_track.html#a9f10f83e79d7271343b4b0d5c3db8bff">m_clips</a></td></tr>
+<tr class="separator:a9f10f83e79d7271343b4b0d5c3db8bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class ClipClass&gt;<br />
@@ -201,6 +209,8 @@ template&lt;class ClipClass&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>add a clip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">clip</td><td></td></tr>
@@ -215,8 +225,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="a2f2314165a05c4748d684fca42b2f76a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f2314165a05c4748d684fca42b2f76a">&#9670;&nbsp;</a></span>conflicts_with_clips()</h2>
+<a id="aefad1eca406d312dbafec624435b4420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefad1eca406d312dbafec624435b4420">&#9670;&nbsp;</a></span>conflicts_with_clip()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +237,7 @@ template&lt;class ClipClass&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool <a class="el" href="classprz_1_1_track.html">prz::Track</a>&lt; ClipClass &gt;::conflicts_with_clips </td>
+          <td class="memname">virtual bool <a class="el" href="classprz_1_1_track.html">prz::Track</a>&lt; ClipClass &gt;::conflicts_with_clip </td>
           <td>(</td>
           <td class="paramtype">ClipClass *&#160;</td>
           <td class="paramname"><em>clip</em></td><td>)</td>
@@ -236,10 +246,12 @@ template&lt;class ClipClass&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Check if the input clip conflicts with this track. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">clip</td><td></td></tr>
@@ -250,14 +262,14 @@ template&lt;class ClipClass&gt; </div>
 <dd>
 false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_track_8hpp_source.html#l00082">82</a> of file <a class="el" href="_track_8hpp_source.html">Track.hpp</a>.</p>
+<p>Implemented in <a class="el" href="classprz_1_1_audio___track.html#a6487c33aca7d2d496ca39037f5f75170">prz::Audio_Track</a>, and <a class="el" href="classprz_1_1_text___track.html#af19070ff05eb7922539baa043441145c">prz::Text_Track</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classprz_1_1_track_a2f2314165a05c4748d684fca42b2f76a_icgraph.png" border="0" usemap="#classprz_1_1_track_a2f2314165a05c4748d684fca42b2f76a_icgraph" alt=""/></div>
-<map name="classprz_1_1_track_a2f2314165a05c4748d684fca42b2f76a_icgraph" id="classprz_1_1_track_a2f2314165a05c4748d684fca42b2f76a_icgraph">
-<area shape="rect"  title=" " alt="" coords="200,5,336,47"/>
-<area shape="rect"  href="classprz_1_1_track.html#aa818d00358690b7dd76ae6e1eb788838" title=" " alt="" coords="5,5,152,47"/>
+<div class="center"><img src="classprz_1_1_track_aefad1eca406d312dbafec624435b4420_icgraph.png" border="0" usemap="#classprz_1_1_track_aefad1eca406d312dbafec624435b4420_icgraph" alt=""/></div>
+<map name="classprz_1_1_track_aefad1eca406d312dbafec624435b4420_icgraph" id="classprz_1_1_track_aefad1eca406d312dbafec624435b4420_icgraph">
+<area shape="rect"  title="Check if the input clip conflicts with this track." alt="" coords="200,5,336,47"/>
+<area shape="rect"  href="classprz_1_1_track.html#aa818d00358690b7dd76ae6e1eb788838" title="add a clip" alt="" coords="5,5,152,47"/>
 </map>
 </div>
 
@@ -291,15 +303,15 @@ template&lt;class ClipClass&gt; </div>
 <p>Get the clips. </p>
 <dl class="section return"><dt>Returns</dt><dd>vector&lt;ClipClass*&gt;&amp; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_track_8hpp_source.html#l00117">117</a> of file <a class="el" href="_track_8hpp_source.html">Track.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_track_8hpp_source.html#l00092">92</a> of file <a class="el" href="_track_8hpp_source.html">Track.hpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classprz_1_1_track_a54eb44634d26680f1851077e64991419_icgraph.png" border="0" usemap="#classprz_1_1_track_a54eb44634d26680f1851077e64991419_icgraph" alt=""/></div>
 <map name="classprz_1_1_track_a54eb44634d26680f1851077e64991419_icgraph" id="classprz_1_1_track_a54eb44634d26680f1851077e64991419_icgraph">
-<area shape="rect"  title="Get the clips." alt="" coords="193,82,333,109"/>
-<area shape="rect"  href="_audio___track_8hpp.html#a291fc379c9ff52af1a7aaa0ac7736567" title="Get the audio track clips." alt="" coords="5,29,145,71"/>
-<area shape="rect"  href="_text___track_8hpp.html#ad39556b5974c5a1715136ac7083ba078" title="Get the text track clips." alt="" coords="10,119,141,160"/>
+<area shape="rect"  title="Get the clips." alt="" coords="193,46,333,73"/>
+<area shape="rect"  href="namespaceprz.html#a291fc379c9ff52af1a7aaa0ac7736567" title="Get the audio track clips." alt="" coords="5,5,145,47"/>
+<area shape="rect"  href="namespaceprz.html#abd2d4f20a28459ce750fa2d4de97ab92" title="Get the text track clips." alt="" coords="10,71,141,112"/>
 </map>
 </div>
 
@@ -333,23 +345,49 @@ template&lt;class ClipClass&gt; </div>
 <p>Get the number of clips. </p>
 <dl class="section return"><dt>Returns</dt><dd>unsigned int </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_track_8hpp_source.html#l00129">129</a> of file <a class="el" href="_track_8hpp_source.html">Track.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_track_8hpp_source.html#l00104">104</a> of file <a class="el" href="_track_8hpp_source.html">Track.hpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classprz_1_1_track_a776b6d37978d945f406fc4922981a2a1_icgraph.png" border="0" usemap="#classprz_1_1_track_a776b6d37978d945f406fc4922981a2a1_icgraph" alt=""/></div>
 <map name="classprz_1_1_track_a776b6d37978d945f406fc4922981a2a1_icgraph" id="classprz_1_1_track_a776b6d37978d945f406fc4922981a2a1_icgraph">
-<area shape="rect"  title="Get the number of clips." alt="" coords="208,95,364,136"/>
-<area shape="rect"  href="classprz_1_1_track.html#a2f2314165a05c4748d684fca42b2f76a" title=" " alt="" coords="5,5,160,47"/>
-<area shape="rect"  href="_audio___track_8hpp.html#a8f5ec57a63ae029d8417d533e30965f4" title="Return the number of clips of the input audio track." alt="" coords="13,95,153,136"/>
-<area shape="rect"  href="_text___track_8hpp.html#a479605aa22a06a3128174b575a312da7" title="Get the text track number of clips." alt="" coords="17,184,148,225"/>
+<area shape="rect"  title="Get the number of clips." alt="" coords="193,39,349,80"/>
+<area shape="rect"  href="namespaceprz.html#a8f5ec57a63ae029d8417d533e30965f4" title="Return the number of clips of the input audio track." alt="" coords="5,5,145,47"/>
+<area shape="rect"  href="namespaceprz.html#a479605aa22a06a3128174b575a312da7" title="Get the text track number of clips." alt="" coords="10,71,141,112"/>
 </map>
 </div>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9f10f83e79d7271343b4b0d5c3db8bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f10f83e79d7271343b4b0d5c3db8bff">&#9670;&nbsp;</a></span>m_clips</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ClipClass&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;ClipClass*&gt; <a class="el" href="classprz_1_1_track.html">prz::Track</a>&lt; ClipClass &gt;::m_clips</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_track_8hpp_source.html#l00125">125</a> of file <a class="el" href="_track_8hpp_source.html">Track.hpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Code/Headers/<a class="el" href="_track_8hpp_source.html">Track.hpp</a></li>
+<li>D:/Repositories/Unity3D-Localization-Tool/DLL/Code/Headers/<a class="el" href="_track_8hpp_source.html">Track.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

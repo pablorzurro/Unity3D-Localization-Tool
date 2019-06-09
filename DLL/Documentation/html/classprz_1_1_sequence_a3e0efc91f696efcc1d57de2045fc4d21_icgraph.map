@@ -1,4 +1,4 @@
 <map id="prz::Sequence::get_audio_tracks_ptr" name="prz::Sequence::get_audio_tracks_ptr">
-<area shape="rect" id="node1" title="Return the audio tracks as array." alt="" coords="220,29,352,71"/>
-<area shape="rect" id="node2" href="$_sequence_8hpp.html#ac5117548474c20a5c1e5ac0998a7c89f" title="Get the sequence audio tracks." alt="" coords="5,29,172,71"/>
+<area shape="rect" id="node1" title="Return the audio tracks as array." alt="" coords="220,5,352,47"/>
+<area shape="rect" id="node2" href="$namespaceprz.html#ac5117548474c20a5c1e5ac0998a7c89f" title="Get the sequence audio tracks." alt="" coords="5,5,172,47"/>
 </map>

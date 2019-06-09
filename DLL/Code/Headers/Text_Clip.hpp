@@ -92,7 +92,7 @@ namespace prz
 		 * @return true 
 		 * @return false 
 		 */
-		/*LOCALIZATION_TOOL_API*/ bool set_text_clip_name(Text_Clip* textClip, const char* name);
+		LOCALIZATION_TOOL_API bool set_text_clip_name(Text_Clip* textClip, const char* name);
 
 		/**
 		 * @brief Set the text clip start time 
@@ -102,7 +102,7 @@ namespace prz
 		 * @return true 
 		 * @return false 
 		 */
-		/*LOCALIZATION_TOOL_API*/ bool set_text_clip_start_time(Text_Clip* textClip, float startTime);
+		LOCALIZATION_TOOL_API bool set_text_clip_start_time(Text_Clip* textClip, float startTime);
 
 		/**
 		 * @brief Set the text clip duration 
@@ -112,7 +112,7 @@ namespace prz
 		 * @return true 
 		 * @return false 
 		 */
-		/*LOCALIZATION_TOOL_API*/ bool set_text_clip_duration(Text_Clip* textClip, float duration);
+		LOCALIZATION_TOOL_API bool set_text_clip_duration(Text_Clip* textClip, float duration);
 
 		/**
 		 * @brief Set the text clip text 
@@ -122,7 +122,7 @@ namespace prz
 		 * @return true 
 		 * @return false 
 		 */
-		/*LOCALIZATION_TOOL_API*/ bool set_text_clip_text(Text_Clip* textClip, const char* text);
+		LOCALIZATION_TOOL_API bool set_text_clip_text(Text_Clip* textClip, const char* text);
 
 		/**
 		 * @brief Get the text clip name 
@@ -130,7 +130,7 @@ namespace prz
 		 * @param textClip 
 		 * @return const PString* 
 		 */
-		/*LOCALIZATION_TOOL_API*/ const PString* get_text_clip_name(Text_Clip* textClip);
+		LOCALIZATION_TOOL_API const PString* get_text_clip_name(Text_Clip* textClip);
 
 		/**
 		 * @brief Get the text clip start time 
@@ -138,7 +138,7 @@ namespace prz
 		 * @param textClip 
 		 * @return float 
 		 */
-		/*LOCALIZATION_TOOL_API*/ float get_text_clip_start_time(Text_Clip* textClip);
+		LOCALIZATION_TOOL_API float get_text_clip_start_time(Text_Clip* textClip);
 
 		/**
 		 * @brief Get the text clip end time 
@@ -146,7 +146,7 @@ namespace prz
 		 * @param textClip 
 		 * @return float 
 		 */
-		/*LOCALIZATION_TOOL_API*/ float get_text_clip_end_time(Text_Clip* textClip);
+		LOCALIZATION_TOOL_API float get_text_clip_end_time(Text_Clip* textClip);
 
 		/**
 		 * @brief Get the text clip duration 
@@ -154,7 +154,7 @@ namespace prz
 		 * @param textClip 
 		 * @return float 
 		 */
-		/*LOCALIZATION_TOOL_API*/ float get_text_clip_duration(Text_Clip* textClip);
+		LOCALIZATION_TOOL_API float get_text_clip_duration(Text_Clip* textClip);
 
 		/**
 		 * @brief Get the text clip text 
@@ -162,7 +162,7 @@ namespace prz
 		 * @param textClip 
 		 * @return const PString* 
 		 */
-		/*LOCALIZATION_TOOL_API*/ const PString* get_text_clip_text(Text_Clip* textClip);
+		LOCALIZATION_TOOL_API const PString* get_text_clip_text(Text_Clip* textClip);
 
 	}
 

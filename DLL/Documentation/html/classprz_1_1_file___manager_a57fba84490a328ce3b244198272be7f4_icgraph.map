@@ -1,9 +1,18 @@
 <map id="prz::File_Manager::is_file_loaded_by_name" name="prz::File_Manager::is_file_loaded_by_name">
-<area shape="rect" id="node1" title="Return if a file is loaded by name." alt="" coords="501,119,661,161"/>
-<area shape="rect" id="node2" href="$classprz_1_1_file___manager.html#a56563f65f4b2cfa34e4393ae34a0afd3" title="Copy the audio files by path (that audio clips store) to the destination folder." alt="" coords="286,5,421,61"/>
-<area shape="rect" id="node3" href="$classprz_1_1_file___manager.html#ab1b6f6447621351af16262236dad73b3" title="Return if a file is loaded by path." alt="" coords="277,86,430,127"/>
-<area shape="rect" id="node4" href="$classprz_1_1_file___manager.html#a9e617521f5fa135f8ecb4b967eed4b7c" title="Get the file sequences by name array." alt="" coords="257,151,450,193"/>
-<area shape="rect" id="node6" href="$classprz_1_1_file___manager.html#abdabf8d32f9cca2d8cda41cdd7841312" title="Get the file number of sequences by name." alt="" coords="253,217,453,273"/>
-<area shape="rect" id="node5" href="$classprz_1_1_file___manager.html#a75c22ac120dc18a061d5c2c68f965d0b" title="Get the file sequences by path array." alt="" coords="12,151,199,193"/>
-<area shape="rect" id="node7" href="$classprz_1_1_file___manager.html#a14c8b3151837fbb69614eb30499c534a" title="Get the file number of sequences by path." alt="" coords="5,217,205,273"/>
+<area shape="rect" id="node1" title="Return if a file is loaded by name." alt="" coords="883,241,1043,283"/>
+<area shape="rect" id="node2" href="$classprz_1_1_file___manager.html#aad862a71b68f6bb1870b1750f33e70f4" title="Load a file in path." alt="" coords="190,5,325,47"/>
+<area shape="rect" id="node5" href="$classprz_1_1_file___manager.html#a56563f65f4b2cfa34e4393ae34a0afd3" title="Copy the audio files by path (that audio clips store) to the destination folder." alt="" coords="667,270,802,326"/>
+<area shape="rect" id="node6" href="$classprz_1_1_file___manager.html#ab1b6f6447621351af16262236dad73b3" title="Return if a file is loaded by path." alt="" coords="658,351,811,392"/>
+<area shape="rect" id="node8" href="$classprz_1_1_file___manager.html#a9e617521f5fa135f8ecb4b967eed4b7c" title="Get the file sequences by name array." alt="" coords="638,204,831,245"/>
+<area shape="rect" id="node12" href="$classprz_1_1_file___manager.html#abdabf8d32f9cca2d8cda41cdd7841312" title="Get the file number of sequences by name." alt="" coords="635,123,835,179"/>
+<area shape="rect" id="node16" href="$namespaceprz.html#a60a210bc0ab0675f0096a17f18420c7b" title="Return if a file is loaded by name." alt="" coords="671,416,798,457"/>
+<area shape="rect" id="node3" href="$namespaceprz.html#a53f06f7dabea7f0219ac751039a82e3c" title="load file" alt="" coords="19,13,114,39"/>
+<area shape="rect" id="node4" href="$namespaceprz.html#ad91b0a2618b7c9ce3a9bf792a3979e55" title="load file and return the sequences array" alt="" coords="5,99,128,140"/>
+<area shape="rect" id="node7" href="$namespaceprz.html#a70392696dda40f3306dbc887daf79478" title="Return if a file is loaded by path." alt="" coords="423,351,550,392"/>
+<area shape="rect" id="node9" href="$classprz_1_1_file___manager.html#a75c22ac120dc18a061d5c2c68f965d0b" title="Get the file sequences by path array." alt="" coords="393,204,580,245"/>
+<area shape="rect" id="node11" href="$namespaceprz.html#a1bf460cd725d36d217e1a94ea659038e" title="Get the file sequences by name." alt="" coords="407,269,566,311"/>
+<area shape="rect" id="node10" href="$namespaceprz.html#ad20f7c7ee778799b88580eaf987b20d3" title="Get the file sequences by path." alt="" coords="178,204,337,245"/>
+<area shape="rect" id="node13" href="$classprz_1_1_file___manager.html#a14c8b3151837fbb69614eb30499c534a" title="Get the file number of sequences by path." alt="" coords="387,58,587,114"/>
+<area shape="rect" id="node15" href="$namespaceprz.html#a1e7f643937e9d287b0ee7b629861e34c" title="Get the file number of sequences by name." alt="" coords="402,139,571,180"/>
+<area shape="rect" id="node14" href="$namespaceprz.html#aea902bbb73266b76bd53325b0c23da4c" title="Get the file number of sequences by path." alt="" coords="176,71,339,112"/>
 </map>

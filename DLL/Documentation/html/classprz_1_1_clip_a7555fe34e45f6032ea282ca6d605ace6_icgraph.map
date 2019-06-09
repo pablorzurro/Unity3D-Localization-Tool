@@ -1,5 +1,5 @@
 <map id="prz::Clip::set_duration" name="prz::Clip::set_duration">
-<area shape="rect" id="node1" title="Set the duration." alt="" coords="184,82,333,109"/>
-<area shape="rect" id="node2" href="$_audio___clip_8hpp.html#a6f3d46bb8898e0ab0f8200ff01e68b83" title="Set the audio clip duration." alt="" coords="5,29,136,71"/>
-<area shape="rect" id="node3" href="$_text___clip_8hpp.html#a0b38209c4d846727812a74f44085daef" title="Set the text clip duration." alt="" coords="9,119,132,160"/>
+<area shape="rect" id="node1" title="Set the duration." alt="" coords="184,46,333,73"/>
+<area shape="rect" id="node2" href="$namespaceprz.html#a6f3d46bb8898e0ab0f8200ff01e68b83" title="Set the audio clip duration." alt="" coords="5,5,136,47"/>
+<area shape="rect" id="node3" href="$namespaceprz.html#a0b38209c4d846727812a74f44085daef" title="Set the text clip duration." alt="" coords="9,71,132,112"/>
 </map>

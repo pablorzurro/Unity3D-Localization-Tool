@@ -11,6 +11,22 @@ namespace prz
 	{
 	}
 
+	bool Audio_Track::conflicts_with_clip(Audio_Clip* audioClip)
+	{
+		bool isConflict = false;
+		
+		if (audioClip)
+		{
+			size_t nClips = get_number_of_clips();
+			for (size_t i = 0; i < nClips && !isConflict; i++)
+			{
+				isConflict = m_clips[i]->collides_with(*audioClip);
+			}
+		}
+		
+		return isConflict;
+	}
+
 	#pragma region AudioTrackExport
 	extern "C"
 	{

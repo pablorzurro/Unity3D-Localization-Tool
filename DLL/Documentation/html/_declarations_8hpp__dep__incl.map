@@ -1,27 +1,27 @@
-<map id="Code/Headers/Declarations.hpp" name="Code/Headers/Declarations.hpp">
-<area shape="rect" id="node1" title="Define the custom names of my own library. Also, include third&#45;party libraries declaration files to a..." alt="" coords="1003,5,1208,32"/>
-<area shape="rect" id="node2" href="$_clip_8hpp.html" title="Store the basic information of any object of a timeline." alt="" coords="607,95,761,121"/>
-<area shape="rect" id="node13" href="$_track_8hpp.html" title="Set of clips(of any kind) aligned in time." alt="" coords="207,191,372,218"/>
-<area shape="rect" id="node15" href="$_file___manager_8hpp.html" title="Create, load, store and manage sequences and files." alt="" coords="979,281,1189,307"/>
-<area shape="rect" id="node16" href="$_interface_8hpp.html" title=" " alt="" coords="1459,191,1642,218"/>
-<area shape="rect" id="node18" href="$_i_o_8hpp.html" title=" " alt="" coords="1123,87,1274,129"/>
-<area shape="rect" id="node22" href="$_math_8hpp.html" title=" " alt="" coords="1233,184,1383,225"/>
-<area shape="rect" id="node23" href="$_utilities_2_nlohmann___j_s_o_n___converter_8hpp_source.html" title=" " alt="" coords="927,80,1099,136"/>
-<area shape="rect" id="node24" href="$_string_8hpp.html" title=" " alt="" coords="1350,87,1501,129"/>
-<area shape="rect" id="node25" href="$_sequence_8hpp.html" title="Manage and store tracks and clips." alt="" coords="611,281,802,307"/>
-<area shape="rect" id="node3" href="$_audio___clip_8hpp.html" title="A clip with the information of an audio file." alt="" coords="401,184,543,225"/>
-<area shape="rect" id="node9" href="$_text___clip_8hpp.html" title="Clip that stores a text." alt="" coords="591,191,777,218"/>
-<area shape="rect" id="node14" href="$_clip_8cpp_source.html" title=" " alt="" coords="1219,370,1373,397"/>
-<area shape="rect" id="node4" href="$_audio___track_8hpp.html" title="Track of audio clips." alt="" coords="21,273,163,315"/>
-<area shape="rect" id="node6" href="$_file___manager_8cpp_source.html" title=" " alt="" coords="608,370,819,397"/>
-<area shape="rect" id="node7" href="$_sequence_8cpp_source.html" title=" " alt="" coords="393,370,583,397"/>
-<area shape="rect" id="node8" href="$_audio___clip_8cpp_source.html" title=" " alt="" coords="843,363,984,404"/>
-<area shape="rect" id="node5" href="$_audio___track_8cpp_source.html" title=" " alt="" coords="5,363,147,404"/>
-<area shape="rect" id="node10" href="$_text___track_8hpp.html" title="A track of text clips." alt="" coords="187,281,384,307"/>
-<area shape="rect" id="node12" href="$_text___clip_8cpp_source.html" title=" " alt="" coords="1008,370,1195,397"/>
-<area shape="rect" id="node11" href="$_text___track_8cpp_source.html" title=" " alt="" coords="171,370,368,397"/>
-<area shape="rect" id="node17" href="$_interface_8cpp_source.html" title=" " alt="" coords="1398,370,1581,397"/>
-<area shape="rect" id="node19" href="$_utilities_8hpp.html" title=" " alt="" coords="1213,281,1389,307"/>
-<area shape="rect" id="node20" href="$_p_string_8hpp.html" title="Class to handle a string with &quot;smart&quot; allocated memory." alt="" coords="1605,363,1755,404"/>
-<area shape="rect" id="node21" href="$_p_string_8cpp_source.html" title=" " alt="" coords="1605,452,1755,493"/>
+<map id="D:/Repositories/Unity3D&#45;Localization&#45;Tool/DLL/Code/Headers/Declarations.hpp" name="D:/Repositories/Unity3D&#45;Localization&#45;Tool/DLL/Code/Headers/Declarations.hpp">
+<area shape="rect" id="node1" title="Define the custom names of my own library. Also, include third&#45;party libraries declaration files to a..." alt="" coords="1144,5,1353,61"/>
+<area shape="rect" id="node2" href="$_clip_8hpp.html" title="Store the basic information of any object of a timeline." alt="" coords="745,124,907,180"/>
+<area shape="rect" id="node13" href="$_track_8hpp.html" title="Set of clips(of any kind) aligned in time." alt="" coords="289,250,459,306"/>
+<area shape="rect" id="node15" href="$_file___manager_8hpp.html" title="Create, load, store and manage sequences and files." alt="" coords="1073,361,1288,417"/>
+<area shape="rect" id="node16" href="$_interface_8hpp.html" title=" " alt="" coords="1614,250,1801,306"/>
+<area shape="rect" id="node18" href="$_i_o_8hpp.html" title=" " alt="" coords="1264,117,1425,187"/>
+<area shape="rect" id="node22" href="$_math_8hpp.html" title=" " alt="" coords="1377,243,1539,313"/>
+<area shape="rect" id="node23" href="$_utilities_2_nlohmann___j_s_o_n___converter_8hpp.html" title=" " alt="" coords="1068,109,1240,195"/>
+<area shape="rect" id="node24" href="$_string_8hpp.html" title=" " alt="" coords="1501,117,1663,187"/>
+<area shape="rect" id="node25" href="$_sequence_8hpp.html" title="Manage and store tracks and clips." alt="" coords="702,361,897,417"/>
+<area shape="rect" id="node3" href="$_audio___clip_8hpp.html" title="A clip with the information of an audio file." alt="" coords="483,250,681,306"/>
+<area shape="rect" id="node9" href="$_text___clip_8hpp.html" title="Clip that stores a text." alt="" coords="731,250,921,306"/>
+<area shape="rect" id="node14" href="$_clip_8cpp.html" title=" " alt="" coords="1360,473,1521,529"/>
+<area shape="rect" id="node4" href="$_audio___track_8hpp.html" title="Track of audio clips." alt="" coords="40,361,249,417"/>
+<area shape="rect" id="node6" href="$_file___manager_8cpp.html" title=" " alt="" coords="684,473,899,529"/>
+<area shape="rect" id="node7" href="$_sequence_8cpp.html" title=" " alt="" coords="465,473,659,529"/>
+<area shape="rect" id="node8" href="$_audio___clip_8cpp.html" title=" " alt="" coords="923,473,1121,529"/>
+<area shape="rect" id="node5" href="$_audio___track_8cpp.html" title=" " alt="" coords="5,473,215,529"/>
+<area shape="rect" id="node10" href="$_text___track_8hpp.html" title="A track of text clips." alt="" coords="273,361,475,417"/>
+<area shape="rect" id="node12" href="$_text___clip_8cpp.html" title=" " alt="" coords="1145,473,1336,529"/>
+<area shape="rect" id="node11" href="$_text___track_8cpp.html" title=" " alt="" coords="239,473,440,529"/>
+<area shape="rect" id="node17" href="$_interface_8cpp.html" title=" " alt="" coords="1546,473,1733,529"/>
+<area shape="rect" id="node19" href="$_utilities_8hpp.html" title=" " alt="" coords="1312,361,1492,417"/>
+<area shape="rect" id="node20" href="$_p_string_8hpp.html" title="Class to handle a string with &quot;smart&quot; allocated memory." alt="" coords="1757,465,1919,536"/>
+<area shape="rect" id="node21" href="$_p_string_8cpp.html" title=" " alt="" coords="1757,584,1919,655"/>
 </map>

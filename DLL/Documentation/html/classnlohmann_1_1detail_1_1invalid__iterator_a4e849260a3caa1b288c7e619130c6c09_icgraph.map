@@ -1,0 +1,21 @@
+<map id="nlohmann::detail::invalid_iterator::create" name="nlohmann::detail::invalid_iterator::create">
+<area shape="rect" id="node1" title=" " alt="" coords="397,365,557,407"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1iter__impl.html#ad6f85e5945429bbdb5a6bef8d3e99d5b" title="return a reference to the value pointed to by the iterator" alt="" coords="204,5,347,47"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1iter__impl.html#a6da3d2b34528aff328f3dcb513076dec" title="dereference the iterator" alt="" coords="204,71,347,112"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1iter__impl.html#a2b592605b63ae7f5401996ffa3b14393" title="comparison: equal" alt="" coords="204,136,347,177"/>
+<area shape="rect" id="node7" href="$classnlohmann_1_1detail_1_1iter__impl.html#a0d14cd76203e00bdcef6a64a5d055cc7" title="comparison: smaller" alt="" coords="204,201,347,243"/>
+<area shape="rect" id="node9" href="$classnlohmann_1_1detail_1_1iter__impl.html#a3eef94f9d167046e7f773aeb6b78090c" title="add to iterator" alt="" coords="204,267,347,308"/>
+<area shape="rect" id="node11" href="$classnlohmann_1_1detail_1_1iter__impl.html#a49bf3e708a9c1c88c415011735962d06" title="return difference" alt="" coords="204,332,347,373"/>
+<area shape="rect" id="node12" href="$classnlohmann_1_1detail_1_1iter__impl.html#ac0b9276f1102ed4b9cd3f5f56287e3ce" title="access to successor" alt="" coords="204,397,347,439"/>
+<area shape="rect" id="node13" href="$classnlohmann_1_1detail_1_1iter__impl.html#a15dfb2744fed2ef40c12a9e9a20d6dbc" title="return the key of an object iterator" alt="" coords="204,463,347,504"/>
+<area shape="rect" id="node14" href="$classnlohmann_1_1basic__json.html#abe197e9f3184487805cfb5bba6fd5938" title="construct a JSON container given an iterator range" alt="" coords="201,528,349,569"/>
+<area shape="rect" id="node15" href="$classnlohmann_1_1basic__json.html#a068a16e76be178e83da6a192916923ed" title="remove element given an iterator" alt="" coords="201,593,349,635"/>
+<area shape="rect" id="node17" href="$classnlohmann_1_1basic__json.html#a0136728f5db69d4051c77b94307abd6c" title="inserts element" alt="" coords="201,659,349,700"/>
+<area shape="rect" id="node19" href="$classnlohmann_1_1basic__json.html#a27921dafadb3bbefd180235ec763e3ea" title="updates a JSON object from another object, overwriting existing keys" alt="" coords="201,724,349,765"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1iter__impl.html#ab447c50354c6611fa2ae0100ac17845c" title="return the value of an iterator" alt="" coords="8,5,151,47"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1iter__impl.html#aeab0e2b5da70b3bdebecd5b1a6ee66a6" title="comparison: not equal" alt="" coords="8,136,151,177"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1detail_1_1iter__impl.html#a634f85da575cb60b012a687efa26e11a" title="comparison: greater than or equal" alt="" coords="8,201,151,243"/>
+<area shape="rect" id="node10" href="$classnlohmann_1_1detail_1_1iter__impl.html#abcc9d51bc52f2e8483bbe4018f05e978" title="subtract from iterator" alt="" coords="8,267,151,308"/>
+<area shape="rect" id="node16" href="$classnlohmann_1_1basic__json.html#a7c43ed2a3004c1fa9543913f37b9fca9" title="applies a JSON Merge Patch" alt="" coords="5,593,153,635"/>
+<area shape="rect" id="node18" href="$classnlohmann_1_1basic__json.html#a1ecce113ff11dd294689ee4d45cbb855" title="inserts element" alt="" coords="5,659,153,700"/>
+</map>

@@ -1,0 +1,31 @@
+<map id="nlohmann::detail::type_error::create" name="nlohmann::detail::type_error::create">
+<area shape="rect" id="node1" title=" " alt="" coords="869,429,1020,471"/>
+<area shape="rect" id="node2" href="$namespacenlohmann_1_1detail.html#a1f0395aad0fe853a4539288749d3a603" title=" " alt="" coords="640,13,821,39"/>
+<area shape="rect" id="node4" href="$namespacenlohmann_1_1detail.html#a85955b9c6dd31846e4b8e891f78614b6" title=" " alt="" coords="659,64,802,105"/>
+<area shape="rect" id="node6" href="$namespacenlohmann_1_1detail.html#a59fca69799f6b9e366710cb9043aa77d" title=" " alt="" coords="657,130,804,157"/>
+<area shape="rect" id="node12" href="$classnlohmann_1_1detail_1_1binary__writer.html#a9ffc566db5219b473762462234b47db9" title=" " alt="" coords="651,181,811,223"/>
+<area shape="rect" id="node14" href="$classnlohmann_1_1basic__json.html#ab5dfd9a2b2663b219641cb7fe59b6da2" title="create a container (array or object) from an initializer list" alt="" coords="657,247,805,288"/>
+<area shape="rect" id="node15" href="$classnlohmann_1_1basic__json.html#a73ae333487310e3302135189ce8ff5d8" title="access specified array element with bounds checking" alt="" coords="647,313,814,339"/>
+<area shape="rect" id="node16" href="$classnlohmann_1_1basic__json.html#ac871e3b03fb2eeca9a8de4db2bea760f" title="access specified array element" alt="" coords="657,364,805,405"/>
+<area shape="rect" id="node18" href="$classnlohmann_1_1basic__json.html#adcf8ca5079f5db993820bf50036bf45d" title="access specified object element with default value" alt="" coords="657,495,805,536"/>
+<area shape="rect" id="node20" href="$classnlohmann_1_1basic__json.html#a068a16e76be178e83da6a192916923ed" title="remove element given an iterator" alt="" coords="657,429,805,471"/>
+<area shape="rect" id="node21" href="$classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="657,560,805,601"/>
+<area shape="rect" id="node24" href="$classnlohmann_1_1basic__json.html#aacf5eed15a8b66fb1e88910707a5e229" title="add an object to an array" alt="" coords="657,625,805,667"/>
+<area shape="rect" id="node25" href="$classnlohmann_1_1basic__json.html#a5338e282d1d02bed389d852dd670d98d" title="add an object to an object if key does not exist" alt="" coords="657,691,805,732"/>
+<area shape="rect" id="node26" href="$classnlohmann_1_1basic__json.html#a0136728f5db69d4051c77b94307abd6c" title="inserts element" alt="" coords="657,756,805,797"/>
+<area shape="rect" id="node28" href="$classnlohmann_1_1basic__json.html#a1cfa9ae5e7c2434cab4cfe69bffffe11" title="updates a JSON object from another object, overwriting existing keys" alt="" coords="657,821,805,863"/>
+<area shape="rect" id="node29" href="$classnlohmann_1_1basic__json.html#a65b0a24e1361a030ad0a661de22f6c8e" title="exchanges the values" alt="" coords="657,887,805,928"/>
+<area shape="rect" id="node3" href="$structnlohmann_1_1detail_1_1from__json__fn.html#a6d14a74e1043072c77892534572d2973" title=" " alt="" coords="426,5,577,47"/>
+<area shape="rect" id="node5" href="$namespacenlohmann_1_1detail.html#a7cb5dd7d46a60e65f9a8e0873b3f7dd8" title=" " alt="" coords="411,71,592,98"/>
+<area shape="rect" id="node7" href="$classnlohmann_1_1detail_1_1binary__reader.html#aed84f0302eb232d3b69f7653bef2337a" title="create a binary reader" alt="" coords="421,123,581,164"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="421,188,582,229"/>
+<area shape="rect" id="node9" href="$classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="201,155,363,196"/>
+<area shape="rect" id="node11" href="$classnlohmann_1_1basic__json.html#a8a3dd150c2d1f0df3502d937de0871db" title="generate SAX events" alt="" coords="208,220,356,261"/>
+<area shape="rect" id="node10" href="$classnlohmann_1_1basic__json.html#a875585b0cb6133902066daccd7c9d420" title=" " alt="" coords="5,155,153,196"/>
+<area shape="rect" id="node13" href="$classnlohmann_1_1basic__json.html#a51df13f73a970da95c3dcb3d47b0c2c4" title="Serializes the given JSON object j to BSON and forwards the corresponding BSON&#45;representation to the ..." alt="" coords="427,253,575,295"/>
+<area shape="rect" id="node17" href="$classnlohmann_1_1basic__json.html#a7c43ed2a3004c1fa9543913f37b9fca9" title="applies a JSON Merge Patch" alt="" coords="427,396,575,437"/>
+<area shape="rect" id="node19" href="$classnlohmann_1_1basic__json.html#ad6a18403e7fbac9c4efd06facc71fc88" title="overload for a default value of type const char*" alt="" coords="427,495,575,536"/>
+<area shape="rect" id="node22" href="$classnlohmann_1_1basic__json.html#aea1085f2d35cc0e1ce119cf0110119e6" title="add an object to an array" alt="" coords="427,560,575,601"/>
+<area shape="rect" id="node23" href="$classnlohmann_1_1basic__json.html#a1be31ef2d2934d37a818083a4af44f99" title="add an object to an object" alt="" coords="427,625,575,667"/>
+<area shape="rect" id="node27" href="$classnlohmann_1_1basic__json.html#a1ecce113ff11dd294689ee4d45cbb855" title="inserts element" alt="" coords="427,756,575,797"/>
+</map>

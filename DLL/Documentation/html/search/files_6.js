@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pstring_2ehpp',['PString.hpp',['../_p_string_8hpp.html',1,'']]]
+  ['math_2ehpp',['Math.hpp',['../_math_8hpp.html',1,'']]]
 ];

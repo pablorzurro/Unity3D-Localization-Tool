@@ -1,4 +1,0 @@
-<map id="prz::get_sequence_audio_tracks" name="prz::get_sequence_audio_tracks">
-<area shape="rect" id="node1" title="Get the sequence audio tracks." alt="" coords="5,29,172,71"/>
-<area shape="rect" id="node2" href="$classprz_1_1_sequence.html#a3e0efc91f696efcc1d57de2045fc4d21" title="Return the audio tracks as array." alt="" coords="220,29,352,71"/>
-</map>

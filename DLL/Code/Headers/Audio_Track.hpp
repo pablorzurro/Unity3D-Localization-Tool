@@ -52,6 +52,10 @@ namespace prz
 
 	public:
 
+		bool conflicts_with_clip(Audio_Clip* clip) final override;
+
+	public:
+
 		/**
 		 * @brief Get the volume 
 		 * 
@@ -84,7 +88,7 @@ namespace prz
 		 * @param audioTrack 
 		 * @return float 
 		 */
-		/*LOCALIZATION_TOOL_API*/ float get_audio_track_volume(Audio_Track* audioTrack);
+		LOCALIZATION_TOOL_API float get_audio_track_volume(Audio_Track* audioTrack);
 
 		/**
 		 * @brief Returns the spatial blend dimension 
@@ -92,7 +96,7 @@ namespace prz
 		 * @param audioTrack 
 		 * @return char. '2' for two dimensions, '3' for three dimensions, '/0' for input audio track nullptr
 		 */
-		/*LOCALIZATION_TOOL_API*/ char get_audio_track_spatial_blend_dimension(Audio_Track* audioTrack);
+		LOCALIZATION_TOOL_API char get_audio_track_spatial_blend_dimension(Audio_Track* audioTrack);
 
 		/**
 		 * @brief Return the number of clips of the input audio track
@@ -100,7 +104,7 @@ namespace prz
 		 * @param audioTrack 
 		 * @return int 
 		 */
-		/*LOCALIZATION_TOOL_API*/ int get_audio_track_number_of_clips(Audio_Track* audioTrack);
+		LOCALIZATION_TOOL_API int get_audio_track_number_of_clips(Audio_Track* audioTrack);
 
 		/**
 		 * @brief Get the audio track clips 
@@ -108,7 +112,7 @@ namespace prz
 		 * @param audioTrack 
 		 * @return Audio_Clip** 
 		 */
-		/*LOCALIZATION_TOOL_API*/ Audio_Clip** get_audio_track_clips(Audio_Track* audioTrack);
+		LOCALIZATION_TOOL_API Audio_Clip** get_audio_track_clips(Audio_Track* audioTrack);
 		
 	}
 

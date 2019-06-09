@@ -54,35 +54,25 @@ namespace prz
 
 	Audio_Clip* Sequence::create_audio_clip(const string& name, const string& audioFilePath, const string& startTime, const string& duration, const string& startCutTime)
 	{
-		if (filesystem::exists(audioFilePath))
-		{
-			return add_audio_clip(new Audio_Clip
-			(
-				name,
-				audioFilePath,
-				get_seconds_from_string(startTime),
-				get_seconds_from_string(duration),
-				get_seconds_from_string(startCutTime)
-			));
-		}
-
-		return nullptr;
+		return add_audio_clip(new Audio_Clip
+		(
+			name,
+			audioFilePath,
+			get_seconds_from_string(startTime),
+			get_seconds_from_string(duration),
+			get_seconds_from_string(startCutTime)
+		));
 	}
 
 	Text_Clip* Sequence::create_text_clip(const string& text, const string& name, const string& startTime, const string& duration)
 	{
-		if (text.size() != 0) // Disable this check if desired
-		{
-			return add_text_clip(new Text_Clip
-			(
-				text,
-				name,
-				get_seconds_from_string(startTime),
-				get_seconds_from_string(duration)
-			));
-		}
-
-		return nullptr;
+		return add_text_clip(new Text_Clip
+		(
+			text,
+			name,
+			get_seconds_from_string(startTime),
+			get_seconds_from_string(duration)
+		));
 	}
 
 	unsigned int Sequence::get_number_of_audio_tracks()
@@ -101,26 +91,16 @@ namespace prz
 
 		Audio_Track* selectedTrack = nullptr;
 
-		if (nAudioTracks == 0)
-		{
-			m_audioTracks.push_back(new Audio_Track());
-			selectedTrack = m_audioTracks.back();
-		}
-
 		for (size_t i = 0; i < nAudioTracks && !selectedTrack; i++)
 		{
-			if(!m_audioTracks[i]->conflicts_with_clips(audioClip))
+			if (m_audioTracks[i]->add_clip(audioClip))
 			{
-				selectedTrack = m_audioTracks[i];
+				return;
 			}
 		}
 
-		if (!selectedTrack)
-		{
-			m_audioTracks.push_back(new Audio_Track());
-			selectedTrack = m_audioTracks.back();
-		}
-
+		selectedTrack = new Audio_Track();
+		m_audioTracks.push_back(selectedTrack);
 		selectedTrack->add_clip(audioClip);
 	}
 
@@ -130,26 +110,16 @@ namespace prz
 
 		Text_Track* selectedTrack = nullptr;
 
-		if (nTextTracks == 0)
-		{
-			m_textTracks.push_back(new Text_Track());
-			selectedTrack = m_textTracks.back();
-		}
-
 		for (size_t i = 0; i < nTextTracks && !selectedTrack; i++)
 		{
-			if (!m_textTracks[i]->conflicts_with_clips(textClip))
+			if (m_textTracks[i]->add_clip(textClip))
 			{
-				selectedTrack = m_textTracks[i];
+				return;
 			}
 		}
 
-		if (!selectedTrack)
-		{
-			m_audioTracks.push_back(new Audio_Track());
-			selectedTrack = m_textTracks.back();
-		}
-
+		selectedTrack = new Text_Track();
+		m_textTracks.push_back(selectedTrack);
 		selectedTrack->add_clip(textClip);
 	}
 

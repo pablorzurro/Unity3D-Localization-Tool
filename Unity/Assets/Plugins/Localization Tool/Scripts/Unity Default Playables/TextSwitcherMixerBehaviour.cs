@@ -35,7 +35,6 @@ public class TextSwitcherMixerBehaviour : PlayableBehaviour
         float totalWeight = 0f;
         float greatestWeight = 0f;
         int currentInputs = 0;
-
         for (int i = 0; i < inputCount; i++)
         {
             float inputWeight = playable.GetInputWeight(i);

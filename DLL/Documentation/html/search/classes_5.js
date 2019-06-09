@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['text_5fclip',['Text_Clip',['../classprz_1_1_text___clip.html',1,'prz']]],
-  ['text_5ftrack',['Text_Track',['../classprz_1_1_text___track.html',1,'prz']]],
-  ['track',['Track',['../classprz_1_1_track.html',1,'prz']]],
-  ['track_3c_20audio_5fclip_20_3e',['Track&lt; Audio_Clip &gt;',['../classprz_1_1_track.html',1,'prz']]],
-  ['track_3c_20text_5fclip_20_3e',['Track&lt; Text_Clip &gt;',['../classprz_1_1_track.html',1,'prz']]]
+  ['file_5finput_5fadapter',['file_input_adapter',['../classnlohmann_1_1detail_1_1file__input__adapter.html',1,'nlohmann::detail']]],
+  ['file_5fmanager',['File_Manager',['../classprz_1_1_file___manager.html',1,'prz']]],
+  ['from_5fjson_5ffn',['from_json_fn',['../structnlohmann_1_1detail_1_1from__json__fn.html',1,'nlohmann::detail']]]
 ];

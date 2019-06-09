@@ -1,5 +1,5 @@
 <map id="prz::Clip::get_duration" name="prz::Clip::get_duration">
-<area shape="rect" id="node1" title="Get the duration." alt="" coords="184,82,333,109"/>
-<area shape="rect" id="node2" href="$_audio___clip_8hpp.html#adf1775cc377a8c1a6b92ba0e648d98f1" title="Get the audio clip duration." alt="" coords="5,29,136,71"/>
-<area shape="rect" id="node3" href="$_text___clip_8hpp.html#af5b673ead16373948262d632b38d0343" title="Get the text clip duration." alt="" coords="9,119,132,160"/>
+<area shape="rect" id="node1" title="Get the duration." alt="" coords="184,46,333,73"/>
+<area shape="rect" id="node2" href="$namespaceprz.html#adf1775cc377a8c1a6b92ba0e648d98f1" title="Get the audio clip duration." alt="" coords="5,5,136,47"/>
+<area shape="rect" id="node3" href="$namespaceprz.html#af5b673ead16373948262d632b38d0343" title="Get the text clip duration." alt="" coords="9,71,132,112"/>
 </map>

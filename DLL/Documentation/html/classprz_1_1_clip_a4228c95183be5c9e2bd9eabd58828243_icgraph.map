@@ -1,5 +1,5 @@
 <map id="prz::Clip::set_name" name="prz::Clip::set_name">
-<area shape="rect" id="node1" title="Set the name." alt="" coords="224,67,359,93"/>
-<area shape="rect" id="node2" href="$_audio___clip_8hpp.html#abbc097e730e2a3eb42a2f205fd714bf2" title="Set the audio clip name." alt="" coords="5,29,176,56"/>
-<area shape="rect" id="node3" href="$_text___clip_8hpp.html#a0f13735aa236bd0a3aff7be58137e6a5" title="Set the text clip name." alt="" coords="10,104,171,131"/>
+<area shape="rect" id="node1" title="Set the name." alt="" coords="224,31,359,57"/>
+<area shape="rect" id="node2" href="$namespaceprz.html#abbc097e730e2a3eb42a2f205fd714bf2" title="Set the audio clip name." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node3" href="$namespaceprz.html#a0f13735aa236bd0a3aff7be58137e6a5" title="Set the text clip name." alt="" coords="10,56,171,83"/>
 </map>

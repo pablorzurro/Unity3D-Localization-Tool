@@ -1,0 +1,6 @@
+<map id="prz::is_file_loaded_by_path" name="prz::is_file_loaded_by_path">
+<area shape="rect" id="node1" title="Return if a file is loaded by path." alt="" coords="5,39,132,80"/>
+<area shape="rect" id="node2" href="$classprz_1_1_file___manager.html#a01f8e98b44d904709af8ec7f9bf91f3a" title="Return the instance to the file manager." alt="" coords="189,5,324,47"/>
+<area shape="rect" id="node3" href="$classprz_1_1_file___manager.html#ab1b6f6447621351af16262236dad73b3" title="Return if a file is loaded by path." alt="" coords="180,71,333,112"/>
+<area shape="rect" id="node4" href="$classprz_1_1_file___manager.html#a57fba84490a328ce3b244198272be7f4" title="Return if a file is loaded by name." alt="" coords="381,71,541,112"/>
+</map>

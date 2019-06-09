@@ -1,4 +1,4 @@
 <map id="prz::Audio_Track::get_volume" name="prz::Audio_Track::get_volume">
-<area shape="rect" id="node1" title="Get the volume." alt="" coords="193,29,340,71"/>
-<area shape="rect" id="node2" href="$_audio___track_8hpp.html#ac010ab2ba32ea1a6777bdf865aa2dcd5" title="Get the audio track volume." alt="" coords="5,29,145,71"/>
+<area shape="rect" id="node1" title="Get the volume." alt="" coords="193,5,340,47"/>
+<area shape="rect" id="node2" href="$namespaceprz.html#ac010ab2ba32ea1a6777bdf865aa2dcd5" title="Get the audio track volume." alt="" coords="5,5,145,47"/>
 </map>

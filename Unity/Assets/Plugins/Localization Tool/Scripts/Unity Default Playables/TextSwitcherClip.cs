@@ -16,5 +16,6 @@ public class TextSwitcherClip : PlayableAsset, ITimelineClipAsset
     public override Playable CreatePlayable (PlayableGraph graph, GameObject owner)
     {
         var playable = ScriptPlayable<TextSwitcherBehaviour>.Create (graph, template);
-        return playable;    }
+        return playable;
+    }
 }

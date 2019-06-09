@@ -1,4 +1,4 @@
 <map id="prz::Audio_Track::get_spatial_blend_dimension" name="prz::Audio_Track::get_spatial_blend_dimension">
-<area shape="rect" id="node1" title="Get the spatial blend dimension." alt="" coords="224,29,395,71"/>
-<area shape="rect" id="node2" href="$_audio___track_8hpp.html#a4fb782ac49bc3d6a8d5ef62f0d529b29" title="Returns the spatial blend dimension." alt="" coords="5,29,176,71"/>
+<area shape="rect" id="node1" title="Get the spatial blend dimension." alt="" coords="224,5,395,47"/>
+<area shape="rect" id="node2" href="$namespaceprz.html#a4fb782ac49bc3d6a8d5ef62f0d529b29" title="Returns the spatial blend dimension." alt="" coords="5,5,176,47"/>
 </map>

@@ -1,0 +1,79 @@
+{
+    "sequences":
+    [
+        {
+            "name": "Tyrion_Trial-JPN",
+            "clips":
+            {
+                "audio":
+                [
+                    {
+                        "name": "Tyrion trial",
+                        "path": "Assets/Plugins/Localization Tool/Example Assets/Audio/Game of Thrones - Epic Tyrion speech during trial.mp3",
+                        "start": "00:00:000",
+                        "duration": "00:56:000",
+                        "start_cut": "00:00:000"   
+                    }
+                ],
+                "text": 
+                [
+                    {
+                        "name": "ST_001",
+                        "start": "00:00:000",
+                        "duration": "00:02:200",
+                        "text": "シェイ"
+                    },
+                    {
+                        "name": "ST_002",
+                        "start": "00:04:000",
+                        "duration": "00:02:200",
+                        "text": "やめてくれ"
+                    },
+                    {
+                        "name": "ST_003",
+                        "start": "00:09:000",
+                        "duration": "00:02:200",
+                        "text": "私は娼婦よ、忘れたの？"
+                    },
+                    {
+                        "name": "ST_004",
+                        "start": "00:15:000",
+                        "duration": "00:02:200",
+                        "text": "今のは結婚前のことで"
+                    },
+                    {
+                        "name": "ST_005",
+                        "start": "00:17:000",
+                        "duration": "00:02:200",
+                        "text": "結婚後はサンサだけを求めました。でも彼女に拒否され”王を殺すから頼む”と"
+                    },
+                    {
+                        "name": "ST_006",
+                        "start": "00:36:000",
+                        "duration": "00:02:200",
+                        "text": "父上、告白します"
+                    },
+                    {
+                        "name": "ST_007",
+                        "start": "00:42:000",
+                        "duration": "00:02:200",
+                        "text": "告白させてください"
+                    },
+                    {
+                        "name": "ST_008",
+                        "start": "00:47:000",
+                        "duration": "00:02:200",
+                        "text": "告白をしたいと？"
+                    },
+                    {
+                        "name": "ST_009",
+                        "start": "00:52:000",
+                        "duration": "00:02:200",
+                        "text": "お前らを救った。この街とゴミ同然のお前らを俺は救った。スタニスに皆殺しにさせるべきだったのに"
+                    }
+                ]
+            },
+            "link": "https://www.youtube.com/watch?v=e4Uq8O5ZhUA"
+        }
+    ]
+}

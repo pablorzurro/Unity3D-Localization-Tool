@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['sequence_2ehpp',['Sequence.hpp',['../_sequence_8hpp.html',1,'']]],
-  ['standard_5flibrary_2ehpp',['Standard_Library.hpp',['../_standard___library_8hpp.html',1,'']]],
-  ['string_2ehpp',['String.hpp',['../_string_8hpp.html',1,'']]]
+  ['nlohmann_5fjson_5fconverter_2ehpp',['Nlohmann_JSON_Converter.hpp',['../_declarations_2_nlohmann___j_s_o_n___converter_8hpp.html',1,'(Global Namespace)'],['../_utilities_2_nlohmann___j_s_o_n___converter_8hpp.html',1,'(Global Namespace)']]]
 ];

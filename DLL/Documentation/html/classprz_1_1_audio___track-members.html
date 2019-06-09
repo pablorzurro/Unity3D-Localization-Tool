@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>prz</b></li><li class="navelem"><a class="el" href="classprz_1_1_audio___track.html">Audio_Track</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceprz.html">prz</a></li><li class="navelem"><a class="el" href="classprz_1_1_audio___track.html">Audio_Track</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -76,17 +76,18 @@ $(function() {
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classprz_1_1_track.html#aa818d00358690b7dd76ae6e1eb788838">add_clip</a>(Audio_Clip *clip)</td><td class="entry"><a class="el" href="classprz_1_1_track.html">prz::Track&lt; Audio_Clip &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classprz_1_1_audio___track.html#ad37bc5741cd0823f8f9277d00a81f50f">Audio_Track</a>()</td><td class="entry"><a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classprz_1_1_track.html#a2f2314165a05c4748d684fca42b2f76a">conflicts_with_clips</a>(Audio_Clip *clip)</td><td class="entry"><a class="el" href="classprz_1_1_track.html">prz::Track&lt; Audio_Clip &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classprz_1_1_audio___track.html#a6487c33aca7d2d496ca39037f5f75170">conflicts_with_clip</a>(Audio_Clip *clip) final override</td><td class="entry"><a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classprz_1_1_track.html#a54eb44634d26680f1851077e64991419">get_clips</a>()</td><td class="entry"><a class="el" href="classprz_1_1_track.html">prz::Track&lt; Audio_Clip &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classprz_1_1_track.html#a776b6d37978d945f406fc4922981a2a1">get_number_of_clips</a>()</td><td class="entry"><a class="el" href="classprz_1_1_track.html">prz::Track&lt; Audio_Clip &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classprz_1_1_audio___track.html#ac10fc428fddc350fb7e6b4d29d287a3a">get_spatial_blend_dimension</a>() const</td><td class="entry"><a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classprz_1_1_audio___track.html#ad3a1f86e10f7e128a5589b621ff28b45">get_volume</a>() const</td><td class="entry"><a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classprz_1_1_audio___track.html#a4fb1dc3dd45713ba4c3e56918721d12a">Spatial_Blend_Dimension</a> enum name</td><td class="entry"><a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>THREE</b> enum value (defined in <a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a>)</td><td class="entry"><a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classprz_1_1_track.html#a65d3d9efb5a6640f94c5f22cacadd625">Track</a>()</td><td class="entry"><a class="el" href="classprz_1_1_track.html">prz::Track&lt; Audio_Clip &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>TWO</b> enum value (defined in <a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a>)</td><td class="entry"><a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classprz_1_1_audio___track.html#a32d24bf61b957d9d5e483eb4c4fbf5c2">~Audio_Track</a>()</td><td class="entry"><a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classprz_1_1_track.html#a84507a3e2e1cbb97d21298e73b7a24e3">~Track</a>()</td><td class="entry"><a class="el" href="classprz_1_1_track.html">prz::Track&lt; Audio_Clip &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classprz_1_1_track.html#a9f10f83e79d7271343b4b0d5c3db8bff">m_clips</a></td><td class="entry"><a class="el" href="classprz_1_1_track.html">prz::Track&lt; Audio_Clip &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classprz_1_1_audio___track.html#a4fb1dc3dd45713ba4c3e56918721d12a">Spatial_Blend_Dimension</a> enum name</td><td class="entry"><a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classprz_1_1_audio___track.html#a4fb1dc3dd45713ba4c3e56918721d12aae008fd40b2713ad1259054014d113239">THREE</a> enum value</td><td class="entry"><a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classprz_1_1_track.html#a65d3d9efb5a6640f94c5f22cacadd625">Track</a>()</td><td class="entry"><a class="el" href="classprz_1_1_track.html">prz::Track&lt; Audio_Clip &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classprz_1_1_audio___track.html#a4fb1dc3dd45713ba4c3e56918721d12aa43821963797a936302adb2b0909da866">TWO</a> enum value</td><td class="entry"><a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classprz_1_1_audio___track.html#a32d24bf61b957d9d5e483eb4c4fbf5c2">~Audio_Track</a>()</td><td class="entry"><a class="el" href="classprz_1_1_audio___track.html">prz::Audio_Track</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classprz_1_1_track.html#a84507a3e2e1cbb97d21298e73b7a24e3">~Track</a>()</td><td class="entry"><a class="el" href="classprz_1_1_track.html">prz::Track&lt; Audio_Clip &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

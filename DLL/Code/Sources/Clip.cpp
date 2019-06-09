@@ -25,13 +25,13 @@ namespace prz
 
 	bool Clip::collides_with(const Clip & other) const
 	{
-		if (other.m_startTime <= m_startTime && m_startTime <= other.m_endTime
-			|| m_startTime >= other.m_startTime && other.m_startTime <= m_endTime)
-		{
-			return true;
-		}
+		bool thisInsideOther = (other.m_startTime <= m_startTime && m_startTime <= other.m_endTime) ||
+			(other.m_startTime <= m_endTime && m_endTime <= other.m_endTime);
 
-		return false;
+		bool otherInsideThis = (m_startTime <= other.m_startTime && other.m_startTime <= m_endTime) ||
+			(m_startTime <= other.m_endTime && other.m_endTime <= m_endTime);
+
+		return thisInsideOther || otherInsideThis;
 	}
 
 	void Clip::set_name(const string& name)

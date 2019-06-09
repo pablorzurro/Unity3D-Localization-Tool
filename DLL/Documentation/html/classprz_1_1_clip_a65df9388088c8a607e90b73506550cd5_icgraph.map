@@ -1,5 +1,5 @@
 <map id="prz::Clip::get_start_time" name="prz::Clip::get_start_time">
-<area shape="rect" id="node1" title="Get the start time." alt="" coords="184,82,345,109"/>
-<area shape="rect" id="node2" href="$_audio___clip_8hpp.html#ae887fdd042262bc94a29ad81d9737093" title="Get the audio clip start time." alt="" coords="5,29,136,71"/>
-<area shape="rect" id="node3" href="$_text___clip_8hpp.html#a616eb57f615a3c7b942e33139a30b25a" title="Get the text clip start time." alt="" coords="9,119,132,160"/>
+<area shape="rect" id="node1" title="Get the start time." alt="" coords="184,46,345,73"/>
+<area shape="rect" id="node2" href="$namespaceprz.html#ae887fdd042262bc94a29ad81d9737093" title="Get the audio clip start time." alt="" coords="5,5,136,47"/>
+<area shape="rect" id="node3" href="$namespaceprz.html#a616eb57f615a3c7b942e33139a30b25a" title="Get the text clip start time." alt="" coords="9,71,132,112"/>
 </map>

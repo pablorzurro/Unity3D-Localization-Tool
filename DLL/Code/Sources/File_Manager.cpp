@@ -102,38 +102,8 @@ namespace prz
 			sequenceItem.find("name") != sequenceItem.end())
 		{
 			Sequence* sequence = new Sequence(sequenceItem["name"]);
-
-			// Load audio clips
-			if (sequenceItem["clips"].find("audio") != sequenceItem["clips"].end())
-			{
-				for (const auto& iAudioClip : sequenceItem["clips"]["audio"])
-				{
-					sequence->create_audio_clip
-					(
-						iAudioClip["name"],
-						iAudioClip["path"],
-						iAudioClip["start"],
-						iAudioClip["duration"],
-						iAudioClip["start_cut"]
-					);
-				}
-			}
-
-			// Load text clips
-			if (sequenceItem["clips"].find("text") != sequenceItem["clips"].end())
-			{
-				for (const auto& iTextClip : sequenceItem["clips"]["text"])
-				{
-					sequence->create_text_clip
-					(
-						iTextClip["text"],
-						iTextClip["name"],
-						iTextClip["start"],
-						iTextClip["duration"]
-					);
-				}
-			}
-
+			load_sequence_clips(sequence, sequenceItem["clips"]);
+			
 			// If the sequence is empty, delete it
 			if (sequence->get_number_of_audio_tracks() > 0 || sequence->get_number_of_text_tracks() > 0)
 			{
@@ -146,6 +116,50 @@ namespace prz
 		}
 
 		return nullptr;
+	}
+
+	void File_Manager::load_sequence_clips(Sequence* sequence, const value_json& clipsItem)
+	{
+		// Load audio clips
+		if (clipsItem.find("audio") != clipsItem.end())
+		{
+			for (const auto& iAudioClip : clipsItem["audio"])
+			{
+				if (iAudioClip.find("name") != iAudioClip.end() && iAudioClip.find("path") != iAudioClip.end() &&
+					iAudioClip.find("start") != iAudioClip.end() && iAudioClip.find("duration") != iAudioClip.end() &&
+					iAudioClip.find("start_cut") != iAudioClip.end())
+				{
+					sequence->create_audio_clip
+					(
+						iAudioClip["name"],
+						iAudioClip["path"],
+						iAudioClip["start"],
+						iAudioClip["duration"],
+						iAudioClip["start_cut"]
+					);
+				}
+			}
+		}
+
+		// Load text clips
+		if (clipsItem.find("text") != clipsItem.end())
+		{
+			for (const auto& iTextClip : clipsItem["text"])
+			{
+				if (iTextClip.find("name") != iTextClip.end() && iTextClip.find("start") != iTextClip.end() &&
+					iTextClip.find("duration") != iTextClip.end() && iTextClip.find("text") != iTextClip.end())
+				{
+					sequence->create_text_clip
+					(
+						iTextClip["text"],
+						iTextClip["name"],
+						iTextClip["start"],
+						iTextClip["duration"]
+					);
+				}
+				
+			}
+		}
 	}
 
 	bool File_Manager::is_file_loaded_by_name(const string& fileName)

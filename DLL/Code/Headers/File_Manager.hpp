@@ -148,6 +148,13 @@ namespace prz
 		 */
 		Sequence* create_sequence(const value_json& sequenceItem);
 
+		/**
+		 * @brief Load secuence clips
+		 *
+		 * @param clipsItem
+		 */
+		void load_sequence_clips(Sequence* sequence, const value_json& clipsItem);
+
 	private:
 
 		/**

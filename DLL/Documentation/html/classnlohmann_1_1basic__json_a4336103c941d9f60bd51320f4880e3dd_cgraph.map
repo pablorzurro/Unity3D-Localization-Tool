@@ -1,0 +1,5 @@
+<map id="nlohmann::basic_json::diff" name="nlohmann::basic_json::diff">
+<area shape="rect" id="node1" title="creates a diff as a JSON patch" alt="" coords="5,27,153,69"/>
+<area shape="rect" id="node2" href="$namespacenlohmann.html#a6ce645a0b8717757e096a5b5773b7a16" title="user&#45;defined to_string function for JSON values" alt="" coords="207,5,343,32"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#aaf509a7c029100d292187068f61c99b8" title="explicitly create an object from an initializer list" alt="" coords="201,57,349,98"/>
+</map>

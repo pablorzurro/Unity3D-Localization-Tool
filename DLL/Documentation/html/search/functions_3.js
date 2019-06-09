@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['instance',['instance',['../classprz_1_1_file___manager.html#a01f8e98b44d904709af8ec7f9bf91f3a',1,'prz::File_Manager']]],
-  ['is_5ffile_5floaded_5fby_5fname',['is_file_loaded_by_name',['../classprz_1_1_file___manager.html#a57fba84490a328ce3b244198272be7f4',1,'prz::File_Manager::is_file_loaded_by_name()'],['../_file___manager_8hpp.html#a60a210bc0ab0675f0096a17f18420c7b',1,'prz::is_file_loaded_by_name()']]],
-  ['is_5ffile_5floaded_5fby_5fpath',['is_file_loaded_by_path',['../classprz_1_1_file___manager.html#ab1b6f6447621351af16262236dad73b3',1,'prz::File_Manager::is_file_loaded_by_path()'],['../_file___manager_8hpp.html#a70392696dda40f3306dbc887daf79478',1,'prz::is_file_loaded_by_path()']]]
+  ['diff',['diff',['../classnlohmann_1_1basic__json.html#a4336103c941d9f60bd51320f4880e3dd',1,'nlohmann::basic_json']]],
+  ['diyfp',['diyfp',['../structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#ad8798a8823a49c8412f0fada9892c918',1,'nlohmann::detail::dtoa_impl::diyfp']]],
+  ['dllmain',['DllMain',['../dllmain_8cpp.html#a26e64fb39b69bcd9d1274d279f1561b9',1,'dllmain.cpp']]],
+  ['dump',['dump',['../classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b',1,'nlohmann::detail::serializer::dump()'],['../classnlohmann_1_1basic__json.html#a50ec80b02d0f3f51130d4abb5d1cfdc5',1,'nlohmann::basic_json::dump()']]]
 ];

@@ -1,0 +1,4 @@
+<map id="prz::Text_Track::conflicts_with_clip" name="prz::Text_Track::conflicts_with_clip">
+<area shape="rect" id="node1" title="Check if the input clip conflicts with this track." alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node2" href="$classprz_1_1_track.html#a776b6d37978d945f406fc4922981a2a1" title="Get the number of clips." alt="" coords="221,5,383,47"/>
+</map>
