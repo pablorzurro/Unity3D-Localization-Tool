@@ -19,17 +19,29 @@
 
 namespace prz
 {
-	
+	/**
+	 * @brief Set of clips(of any kind) aligned in time 
+	 * 
+	 * @tparam ClipClass 
+	 */
 	template<class ClipClass>
 	class Track
 	{
-
+		// Check if the class template meets the target base class conditions
 		static_assert(std::is_base_of<Clip, ClipClass>::value, "ClipClass must derive from Clip");
 
 	public:
 
+		/**
+		 * @brief Construct a new Track
+		 * 
+		 */
 		Track(){}
 
+		/**
+		 * @brief Destroy the Track
+		 * 
+		 */
 		~Track()
 		{
 			size_t nClips = m_clips.size();
@@ -41,6 +53,13 @@ namespace prz
 
 	public:
 
+		/**
+		 * @brief 
+		 * 
+		 * @param clip 
+		 * @return true 
+		 * @return false 
+		 */
 		bool add_clip(ClipClass* clip)
 		{
 			if (!conflicts_with_clips(clip))
@@ -53,6 +72,13 @@ namespace prz
 		
 	public:
 
+		/**
+		 * @brief 
+		 * 
+		 * @param clip 
+		 * @return true 
+		 * @return false 
+		 */
 		virtual bool conflicts_with_clips(ClipClass* clip)
 		{
 			bool isConflict = false;
@@ -83,6 +109,11 @@ namespace prz
 		
 	public:
 
+		/**
+		 * @brief Get the clips 
+		 * 
+		 * @return vector<ClipClass*>& 
+		 */
 		vector<ClipClass*>& get_clips()
 		{
 			return m_clips;
@@ -90,13 +121,18 @@ namespace prz
 
 	public:
 
+		/**
+		 * @brief Get the number of clips 
+		 * 
+		 * @return unsigned int 
+		 */
 		unsigned int get_number_of_clips()
 		{
 			return (unsigned int)m_clips.size();
 		}
 
 	public:
-
+	
 		/*virtual json to_json()
 		{
 			size_t nTracks = get_number_of_clips();

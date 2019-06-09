@@ -1,7 +1,7 @@
 /**
  * @file Sequence.hpp
  * @author Pablo Rodríguez Zurro (przuro@gmail.com)
- * @brief c
+ * @brief Manage and store tracks and clips
  * @version 0.1
  * @date 05-06-2019
  * 
@@ -22,6 +22,10 @@ namespace prz
 	class Audio_Track;
 	class Text_Track;
 
+	/**
+	 * @brief Manage and store tracks and clips
+	 * 
+	 */
 	class Sequence
 	{
 	public:
@@ -30,8 +34,6 @@ namespace prz
 		 * @brief Construct a new Sequence
 		 * 
 		 * @param name 
-		 * @param audioTracks 
-		 * @param textTracks 
 		 */
 		Sequence
 		(
@@ -149,7 +151,11 @@ namespace prz
 		 */
 		Text_Track** get_text_tracks_ptr() { return m_textTracks.data(); }
 
-
+		/**
+		 * @brief Get the name 
+		 * 
+		 * @return const PString& 
+		 */
 		const PString& get_name() const { return m_name; }
 
 	private:
@@ -183,12 +189,45 @@ namespace prz
 
 	extern "C"
 	{
+		/**
+		 * @brief Get the sequence name 
+		 * 
+		 * @param sequence 
+		 * @return const PString* 
+		 */
+		/*LOCALIZATION_TOOL_API*/ const PString* get_sequence_name(Sequence* sequence);
 
-		LOCALIZATION_TOOL_API const PString* get_sequence_name(Sequence* sequence);
-		LOCALIZATION_TOOL_API int get_sequence_number_of_audio_tracks(Sequence* sequence);
-		LOCALIZATION_TOOL_API int get_sequence_number_of_text_tracks(Sequence* sequence);
-		LOCALIZATION_TOOL_API Audio_Track** get_sequence_audio_tracks(Sequence* sequence);
-		LOCALIZATION_TOOL_API Text_Track** get_sequence_text_tracks(Sequence* sequence);
+		/**
+		 * @brief Get the sequence number of audio tracks 
+		 * 
+		 * @param sequence 
+		 * @return int 
+		 */
+		/*LOCALIZATION_TOOL_API*/ int get_sequence_number_of_audio_tracks(Sequence* sequence);
+
+		/**
+		 * @brief Get the sequence number of text tracks 
+		 * 
+		 * @param sequence 
+		 * @return int 
+		 */
+		/*LOCALIZATION_TOOL_API*/ int get_sequence_number_of_text_tracks(Sequence* sequence);
+
+		/**
+		 * @brief Get the sequence audio tracks 
+		 * 
+		 * @param sequence 
+		 * @return Audio_Track** 
+		 */
+		/*LOCALIZATION_TOOL_API*/ Audio_Track** get_sequence_audio_tracks(Sequence* sequence);
+
+		/**
+		 * @brief Get the sequence text tracks 
+		 * 
+		 * @param sequence 
+		 * @return Text_Track** 
+		 */
+		/*LOCALIZATION_TOOL_API*/ Text_Track** get_sequence_text_tracks(Sequence* sequence);
 
 	}
 

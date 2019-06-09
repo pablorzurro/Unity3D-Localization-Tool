@@ -1,0 +1,213 @@
+\hypertarget{_audio___track_8hpp}{}\section{Code/\+Headers/\+Audio\+\_\+\+Track.hpp File Reference}
+\label{_audio___track_8hpp}\index{Code/Headers/Audio\_Track.hpp@{Code/Headers/Audio\_Track.hpp}}
+
+
+Track of audio clips.  
+
+
+{\ttfamily \#include $<$Track.\+hpp$>$}\newline
+{\ttfamily \#include $<$Audio\+\_\+\+Clip.\+hpp$>$}\newline
+Include dependency graph for Audio\+\_\+\+Track.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_audio___track_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_audio___track_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classprz_1_1_audio___track}{prz\+::\+Audio\+\_\+\+Track}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classprz_1_1_track}{Track}} of audio clips. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{_audio___track_8hpp_ac010ab2ba32ea1a6777bdf865aa2dcd5}{prz\+::get\+\_\+audio\+\_\+track\+\_\+volume}} (Audio\+\_\+\+Track $\ast$audio\+Track)
+\begin{DoxyCompactList}\small\item\em Get the audio track volume. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{_audio___track_8hpp_a4fb782ac49bc3d6a8d5ef62f0d529b29}{prz\+::get\+\_\+audio\+\_\+track\+\_\+spatial\+\_\+blend\+\_\+dimension}} (Audio\+\_\+\+Track $\ast$audio\+Track)
+\begin{DoxyCompactList}\small\item\em Returns the spatial blend dimension. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_audio___track_8hpp_a8f5ec57a63ae029d8417d533e30965f4}{prz\+::get\+\_\+audio\+\_\+track\+\_\+number\+\_\+of\+\_\+clips}} (Audio\+\_\+\+Track $\ast$audio\+Track)
+\begin{DoxyCompactList}\small\item\em Return the number of clips of the input audio track. \end{DoxyCompactList}\item 
+Audio\+\_\+\+Clip $\ast$$\ast$ \mbox{\hyperlink{_audio___track_8hpp_a291fc379c9ff52af1a7aaa0ac7736567}{prz\+::get\+\_\+audio\+\_\+track\+\_\+clips}} (Audio\+\_\+\+Track $\ast$audio\+Track)
+\begin{DoxyCompactList}\small\item\em Get the audio track clips. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Track of audio clips. 
+
+\begin{DoxyAuthor}{Author}
+Pablo Rodríguez Zurro (\href{mailto:przuro@gmail.com}{\texttt{ przuro@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+06-\/06-\/2019
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2019 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_audio___track_8hpp_file_a291fc379c9ff52af1a7aaa0ac7736567}\label{_audio___track_8hpp_file_a291fc379c9ff52af1a7aaa0ac7736567}} 
+\index{Audio\_Track.hpp@{Audio\_Track.hpp}!get\_audio\_track\_clips@{get\_audio\_track\_clips}}
+\index{get\_audio\_track\_clips@{get\_audio\_track\_clips}!Audio\_Track.hpp@{Audio\_Track.hpp}}
+\subsubsection{\texorpdfstring{get\_audio\_track\_clips()}{get\_audio\_track\_clips()}}
+{\footnotesize\ttfamily Audio\+\_\+\+Clip $\ast$$\ast$ prz\+::get\+\_\+audio\+\_\+track\+\_\+clips (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_audio___track}{Audio\+\_\+\+Track}} $\ast$}]{audio\+Track }\end{DoxyParamCaption})}
+
+
+
+Get the audio track clips. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Track} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Audio\+\_\+\+Clip$\ast$$\ast$ 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file Audio\+\_\+\+Track.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{_audio___track_8hpp_a291fc379c9ff52af1a7aaa0ac7736567_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{_audio___track_8hpp_a291fc379c9ff52af1a7aaa0ac7736567_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_audio___track_8hpp_file_a8f5ec57a63ae029d8417d533e30965f4}\label{_audio___track_8hpp_file_a8f5ec57a63ae029d8417d533e30965f4}} 
+\index{Audio\_Track.hpp@{Audio\_Track.hpp}!get\_audio\_track\_number\_of\_clips@{get\_audio\_track\_number\_of\_clips}}
+\index{get\_audio\_track\_number\_of\_clips@{get\_audio\_track\_number\_of\_clips}!Audio\_Track.hpp@{Audio\_Track.hpp}}
+\subsubsection{\texorpdfstring{get\_audio\_track\_number\_of\_clips()}{get\_audio\_track\_number\_of\_clips()}}
+{\footnotesize\ttfamily int prz\+::get\+\_\+audio\+\_\+track\+\_\+number\+\_\+of\+\_\+clips (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_audio___track}{Audio\+\_\+\+Track}} $\ast$}]{audio\+Track }\end{DoxyParamCaption})}
+
+
+
+Return the number of clips of the input audio track. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Track} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file Audio\+\_\+\+Track.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{_audio___track_8hpp_a8f5ec57a63ae029d8417d533e30965f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{_audio___track_8hpp_a8f5ec57a63ae029d8417d533e30965f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_audio___track_8hpp_file_a4fb782ac49bc3d6a8d5ef62f0d529b29}\label{_audio___track_8hpp_file_a4fb782ac49bc3d6a8d5ef62f0d529b29}} 
+\index{Audio\_Track.hpp@{Audio\_Track.hpp}!get\_audio\_track\_spatial\_blend\_dimension@{get\_audio\_track\_spatial\_blend\_dimension}}
+\index{get\_audio\_track\_spatial\_blend\_dimension@{get\_audio\_track\_spatial\_blend\_dimension}!Audio\_Track.hpp@{Audio\_Track.hpp}}
+\subsubsection{\texorpdfstring{get\_audio\_track\_spatial\_blend\_dimension()}{get\_audio\_track\_spatial\_blend\_dimension()}}
+{\footnotesize\ttfamily char prz\+::get\+\_\+audio\+\_\+track\+\_\+spatial\+\_\+blend\+\_\+dimension (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_audio___track}{Audio\+\_\+\+Track}} $\ast$}]{audio\+Track }\end{DoxyParamCaption})}
+
+
+
+Returns the spatial blend dimension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Track} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char. \textquotesingle{}2\textquotesingle{} for two dimensions, \textquotesingle{}3\textquotesingle{} for three dimensions, \textquotesingle{}/0\textquotesingle{} for input audio track nullptr 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file Audio\+\_\+\+Track.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_audio___track_8hpp_a4fb782ac49bc3d6a8d5ef62f0d529b29_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{_audio___track_8hpp_a4fb782ac49bc3d6a8d5ef62f0d529b29_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_audio___track_8hpp_file_ac010ab2ba32ea1a6777bdf865aa2dcd5}\label{_audio___track_8hpp_file_ac010ab2ba32ea1a6777bdf865aa2dcd5}} 
+\index{Audio\_Track.hpp@{Audio\_Track.hpp}!get\_audio\_track\_volume@{get\_audio\_track\_volume}}
+\index{get\_audio\_track\_volume@{get\_audio\_track\_volume}!Audio\_Track.hpp@{Audio\_Track.hpp}}
+\subsubsection{\texorpdfstring{get\_audio\_track\_volume()}{get\_audio\_track\_volume()}}
+{\footnotesize\ttfamily float prz\+::get\+\_\+audio\+\_\+track\+\_\+volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_audio___track}{Audio\+\_\+\+Track}} $\ast$}]{audio\+Track }\end{DoxyParamCaption})}
+
+
+
+Get the audio track volume. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Track} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file Audio\+\_\+\+Track.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{_audio___track_8hpp_ac010ab2ba32ea1a6777bdf865aa2dcd5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{_audio___track_8hpp_ac010ab2ba32ea1a6777bdf865aa2dcd5_icgraph}
+\end{center}
+\end{figure}

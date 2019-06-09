@@ -24,7 +24,7 @@ namespace prz
 
 		#pragma region Testing
 
-		LOCALIZATION_TOOL_API float test_get_seconds_from_string(const char* str);
+		/*LOCALIZATION_TOOL_API*/ float test_get_seconds_from_string(const char* str);
 
 		#pragma endregion
 

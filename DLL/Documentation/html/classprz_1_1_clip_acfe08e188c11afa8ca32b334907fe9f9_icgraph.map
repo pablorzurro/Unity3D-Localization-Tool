@@ -1,0 +1,5 @@
+<map id="prz::Clip::get_end_time" name="prz::Clip::get_end_time">
+<area shape="rect" id="node1" title="Get the end time." alt="" coords="184,82,340,109"/>
+<area shape="rect" id="node2" href="$_audio___clip_8hpp.html#ab424e7684c53c76bd12b24e549df8d32" title="Get the audio clip end time." alt="" coords="5,29,136,71"/>
+<area shape="rect" id="node3" href="$_text___clip_8hpp.html#a6c9111d61f5d8a4089c0dce9b8503f28" title="Get the text clip end time." alt="" coords="9,119,132,160"/>
+</map>

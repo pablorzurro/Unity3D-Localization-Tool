@@ -1,0 +1,5 @@
+<map id="prz::Clip::set_start_time" name="prz::Clip::set_start_time">
+<area shape="rect" id="node1" title="Set the start time." alt="" coords="184,82,345,109"/>
+<area shape="rect" id="node2" href="$_audio___clip_8hpp.html#ac8b09f14a5b58fe5ca2521460856443d" title="Set the audio clip start time." alt="" coords="5,29,136,71"/>
+<area shape="rect" id="node3" href="$_text___clip_8hpp.html#aa7768ced397410c261e9ac6d1fecade5" title="Set the text clip start time." alt="" coords="9,119,132,160"/>
+</map>

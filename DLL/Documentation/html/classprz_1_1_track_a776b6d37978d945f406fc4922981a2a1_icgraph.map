@@ -1,0 +1,6 @@
+<map id="prz::Track::get_number_of_clips" name="prz::Track::get_number_of_clips">
+<area shape="rect" id="node1" title="Get the number of clips." alt="" coords="208,95,364,136"/>
+<area shape="rect" id="node2" href="$classprz_1_1_track.html#a2f2314165a05c4748d684fca42b2f76a" title=" " alt="" coords="5,5,160,47"/>
+<area shape="rect" id="node3" href="$_audio___track_8hpp.html#a8f5ec57a63ae029d8417d533e30965f4" title="Return the number of clips of the input audio track." alt="" coords="13,95,153,136"/>
+<area shape="rect" id="node4" href="$_text___track_8hpp.html#a479605aa22a06a3128174b575a312da7" title="Get the text track number of clips." alt="" coords="17,184,148,225"/>
+</map>

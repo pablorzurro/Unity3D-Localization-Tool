@@ -1,0 +1,4 @@
+<map id="prz::get_sequence_text_tracks" name="prz::get_sequence_text_tracks">
+<area shape="rect" id="node1" title="Get the sequence text tracks." alt="" coords="5,29,164,71"/>
+<area shape="rect" id="node2" href="$classprz_1_1_sequence.html#af987ebf568d1a5ab5d589f9a0e7746c9" title="Return the text tracks as array." alt="" coords="212,29,344,71"/>
+</map>

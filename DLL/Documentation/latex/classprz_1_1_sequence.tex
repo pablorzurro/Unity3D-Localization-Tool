@@ -1,0 +1,399 @@
+\hypertarget{classprz_1_1_sequence}{}\section{prz\+::Sequence Class Reference}
+\label{classprz_1_1_sequence}\index{prz::Sequence@{prz::Sequence}}
+
+
+Manage and store tracks and clips.  
+
+
+
+
+{\ttfamily \#include $<$Sequence.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classprz_1_1_sequence_aec5dd736362277677b449619211ebe6f}{Sequence}} (const string \&name=\char`\"{}Unnamed\+\_\+\+Sequence\char`\"{})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classprz_1_1_sequence}{Sequence}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_sequence_aee7da60c0b19a1565ee44265a6738c43}{$\sim$\+Sequence}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classprz_1_1_sequence}{Sequence}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}} $\ast$ \mbox{\hyperlink{classprz_1_1_sequence_a67a5cf8454902f91c6168516a3a04a75}{add\+\_\+audio\+\_\+clip}} (\mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}} $\ast$audio\+Clip)
+\begin{DoxyCompactList}\small\item\em Add an audio clip to the first available track. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$ \mbox{\hyperlink{classprz_1_1_sequence_a66229b6f4cab505e8569e31dfe023e08}{add\+\_\+text\+\_\+clip}} (\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$text\+Clip)
+\begin{DoxyCompactList}\small\item\em Add a text clip to the first available track. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}} $\ast$ \mbox{\hyperlink{classprz_1_1_sequence_a736917b939054ae04941bdede0a16e4a}{create\+\_\+audio\+\_\+clip}} (const string \&name, const string \&audio\+File\+Path, const string \&start\+Time, const string \&duration, const string \&start\+Cut\+Time)
+\begin{DoxyCompactList}\small\item\em Create a new audio clip and save it in the first available track. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$ \mbox{\hyperlink{classprz_1_1_sequence_a2179bcb2b410d08a589d60543d09c87f}{create\+\_\+text\+\_\+clip}} (const string \&text, const string \&name, const string \&start\+Time, const string \&duration)
+\begin{DoxyCompactList}\small\item\em Create a text clip and save it in the first available track, if there aren\textquotesingle{}t any tracks available, create a new one. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classprz_1_1_sequence_a2d0ac9ea8804465100b36bb36a687799}{get\+\_\+number\+\_\+of\+\_\+audio\+\_\+tracks}} ()
+\begin{DoxyCompactList}\small\item\em Return the number of audio tracks. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classprz_1_1_sequence_a1f00232c23dda0a52686d2012b6990c5}{get\+\_\+number\+\_\+of\+\_\+text\+\_\+tracks}} ()
+\begin{DoxyCompactList}\small\item\em Return the number of text tracks. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classprz_1_1_audio___track}{Audio\+\_\+\+Track}} $\ast$ $>$ \& \mbox{\hyperlink{classprz_1_1_sequence_aa2e32091a59da3e33ef846ae61cacca8}{get\+\_\+audio\+\_\+tracks}} ()
+\begin{DoxyCompactList}\small\item\em Return the audio tracks. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classprz_1_1_text___track}{Text\+\_\+\+Track}} $\ast$ $>$ \& \mbox{\hyperlink{classprz_1_1_sequence_a7f39a3d45d20f4f65811d8603b90fa83}{get\+\_\+text\+\_\+tracks}} ()
+\begin{DoxyCompactList}\small\item\em Return the text tracks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_audio___track}{Audio\+\_\+\+Track}} $\ast$$\ast$ \mbox{\hyperlink{classprz_1_1_sequence_a3e0efc91f696efcc1d57de2045fc4d21}{get\+\_\+audio\+\_\+tracks\+\_\+ptr}} ()
+\begin{DoxyCompactList}\small\item\em Return the audio tracks as array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classprz_1_1_text___track}{Text\+\_\+\+Track}} $\ast$$\ast$ \mbox{\hyperlink{classprz_1_1_sequence_af987ebf568d1a5ab5d589f9a0e7746c9}{get\+\_\+text\+\_\+tracks\+\_\+ptr}} ()
+\begin{DoxyCompactList}\small\item\em Return the text tracks as array. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classprz_1_1_p_string}{P\+String}} \& \mbox{\hyperlink{classprz_1_1_sequence_a3482d0948898b7573df2e0f86d7e3a83}{get\+\_\+name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manage and store tracks and clips. 
+
+
+
+Definition at line 29 of file Sequence.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classprz_1_1_sequence_aec5dd736362277677b449619211ebe6f}\label{classprz_1_1_sequence_aec5dd736362277677b449619211ebe6f}} 
+\index{prz::Sequence@{prz::Sequence}!Sequence@{Sequence}}
+\index{Sequence@{Sequence}!prz::Sequence@{prz::Sequence}}
+\subsubsection{\texorpdfstring{Sequence()}{Sequence()}}
+{\footnotesize\ttfamily prz\+::\+Sequence\+::\+Sequence (\begin{DoxyParamCaption}\item[{const string \&}]{name = {\ttfamily \char`\"{}Unnamed\+\_\+Sequence\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classprz_1_1_sequence}{Sequence}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file Sequence.\+cpp.
+
+\mbox{\Hypertarget{classprz_1_1_sequence_aee7da60c0b19a1565ee44265a6738c43}\label{classprz_1_1_sequence_aee7da60c0b19a1565ee44265a6738c43}} 
+\index{prz::Sequence@{prz::Sequence}!````~Sequence@{$\sim$Sequence}}
+\index{````~Sequence@{$\sim$Sequence}!prz::Sequence@{prz::Sequence}}
+\subsubsection{\texorpdfstring{$\sim$Sequence()}{~Sequence()}}
+{\footnotesize\ttfamily prz\+::\+Sequence\+::$\sim$\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classprz_1_1_sequence}{Sequence}}. 
+
+
+
+Definition at line 18 of file Sequence.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_sequence_aee7da60c0b19a1565ee44265a6738c43_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classprz_1_1_sequence_a67a5cf8454902f91c6168516a3a04a75}\label{classprz_1_1_sequence_a67a5cf8454902f91c6168516a3a04a75}} 
+\index{prz::Sequence@{prz::Sequence}!add\_audio\_clip@{add\_audio\_clip}}
+\index{add\_audio\_clip@{add\_audio\_clip}!prz::Sequence@{prz::Sequence}}
+\subsubsection{\texorpdfstring{add\_audio\_clip()}{add\_audio\_clip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}} $\ast$ prz\+::\+Sequence\+::add\+\_\+audio\+\_\+clip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}} $\ast$}]{audio\+Clip }\end{DoxyParamCaption})}
+
+
+
+Add an audio clip to the first available track. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Clip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Audio\+\_\+\+Clip$\ast$ 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file Sequence.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classprz_1_1_sequence_a67a5cf8454902f91c6168516a3a04a75_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_sequence_a66229b6f4cab505e8569e31dfe023e08}\label{classprz_1_1_sequence_a66229b6f4cab505e8569e31dfe023e08}} 
+\index{prz::Sequence@{prz::Sequence}!add\_text\_clip@{add\_text\_clip}}
+\index{add\_text\_clip@{add\_text\_clip}!prz::Sequence@{prz::Sequence}}
+\subsubsection{\texorpdfstring{add\_text\_clip()}{add\_text\_clip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$ prz\+::\+Sequence\+::add\+\_\+text\+\_\+clip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$}]{text\+Clip }\end{DoxyParamCaption})}
+
+
+
+Add a text clip to the first available track. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Clip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Text\+\_\+\+Clip$\ast$ 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file Sequence.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classprz_1_1_sequence_a66229b6f4cab505e8569e31dfe023e08_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_sequence_a736917b939054ae04941bdede0a16e4a}\label{classprz_1_1_sequence_a736917b939054ae04941bdede0a16e4a}} 
+\index{prz::Sequence@{prz::Sequence}!create\_audio\_clip@{create\_audio\_clip}}
+\index{create\_audio\_clip@{create\_audio\_clip}!prz::Sequence@{prz::Sequence}}
+\subsubsection{\texorpdfstring{create\_audio\_clip()}{create\_audio\_clip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classprz_1_1_audio___clip}{Audio\+\_\+\+Clip}} $\ast$ prz\+::\+Sequence\+::create\+\_\+audio\+\_\+clip (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{const string \&}]{audio\+File\+Path,  }\item[{const string \&}]{start\+Time,  }\item[{const string \&}]{duration,  }\item[{const string \&}]{start\+Cut\+Time }\end{DoxyParamCaption})}
+
+
+
+Create a new audio clip and save it in the first available track. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em audio\+File\+Path} & \\
+\hline
+{\em start\+Time} & \\
+\hline
+{\em duration} & \\
+\hline
+{\em start\+Cut\+Time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file Sequence.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classprz_1_1_sequence_a736917b939054ae04941bdede0a16e4a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_sequence_a2179bcb2b410d08a589d60543d09c87f}\label{classprz_1_1_sequence_a2179bcb2b410d08a589d60543d09c87f}} 
+\index{prz::Sequence@{prz::Sequence}!create\_text\_clip@{create\_text\_clip}}
+\index{create\_text\_clip@{create\_text\_clip}!prz::Sequence@{prz::Sequence}}
+\subsubsection{\texorpdfstring{create\_text\_clip()}{create\_text\_clip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$ prz\+::\+Sequence\+::create\+\_\+text\+\_\+clip (\begin{DoxyParamCaption}\item[{const string \&}]{text,  }\item[{const string \&}]{name,  }\item[{const string \&}]{start\+Time,  }\item[{const string \&}]{duration }\end{DoxyParamCaption})}
+
+
+
+Create a text clip and save it in the first available track, if there aren\textquotesingle{}t any tracks available, create a new one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+{\em name} & \\
+\hline
+{\em start\+Time} & \\
+\hline
+{\em duration} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Definition at line 72 of file Sequence.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classprz_1_1_sequence_a2179bcb2b410d08a589d60543d09c87f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_sequence_aa2e32091a59da3e33ef846ae61cacca8}\label{classprz_1_1_sequence_aa2e32091a59da3e33ef846ae61cacca8}} 
+\index{prz::Sequence@{prz::Sequence}!get\_audio\_tracks@{get\_audio\_tracks}}
+\index{get\_audio\_tracks@{get\_audio\_tracks}!prz::Sequence@{prz::Sequence}}
+\subsubsection{\texorpdfstring{get\_audio\_tracks()}{get\_audio\_tracks()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classprz_1_1_audio___track}{Audio\+\_\+\+Track}}$\ast$$>$\& prz\+::\+Sequence\+::get\+\_\+audio\+\_\+tracks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the audio tracks. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Audio\+\_\+\+Track$\ast$$>$\& 
+\end{DoxyReturn}
+
+
+Definition at line 131 of file Sequence.\+hpp.
+
+\mbox{\Hypertarget{classprz_1_1_sequence_a3e0efc91f696efcc1d57de2045fc4d21}\label{classprz_1_1_sequence_a3e0efc91f696efcc1d57de2045fc4d21}} 
+\index{prz::Sequence@{prz::Sequence}!get\_audio\_tracks\_ptr@{get\_audio\_tracks\_ptr}}
+\index{get\_audio\_tracks\_ptr@{get\_audio\_tracks\_ptr}!prz::Sequence@{prz::Sequence}}
+\subsubsection{\texorpdfstring{get\_audio\_tracks\_ptr()}{get\_audio\_tracks\_ptr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classprz_1_1_audio___track}{Audio\+\_\+\+Track}}$\ast$$\ast$ prz\+::\+Sequence\+::get\+\_\+audio\+\_\+tracks\+\_\+ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the audio tracks as array. 
+
+\begin{DoxyReturn}{Returns}
+Audio\+\_\+\+Track$\ast$$\ast$ 
+\end{DoxyReturn}
+
+
+Definition at line 145 of file Sequence.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classprz_1_1_sequence_a3e0efc91f696efcc1d57de2045fc4d21_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_sequence_a3482d0948898b7573df2e0f86d7e3a83}\label{classprz_1_1_sequence_a3482d0948898b7573df2e0f86d7e3a83}} 
+\index{prz::Sequence@{prz::Sequence}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!prz::Sequence@{prz::Sequence}}
+\subsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classprz_1_1_p_string}{P\+String}}\& prz\+::\+Sequence\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name. 
+
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{classprz_1_1_p_string}{P\+String}}\& 
+\end{DoxyReturn}
+
+
+Definition at line 159 of file Sequence.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_sequence_a3482d0948898b7573df2e0f86d7e3a83_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_sequence_a2d0ac9ea8804465100b36bb36a687799}\label{classprz_1_1_sequence_a2d0ac9ea8804465100b36bb36a687799}} 
+\index{prz::Sequence@{prz::Sequence}!get\_number\_of\_audio\_tracks@{get\_number\_of\_audio\_tracks}}
+\index{get\_number\_of\_audio\_tracks@{get\_number\_of\_audio\_tracks}!prz::Sequence@{prz::Sequence}}
+\subsubsection{\texorpdfstring{get\_number\_of\_audio\_tracks()}{get\_number\_of\_audio\_tracks()}}
+{\footnotesize\ttfamily unsigned int prz\+::\+Sequence\+::get\+\_\+number\+\_\+of\+\_\+audio\+\_\+tracks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the number of audio tracks. 
+
+\begin{DoxyReturn}{Returns}
+unsigned int 
+\end{DoxyReturn}
+
+
+Definition at line 88 of file Sequence.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_sequence_a2d0ac9ea8804465100b36bb36a687799_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_sequence_a1f00232c23dda0a52686d2012b6990c5}\label{classprz_1_1_sequence_a1f00232c23dda0a52686d2012b6990c5}} 
+\index{prz::Sequence@{prz::Sequence}!get\_number\_of\_text\_tracks@{get\_number\_of\_text\_tracks}}
+\index{get\_number\_of\_text\_tracks@{get\_number\_of\_text\_tracks}!prz::Sequence@{prz::Sequence}}
+\subsubsection{\texorpdfstring{get\_number\_of\_text\_tracks()}{get\_number\_of\_text\_tracks()}}
+{\footnotesize\ttfamily unsigned int prz\+::\+Sequence\+::get\+\_\+number\+\_\+of\+\_\+text\+\_\+tracks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the number of text tracks. 
+
+\begin{DoxyReturn}{Returns}
+unsigned int 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file Sequence.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprz_1_1_sequence_a1f00232c23dda0a52686d2012b6990c5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprz_1_1_sequence_a7f39a3d45d20f4f65811d8603b90fa83}\label{classprz_1_1_sequence_a7f39a3d45d20f4f65811d8603b90fa83}} 
+\index{prz::Sequence@{prz::Sequence}!get\_text\_tracks@{get\_text\_tracks}}
+\index{get\_text\_tracks@{get\_text\_tracks}!prz::Sequence@{prz::Sequence}}
+\subsubsection{\texorpdfstring{get\_text\_tracks()}{get\_text\_tracks()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classprz_1_1_text___track}{Text\+\_\+\+Track}}$\ast$$>$\& prz\+::\+Sequence\+::get\+\_\+text\+\_\+tracks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the text tracks. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Text\+\_\+\+Track$\ast$$>$\& 
+\end{DoxyReturn}
+
+
+Definition at line 138 of file Sequence.\+hpp.
+
+\mbox{\Hypertarget{classprz_1_1_sequence_af987ebf568d1a5ab5d589f9a0e7746c9}\label{classprz_1_1_sequence_af987ebf568d1a5ab5d589f9a0e7746c9}} 
+\index{prz::Sequence@{prz::Sequence}!get\_text\_tracks\_ptr@{get\_text\_tracks\_ptr}}
+\index{get\_text\_tracks\_ptr@{get\_text\_tracks\_ptr}!prz::Sequence@{prz::Sequence}}
+\subsubsection{\texorpdfstring{get\_text\_tracks\_ptr()}{get\_text\_tracks\_ptr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classprz_1_1_text___track}{Text\+\_\+\+Track}}$\ast$$\ast$ prz\+::\+Sequence\+::get\+\_\+text\+\_\+tracks\+\_\+ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the text tracks as array. 
+
+\begin{DoxyReturn}{Returns}
+Text\+\_\+\+Track$\ast$$\ast$ 
+\end{DoxyReturn}
+
+
+Definition at line 152 of file Sequence.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classprz_1_1_sequence_af987ebf568d1a5ab5d589f9a0e7746c9_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Code/\+Headers/\mbox{\hyperlink{_sequence_8hpp}{Sequence.\+hpp}}\item 
+Code/\+Sources/Sequence.\+cpp\end{DoxyCompactItemize}

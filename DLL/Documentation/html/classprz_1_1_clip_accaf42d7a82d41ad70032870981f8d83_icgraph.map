@@ -1,0 +1,5 @@
+<map id="prz::Clip::get_name" name="prz::Clip::get_name">
+<area shape="rect" id="node1" title="Get the name." alt="" coords="224,67,359,93"/>
+<area shape="rect" id="node2" href="$_audio___clip_8hpp.html#a34ace91843bd282282f609752f6ba309" title="Get the audio clip name." alt="" coords="5,29,176,56"/>
+<area shape="rect" id="node3" href="$_text___clip_8hpp.html#a87875ccb3d758a8061f6e9985fcb6780" title="Get the text clip name." alt="" coords="10,104,171,131"/>
+</map>

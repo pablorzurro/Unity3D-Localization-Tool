@@ -1,7 +1,7 @@
 /**
  * @file Audio_Clip.hpp
  * @author Pablo Rodríguez Zurro (przuro@gmail.com)
- * @brief 
+ * @brief A clip with the information of an audio file
  * @version 0.1
  * @date 05-06-2019
  * 
@@ -17,17 +17,22 @@
 namespace prz
 {
 
+	/**
+	 * @brief A clip with the information of an audio file
+	 * 
+	 */
 	class Audio_Clip : public Clip
 	{
 	public:
 
 		/**
 		 * @brief Construct a new Audio_Clip
-		 *
-		 * @param audioFilePath
-		 * @param startTime
-		 * @param duration. If the value is -1.0, this audio clip has the same duration as the length of the corresponding file.
-		 * @param startClippingTime. If the start clipping time is 0.0, there is no clipping
+		 * 
+		 * @param name 
+		 * @param audioFilePath 
+		 * @param startTime 
+		 * @param duration 
+		 * @param startCutTime 
 		 */
 		Audio_Clip
 		(
@@ -65,9 +70,9 @@ namespace prz
 		/**
 		 * @brief Set the start cut time
 		 * 
-		 * @param startClippingTime 
+		 * @param startCutTime 
 		 */
-		void set_start_cut_time(float startClippingTime);
+		void set_start_cut_time(float startCutTime);
 
 		/**
 		 * @brief Set the file length
@@ -79,26 +84,31 @@ namespace prz
 	public:
 
 		/**
-		 * @brief Return the file path
+		 * @brief Get the file path 
 		 * 
-		 * @return const char* 
+		 * @return const PString& 
 		 */
 		const PString& get_file_path() const { return m_filePath; }
 
 		/**
-		 * @brief Return the file name
+		 * @brief Get the file name 
 		 * 
-		 * @return const char* 
+		 * @return const PString& 
 		 */
 		const PString& get_file_name() const { return m_fileName; }
 		
 		/**
-		 * @brief Return the start clipping time
+		 * @brief Get the start cut time 
 		 * 
 		 * @return float 
 		 */
 		float get_start_cut_time() const { return m_startCutTime; }
 
+		/**
+		 * @brief Get the file length 
+		 * 
+		 * @return float 
+		 */
 		float get_file_length() const { return m_fileLength; }
 
 	public:
@@ -128,9 +138,34 @@ namespace prz
 
 	extern "C"
 	{
-
+		/**
+		 * @brief Set the audio clip name 
+		 * 
+		 * @param audioClip 
+		 * @param name 
+		 * @return true 
+		 * @return false 
+		 */
 		LOCALIZATION_TOOL_API bool set_audio_clip_name(Audio_Clip* audioClip, const char* name);
+
+		/**
+		 * @brief Set the audio clip start time 
+		 * 
+		 * @param audioClip 
+		 * @param startTime 
+		 * @return true 
+		 * @return false 
+		 */
 		LOCALIZATION_TOOL_API bool set_audio_clip_start_time(Audio_Clip* audioClip, float startTime);
+
+		/**
+		 * @brief Set the audio clip duration 
+		 * 
+		 * @param audioClip 
+		 * @param duration 
+		 * @return true 
+		 * @return false 
+		 */
 		LOCALIZATION_TOOL_API bool set_audio_clip_duration(Audio_Clip* audioClip, float duration);
 
 		/**
@@ -157,16 +192,43 @@ namespace prz
 		 */
 		LOCALIZATION_TOOL_API bool set_audio_clip_file_length(Audio_Clip* audioClip, float fileLength);
 
+		/**
+		 * @brief Get the audio clip name 
+		 * 
+		 * @param audioClip 
+		 * @return const PString* 
+		 */
 		LOCALIZATION_TOOL_API const PString* get_audio_clip_name(Audio_Clip* audioClip);
+
+		/**
+		 * @brief Get the audio clip start time 
+		 * 
+		 * @param audioClip 
+		 * @return float 
+		 */
 		LOCALIZATION_TOOL_API float get_audio_clip_start_time(Audio_Clip* audioClip);
+
+		/**
+		 * @brief Get the audio clip end time 
+		 * 
+		 * @param audioClip 
+		 * @return float 
+		 */
 		LOCALIZATION_TOOL_API float get_audio_clip_end_time(Audio_Clip* audioClip);
+
+		/**
+		 * @brief Get the audio clip duration 
+		 * 
+		 * @param audioClip 
+		 * @return float 
+		 */
 		LOCALIZATION_TOOL_API float get_audio_clip_duration(Audio_Clip* audioClip);
 
 		/**
-		 * @brief get the audio file path of an audio clip
+		 * @brief Get the audio clip file path 
 		 * 
 		 * @param audioClip 
-		 * @return const char*
+		 * @return const PString* 
 		 */
 		LOCALIZATION_TOOL_API const PString* get_audio_clip_file_path(Audio_Clip* audioClip);
 		

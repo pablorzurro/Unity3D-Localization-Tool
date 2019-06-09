@@ -1,0 +1,428 @@
+\hypertarget{_text___clip_8hpp}{}\section{Code/\+Headers/\+Text\+\_\+\+Clip.hpp File Reference}
+\label{_text___clip_8hpp}\index{Code/Headers/Text\_Clip.hpp@{Code/Headers/Text\_Clip.hpp}}
+
+
+Clip that stores a text.  
+
+
+{\ttfamily \#include $<$Clip.\+hpp$>$}\newline
+Include dependency graph for Text\+\_\+\+Clip.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_text___clip_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_text___clip_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classprz_1_1_text___clip}{prz\+::\+Text\+\_\+\+Clip}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classprz_1_1_clip}{Clip}} that stores a text. It may contain font size aand style information in a future. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_text___clip_8hpp_a0f13735aa236bd0a3aff7be58137e6a5}{prz\+::set\+\_\+text\+\_\+clip\+\_\+name}} (Text\+\_\+\+Clip $\ast$text\+Clip, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Set the text clip name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_text___clip_8hpp_aa7768ced397410c261e9ac6d1fecade5}{prz\+::set\+\_\+text\+\_\+clip\+\_\+start\+\_\+time}} (Text\+\_\+\+Clip $\ast$text\+Clip, float start\+Time)
+\begin{DoxyCompactList}\small\item\em Set the text clip start time. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_text___clip_8hpp_a0b38209c4d846727812a74f44085daef}{prz\+::set\+\_\+text\+\_\+clip\+\_\+duration}} (Text\+\_\+\+Clip $\ast$text\+Clip, float duration)
+\begin{DoxyCompactList}\small\item\em Set the text clip duration. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_text___clip_8hpp_add7a0ed63b75c519ee18b435f6883f50}{prz\+::set\+\_\+text\+\_\+clip\+\_\+text}} (Text\+\_\+\+Clip $\ast$text\+Clip, const char $\ast$text)
+\begin{DoxyCompactList}\small\item\em Set the text clip text. \end{DoxyCompactList}\item 
+const P\+String $\ast$ \mbox{\hyperlink{_text___clip_8hpp_a87875ccb3d758a8061f6e9985fcb6780}{prz\+::get\+\_\+text\+\_\+clip\+\_\+name}} (Text\+\_\+\+Clip $\ast$text\+Clip)
+\begin{DoxyCompactList}\small\item\em Get the text clip name. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{_text___clip_8hpp_a616eb57f615a3c7b942e33139a30b25a}{prz\+::get\+\_\+text\+\_\+clip\+\_\+start\+\_\+time}} (Text\+\_\+\+Clip $\ast$text\+Clip)
+\begin{DoxyCompactList}\small\item\em Get the text clip start time. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{_text___clip_8hpp_a6c9111d61f5d8a4089c0dce9b8503f28}{prz\+::get\+\_\+text\+\_\+clip\+\_\+end\+\_\+time}} (Text\+\_\+\+Clip $\ast$text\+Clip)
+\begin{DoxyCompactList}\small\item\em Get the text clip end time. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{_text___clip_8hpp_af5b673ead16373948262d632b38d0343}{prz\+::get\+\_\+text\+\_\+clip\+\_\+duration}} (Text\+\_\+\+Clip $\ast$text\+Clip)
+\begin{DoxyCompactList}\small\item\em Get the text clip duration. \end{DoxyCompactList}\item 
+const P\+String $\ast$ \mbox{\hyperlink{_text___clip_8hpp_a007de1ffd5893fd30640a9117d09245a}{prz\+::get\+\_\+text\+\_\+clip\+\_\+text}} (Text\+\_\+\+Clip $\ast$text\+Clip)
+\begin{DoxyCompactList}\small\item\em Get the text clip text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clip that stores a text. 
+
+\begin{DoxyAuthor}{Author}
+Pablo Rodríguez Zurro (\href{mailto:przuro@gmail.com}{\texttt{ przuro@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+06-\/06-\/2019
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2019 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_text___clip_8hpp_file_af5b673ead16373948262d632b38d0343}\label{_text___clip_8hpp_file_af5b673ead16373948262d632b38d0343}} 
+\index{Text\_Clip.hpp@{Text\_Clip.hpp}!get\_text\_clip\_duration@{get\_text\_clip\_duration}}
+\index{get\_text\_clip\_duration@{get\_text\_clip\_duration}!Text\_Clip.hpp@{Text\_Clip.hpp}}
+\subsubsection{\texorpdfstring{get\_text\_clip\_duration()}{get\_text\_clip\_duration()}}
+{\footnotesize\ttfamily float prz\+::get\+\_\+text\+\_\+clip\+\_\+duration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$}]{text\+Clip }\end{DoxyParamCaption})}
+
+
+
+Get the text clip duration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Clip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file Text\+\_\+\+Clip.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{_text___clip_8hpp_af5b673ead16373948262d632b38d0343_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{_text___clip_8hpp_af5b673ead16373948262d632b38d0343_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_text___clip_8hpp_file_a6c9111d61f5d8a4089c0dce9b8503f28}\label{_text___clip_8hpp_file_a6c9111d61f5d8a4089c0dce9b8503f28}} 
+\index{Text\_Clip.hpp@{Text\_Clip.hpp}!get\_text\_clip\_end\_time@{get\_text\_clip\_end\_time}}
+\index{get\_text\_clip\_end\_time@{get\_text\_clip\_end\_time}!Text\_Clip.hpp@{Text\_Clip.hpp}}
+\subsubsection{\texorpdfstring{get\_text\_clip\_end\_time()}{get\_text\_clip\_end\_time()}}
+{\footnotesize\ttfamily float prz\+::get\+\_\+text\+\_\+clip\+\_\+end\+\_\+time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$}]{text\+Clip }\end{DoxyParamCaption})}
+
+
+
+Get the text clip end time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Clip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+Definition at line 103 of file Text\+\_\+\+Clip.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{_text___clip_8hpp_a6c9111d61f5d8a4089c0dce9b8503f28_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{_text___clip_8hpp_a6c9111d61f5d8a4089c0dce9b8503f28_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_text___clip_8hpp_file_a87875ccb3d758a8061f6e9985fcb6780}\label{_text___clip_8hpp_file_a87875ccb3d758a8061f6e9985fcb6780}} 
+\index{Text\_Clip.hpp@{Text\_Clip.hpp}!get\_text\_clip\_name@{get\_text\_clip\_name}}
+\index{get\_text\_clip\_name@{get\_text\_clip\_name}!Text\_Clip.hpp@{Text\_Clip.hpp}}
+\subsubsection{\texorpdfstring{get\_text\_clip\_name()}{get\_text\_clip\_name()}}
+{\footnotesize\ttfamily const P\+String $\ast$ prz\+::get\+\_\+text\+\_\+clip\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$}]{text\+Clip }\end{DoxyParamCaption})}
+
+
+
+Get the text clip name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Clip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const P\+String$\ast$ 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file Text\+\_\+\+Clip.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{_text___clip_8hpp_a87875ccb3d758a8061f6e9985fcb6780_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{_text___clip_8hpp_a87875ccb3d758a8061f6e9985fcb6780_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_text___clip_8hpp_file_a616eb57f615a3c7b942e33139a30b25a}\label{_text___clip_8hpp_file_a616eb57f615a3c7b942e33139a30b25a}} 
+\index{Text\_Clip.hpp@{Text\_Clip.hpp}!get\_text\_clip\_start\_time@{get\_text\_clip\_start\_time}}
+\index{get\_text\_clip\_start\_time@{get\_text\_clip\_start\_time}!Text\_Clip.hpp@{Text\_Clip.hpp}}
+\subsubsection{\texorpdfstring{get\_text\_clip\_start\_time()}{get\_text\_clip\_start\_time()}}
+{\footnotesize\ttfamily float prz\+::get\+\_\+text\+\_\+clip\+\_\+start\+\_\+time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$}]{text\+Clip }\end{DoxyParamCaption})}
+
+
+
+Get the text clip start time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Clip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file Text\+\_\+\+Clip.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{_text___clip_8hpp_a616eb57f615a3c7b942e33139a30b25a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{_text___clip_8hpp_a616eb57f615a3c7b942e33139a30b25a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_text___clip_8hpp_file_a007de1ffd5893fd30640a9117d09245a}\label{_text___clip_8hpp_file_a007de1ffd5893fd30640a9117d09245a}} 
+\index{Text\_Clip.hpp@{Text\_Clip.hpp}!get\_text\_clip\_text@{get\_text\_clip\_text}}
+\index{get\_text\_clip\_text@{get\_text\_clip\_text}!Text\_Clip.hpp@{Text\_Clip.hpp}}
+\subsubsection{\texorpdfstring{get\_text\_clip\_text()}{get\_text\_clip\_text()}}
+{\footnotesize\ttfamily const P\+String $\ast$ prz\+::get\+\_\+text\+\_\+clip\+\_\+text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$}]{text\+Clip }\end{DoxyParamCaption})}
+
+
+
+Get the text clip text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Clip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const P\+String$\ast$ 
+\end{DoxyReturn}
+
+
+Definition at line 123 of file Text\+\_\+\+Clip.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{_text___clip_8hpp_a007de1ffd5893fd30640a9117d09245a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{_text___clip_8hpp_a007de1ffd5893fd30640a9117d09245a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_text___clip_8hpp_file_a0b38209c4d846727812a74f44085daef}\label{_text___clip_8hpp_file_a0b38209c4d846727812a74f44085daef}} 
+\index{Text\_Clip.hpp@{Text\_Clip.hpp}!set\_text\_clip\_duration@{set\_text\_clip\_duration}}
+\index{set\_text\_clip\_duration@{set\_text\_clip\_duration}!Text\_Clip.hpp@{Text\_Clip.hpp}}
+\subsubsection{\texorpdfstring{set\_text\_clip\_duration()}{set\_text\_clip\_duration()}}
+{\footnotesize\ttfamily bool prz\+::set\+\_\+text\+\_\+clip\+\_\+duration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$}]{text\+Clip,  }\item[{float}]{duration }\end{DoxyParamCaption})}
+
+
+
+Set the text clip duration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Clip} & \\
+\hline
+{\em duration} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file Text\+\_\+\+Clip.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{_text___clip_8hpp_a0b38209c4d846727812a74f44085daef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{_text___clip_8hpp_a0b38209c4d846727812a74f44085daef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_text___clip_8hpp_file_a0f13735aa236bd0a3aff7be58137e6a5}\label{_text___clip_8hpp_file_a0f13735aa236bd0a3aff7be58137e6a5}} 
+\index{Text\_Clip.hpp@{Text\_Clip.hpp}!set\_text\_clip\_name@{set\_text\_clip\_name}}
+\index{set\_text\_clip\_name@{set\_text\_clip\_name}!Text\_Clip.hpp@{Text\_Clip.hpp}}
+\subsubsection{\texorpdfstring{set\_text\_clip\_name()}{set\_text\_clip\_name()}}
+{\footnotesize\ttfamily bool prz\+::set\+\_\+text\+\_\+clip\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$}]{text\+Clip,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Set the text clip name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Clip} & \\
+\hline
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file Text\+\_\+\+Clip.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{_text___clip_8hpp_a0f13735aa236bd0a3aff7be58137e6a5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{_text___clip_8hpp_a0f13735aa236bd0a3aff7be58137e6a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_text___clip_8hpp_file_aa7768ced397410c261e9ac6d1fecade5}\label{_text___clip_8hpp_file_aa7768ced397410c261e9ac6d1fecade5}} 
+\index{Text\_Clip.hpp@{Text\_Clip.hpp}!set\_text\_clip\_start\_time@{set\_text\_clip\_start\_time}}
+\index{set\_text\_clip\_start\_time@{set\_text\_clip\_start\_time}!Text\_Clip.hpp@{Text\_Clip.hpp}}
+\subsubsection{\texorpdfstring{set\_text\_clip\_start\_time()}{set\_text\_clip\_start\_time()}}
+{\footnotesize\ttfamily bool prz\+::set\+\_\+text\+\_\+clip\+\_\+start\+\_\+time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$}]{text\+Clip,  }\item[{float}]{start\+Time }\end{DoxyParamCaption})}
+
+
+
+Set the text clip start time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Clip} & \\
+\hline
+{\em start\+Time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Text\+\_\+\+Clip.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{_text___clip_8hpp_aa7768ced397410c261e9ac6d1fecade5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{_text___clip_8hpp_aa7768ced397410c261e9ac6d1fecade5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_text___clip_8hpp_file_add7a0ed63b75c519ee18b435f6883f50}\label{_text___clip_8hpp_file_add7a0ed63b75c519ee18b435f6883f50}} 
+\index{Text\_Clip.hpp@{Text\_Clip.hpp}!set\_text\_clip\_text@{set\_text\_clip\_text}}
+\index{set\_text\_clip\_text@{set\_text\_clip\_text}!Text\_Clip.hpp@{Text\_Clip.hpp}}
+\subsubsection{\texorpdfstring{set\_text\_clip\_text()}{set\_text\_clip\_text()}}
+{\footnotesize\ttfamily bool prz\+::set\+\_\+text\+\_\+clip\+\_\+text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classprz_1_1_text___clip}{Text\+\_\+\+Clip}} $\ast$}]{text\+Clip,  }\item[{const char $\ast$}]{text }\end{DoxyParamCaption})}
+
+
+
+Set the text clip text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Clip} & \\
+\hline
+{\em text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Definition at line 72 of file Text\+\_\+\+Clip.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{_text___clip_8hpp_add7a0ed63b75c519ee18b435f6883f50_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{_text___clip_8hpp_add7a0ed63b75c519ee18b435f6883f50_icgraph}
+\end{center}
+\end{figure}

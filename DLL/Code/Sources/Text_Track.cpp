@@ -19,7 +19,7 @@ namespace prz
 			return int::MinValue;
 		}
 
-		LOCALIZATION_TOOL_API Text_Clip** get_text_track_clips(Text_Track* textTrack)
+		/*LOCALIZATION_TOOL_API*/ Text_Clip** get_text_track_clips(Text_Track* textTrack)
 		{
 			if (textTrack)
 			{
